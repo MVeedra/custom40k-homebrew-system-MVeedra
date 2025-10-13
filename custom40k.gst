@@ -268,6 +268,11 @@
         <characteristicType name="Keywords" id="a78e-ed35-c409-5cda"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Equipment" id="03e4-280e-70a0-4395" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Keywords" id="0207-88db-7926-4ba6"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedRules>
     <rule name="Infiltrator" id="276b-ef81-2a62-da70" hidden="false">
