@@ -273,6 +273,21 @@
         <characteristicType name="Keywords" id="0207-88db-7926-4ba6"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Traits" id="766f-e609-4aa9-47e8" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Keywords" id="0207-88db-7926-4ba6"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Vehicle_Equipment" id="57f5-93cf-6d5d-4dca" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Keywords" id="0207-88db-7926-4ba6"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Ability Choice" id="df71-6064-b08f-42cb" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Keywords" id="0207-88db-7926-4ba6"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <sharedRules>
     <rule name="Infiltrator" id="276b-ef81-2a62-da70" hidden="false">
