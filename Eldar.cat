@@ -3170,7 +3170,7 @@
       <selectionEntries>
         <selectionEntry type="model" import="true" name="War Walkers" hidden="false" id="13ff-5565-50fd-41424" defaultAmount="1" sortIndex="2">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c4e-a21b-327f-4acd" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7c4e-a21b-327f-4acd" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6494-9b6c-de73-41a8" includeChildSelections="false"/>
           </constraints>
           <costs>
@@ -3182,7 +3182,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="43ae-f597-c0e4-8d1c" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Scatter laser" hidden="false" id="583f-25cb-481a-53f8" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Scatter laser" hidden="false" id="583f-25cb-481a-53f8" sortIndex="1" defaultAmount="2">
                   <infoLinks>
                     <infoLink name="Scatter laser" id="0b3d-bcf9-f4dd-6734" hidden="false" type="profile" targetId="5f6b-6056-4af7-4eae"/>
                   </infoLinks>
@@ -3221,10 +3221,6 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98c0-8731-56e0-ed39"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff7c-43a5-fbeb-2493"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
