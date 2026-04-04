@@ -57,9 +57,12 @@
     <categoryEntry name="Advisor" id="187a-b1be-ad57-93fd" hidden="true">
       <comment>Chaos Space Marine Ability</comment>
     </categoryEntry>
+    <categoryEntry name="No Battlefield Role" id="41ed-bf57-7d27-9690" hidden="false">
+      <description>For units in force creation that do not use a slot.</description>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
-    <forceEntry name="Army" id="59f5-9244-6426-aff0" hidden="false">
+    <forceEntry name="No Archetype" id="59f5-9244-6426-aff0" hidden="false" sortIndex="1">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="5ede-ce99-1dfe-da5f" targetId="251a-e788-36d5-a036"/>
         <categoryLink name="HQ" hidden="false" id="ffd8-43c9-3bf7-4c6c" targetId="681b-82fd-7cc4-8ef8">
@@ -180,8 +183,15 @@
         </categoryLink>
         <categoryLink name="Transports" hidden="false" id="7190-6a67-d821-1c2d" targetId="8046-e26a-aa36-3308">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="56c3-5761-aede-0220"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="56c3-5761-aede-0220"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="56c3-5761-aede-0220">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="79f3-f25d-2e24-7130" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink name="Fortification" hidden="false" id="90e3-b264-453a-b9b7" targetId="21aa-fe1b-91db-f8a1">
           <constraints>
@@ -195,9 +205,10 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d7e2-81b8-ddb8-b15c"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="No Battlefield Role" hidden="false" id="dbb3-5877-0069-1710" targetId="41ed-bf57-7d27-9690"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry name="Free Army" id="c934-704f-061c-2efe" hidden="false">
+    <forceEntry name="Free Army" id="c934-704f-061c-2efe" hidden="false" sortIndex="99">
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="3949-7bc1-cbe4-9000" targetId="681b-82fd-7cc4-8ef8"/>
         <categoryLink name="Transports" hidden="false" id="836a-bb2a-2af1-e63a" targetId="8046-e26a-aa36-3308"/>
