@@ -66,6 +66,7 @@
         <entryLink import="true" name="Equipment Autarch" hidden="false" id="e737-9168-3046-ff88" type="selectionEntryGroup" targetId="52e9-7cc4-5299-59fa"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="3ede-0866-3089-7dcc" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="08cc-4c9a-04c0-2c79" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
+        <entryLink import="true" name="Webway Strike" hidden="false" id="2cd6-9e9a-f40a-dd1d" type="selectionEntry" targetId="2e9d-6d1d-0817-ba0d"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Avatar of Khaine" hidden="false" id="30fc-45d3-ee1b-431a">
@@ -195,6 +196,7 @@
         <entryLink import="true" name="Weapons Psyker" hidden="false" id="22dd-563a-04af-9690" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="f1df-8319-c48e-8e9c" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="3"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="39a3-ce2d-48c9-5e6a" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="4"/>
+        <entryLink import="true" name="Webway Strike" hidden="false" id="7bc7-d81c-a967-2f1d" type="selectionEntry" targetId="2e9d-6d1d-0817-ba0d"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="c323-982c-aaf6-81e7" hidden="false">
@@ -258,6 +260,7 @@
         <entryLink import="true" name="Smite" hidden="false" id="24f2-c0d3-42f6-66af" type="selectionEntry" targetId="eae4-8949-6416-c634"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="fb5d-f5e4-187b-af2b" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="3e1c-f395-dc05-cf46" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
+        <entryLink import="true" name="Webway Strike" hidden="false" id="3057-947a-4d3a-7129" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="a0ae-2d3a-68b2-504b" hidden="false">
@@ -365,6 +368,9 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="d54a-5961-058c-fd6d" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Heavy weapon platform" hidden="false" id="b276-11ec-db9b-4445" defaultAmount="0" sortIndex="1">
           <costs>
@@ -379,26 +385,43 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="cb94-76cf-42d9-915c" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Scatter laser" hidden="false" id="2ca0-50d0-e33c-5581" sortIndex="1" defaultAmount="1"/>
+                <selectionEntry type="upgrade" import="true" name="Scatter laser" hidden="false" id="2ca0-50d0-e33c-5581" sortIndex="1" defaultAmount="1">
+                  <infoLinks>
+                    <infoLink name="Scatter laser" id="7556-c295-5f13-88fc" hidden="false" type="profile" targetId="5f6b-6056-4af7-4eae"/>
+                  </infoLinks>
+                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Shuriken cannon" hidden="false" id="9d35-d0a2-21af-eab6" sortIndex="2">
                   <costs>
                     <cost name="pts" typeId="40d8-7900-73a1-1378" value="1"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Shuriken cannon" id="74d5-635e-f78b-c844" hidden="false" type="profile" targetId="8991-a44b-6497-4096"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Aeldari missile launcher" hidden="false" id="9abc-0e0c-80be-2033" sortIndex="3">
                   <costs>
                     <cost name="pts" typeId="40d8-7900-73a1-1378" value="22"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Aeldari missile launcher * - Starshot" id="6ab3-1c09-8f6b-e014" hidden="false" type="profile" targetId="8810-e735-a434-4b90"/>
+                    <infoLink name="Aeldari missile launcher * - Sunburst" id="d437-0828-82ee-8609" hidden="false" type="profile" targetId="a881-a7a2-0e74-49c8"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="b8db-00f1-371b-1937" sortIndex="4">
                   <costs>
                     <cost name="pts" typeId="40d8-7900-73a1-1378" value="30"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Starcannon" id="59ff-e25f-97d1-9a57" hidden="false" type="profile" targetId="e881-13e0-752e-4dc8"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Bright lance" hidden="false" id="7e51-55eb-445e-651a" sortIndex="5">
                   <costs>
                     <cost name="pts" typeId="40d8-7900-73a1-1378" value="37"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Bright lance" id="ab89-397d-eb23-737a" hidden="false" type="profile" targetId="2c99-e69e-e54c-4e81"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -414,6 +437,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="d5c2-4fc8-628c-33c2" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -465,6 +491,9 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="014b-652a-3dbe-916e" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -557,6 +586,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="7f91-3066-eaa6-f128" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -613,6 +645,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="fc9f-00ca-f74d-7640" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Storm Guardian with special weapon" hidden="false" id="8981-a6ed-bfc5-66ef" sortIndex="2">
               <costs>
@@ -665,6 +700,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="838d-3225-d280-15a8" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -759,6 +797,9 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="59c8-2b55-9a36-3af4" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -815,6 +856,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="cd46-f263-c4c5-697a" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Voidreaver with Special Weapon" hidden="false" id="a952-d6fa-641c-ec78" sortIndex="2">
               <selectionEntries>
@@ -870,6 +914,9 @@
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="221f-739c-58e2-5e60" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Voidreaver with Heavy Weapon" hidden="false" id="e84b-d3ab-25c9-dfbb" sortIndex="3">
               <selectionEntries>
@@ -925,6 +972,9 @@
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="3da7-4138-1031-43a4" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1002,6 +1052,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="cbaf-2fca-4cd6-94d7" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Dire Avenger Exarch" hidden="false" id="4c2c-51e5-f4f4-4b2b" defaultAmount="0" sortIndex="2">
               <costs>
@@ -1083,6 +1136,7 @@
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="27c2-678b-b552-f3c7" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="5de6-5f30-10e3-f7a3" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -1166,6 +1220,7 @@
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="c184-b07a-a743-5068" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="5b82-4699-7084-67a0" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Fire Dragons" hidden="false" id="baaf-50df-43a7-49e64" defaultAmount="5" sortIndex="1">
@@ -1190,6 +1245,9 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="f8fd-9a2f-7c35-0e32" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1284,6 +1342,7 @@
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="45fa-778f-e80a-ab2b" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="b796-1682-7a12-0af3" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Howling Banshees" hidden="false" id="7f75-ec0a-5481-45a24" defaultAmount="5" sortIndex="1">
@@ -1317,6 +1376,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="78fb-d522-7d43-6eab" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1413,6 +1475,7 @@
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="ac43-cf3d-3ed9-4a30" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="a826-6635-366f-64f8" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Striking Scorpions" hidden="false" id="5d2d-0d51-2cbc-42d84" defaultAmount="5">
@@ -1454,6 +1517,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="fee3-6403-823b-efe1" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1543,6 +1609,9 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2016-e0a5-f45b-12d2"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f49a-ffee-1f8d-e2d8"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="79bd-5432-4923-129a" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="One Voidscarred may be equipped with a Faolchu." hidden="false" id="f7b5-c0c0-e3f2-8e35" sortIndex="3">
           <constraints>
@@ -1614,6 +1683,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="2917-9faa-ca91-8e5a" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Voidscarred with Special Weapon" hidden="false" id="551d-d043-73af-fd5a" sortIndex="2">
               <selectionEntries>
@@ -1669,6 +1741,9 @@
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="16"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="19a5-dc8c-0eb4-0a31" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Voidscarred with Heavy Weapon" hidden="false" id="1847-6a71-ca60-ff34" sortIndex="3">
               <selectionEntries>
@@ -1724,6 +1799,9 @@
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="16"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="048d-040d-46ff-0c96" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Voidscarred with Fusion pistol and Power sword" hidden="false" id="4025-7a3f-d4b9-52d7" sortIndex="4">
               <selectionEntries>
@@ -1771,6 +1849,9 @@
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="31"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="b25e-02af-b756-542c" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Voidscarred with Ranger long rifle" hidden="false" id="62b8-6ff7-ec58-9362" sortIndex="5">
               <selectionEntries>
@@ -1809,8 +1890,11 @@
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="33"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Support Weapons" hidden="false" id="302b-e335-4c94-ef69" type="selectionEntry" targetId="6a21-6a5b-758f-4c54"/>
+              </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Shade Runner" hidden="false" id="9045-a6ba-bfdc-f0f8" sortIndex="6">
+            <selectionEntry type="model" import="true" name="Shade Runner" hidden="false" id="9045-a6ba-bfdc-f0f8" sortIndex="6">
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="20"/>
               </costs>
@@ -1850,8 +1934,11 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b70c-9fd2-c75c-762b"/>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="83a9-60d1-475f-af9d"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="575a-0004-1237-9117" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Soul Weaver" hidden="false" id="522a-5a86-ab4e-24c1" sortIndex="7">
+            <selectionEntry type="model" import="true" name="Soul Weaver" hidden="false" id="522a-5a86-ab4e-24c1" sortIndex="7">
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="22"/>
               </costs>
@@ -1895,8 +1982,11 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7428-b8fa-16c3-dfb3"/>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2570-9c4d-6196-b75e"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="3880-4032-0807-7334" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Way Seeker" hidden="false" id="f90e-9f4d-d7a7-24de" sortIndex="8">
+            <selectionEntry type="model" import="true" name="Way Seeker" hidden="false" id="f90e-9f4d-d7a7-24de" sortIndex="8">
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="26"/>
               </costs>
@@ -1936,6 +2026,9 @@
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b8c1-4856-0f30-dfbe"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98cd-6b00-9289-0fb7"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="5350-2b0d-40c9-3074" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1977,6 +2070,7 @@
             <entryLink import="true" name="Weapons Psyker" hidden="false" id="405a-9881-c5a1-ce12" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
             <entryLink import="true" name="Legacy Armory" hidden="false" id="decf-4c71-fc72-40fb" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
             <entryLink import="true" name="Ynnari Armory" hidden="false" id="52f5-2518-d875-9db0" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="0fc8-5216-2d32-1ed6" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Psychic powers" id="fd44-1479-4e0f-5d75" hidden="false" sortIndex="1" collapsible="true">
@@ -2826,6 +2920,7 @@
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="0d51-7e7f-8087-1004" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="06cc-364c-ad92-5591" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Dark Reapers" hidden="false" id="b19a-ec0b-3ecf-45604" defaultAmount="5" sortIndex="1">
@@ -2851,6 +2946,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="243f-50fa-494e-7811" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2927,6 +3025,9 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="542d-08d6-6fbd-2f67" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -3576,6 +3677,7 @@
         <entryLink import="true" name="Smite" hidden="false" id="39c8-570f-0d49-61db" type="selectionEntry" targetId="eae4-8949-6416-c634"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="f0dc-2fbb-1cb7-80e3" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="e42c-d6cd-821d-f8a8" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
+        <entryLink import="true" name="Webway Strike" hidden="false" id="c462-6d9a-21b1-f93a" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="3ca9-9944-8556-8f92" hidden="false">
@@ -3612,6 +3714,7 @@
             <entryLink import="true" name="Weapons Psyker" hidden="false" id="9baf-e68d-fbc4-34b1" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
             <entryLink import="true" name="Legacy Armory" hidden="false" id="5941-9f4b-57f9-7436" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
             <entryLink import="true" name="Ynnari Armory" hidden="false" id="3da9-8b1a-72f4-f919" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="a889-9bd1-be68-22ab" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Psychic powers" id="0cbb-16d3-c88c-99a5" hidden="false" sortIndex="1" collapsible="true">
@@ -3843,6 +3946,9 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="73a3-c8e2-bdd3-2982" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -3899,6 +4005,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="e98c-7e09-cc49-fb5e" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Voidreaver with Special Weapon" hidden="false" id="bc12-0faa-7382-392c" sortIndex="2">
               <selectionEntries>
@@ -3954,6 +4063,9 @@
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="9786-dde0-2d0c-b927" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Voidreaver with Heavy Weapon" hidden="false" id="a006-f7b9-1faf-4159" sortIndex="3">
               <selectionEntries>
@@ -4009,6 +4121,9 @@
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="f729-db1c-3e90-1f66" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4054,6 +4169,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="03ff-acda-5435-2711" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -4110,6 +4228,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="b211-7acf-cbcb-fcfa" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Storm Guardian with special weapon" hidden="false" id="40a8-605f-4c2f-fc78" sortIndex="2">
               <costs>
@@ -4162,6 +4283,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="1eb1-f70b-3c9d-2e7e" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4220,6 +4344,9 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="bb2b-5905-84dd-3467" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Heavy weapon platform" hidden="false" id="ecb2-de7d-b733-b735" defaultAmount="0" sortIndex="1">
           <costs>
@@ -4232,33 +4359,50 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91bc-ff3f-cc9a-9d39" includeChildSelections="False"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons" id="3fd1-30da-c649-f7b4" hidden="false">
+            <selectionEntryGroup name="Weapons" id="c63c-1d27-0285-33e8" hidden="false">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Scatter laser" hidden="false" id="1235-6547-6395-6d9d" sortIndex="1" defaultAmount="1"/>
-                <selectionEntry type="upgrade" import="true" name="Shuriken cannon" hidden="false" id="0366-f530-1421-b2ac" sortIndex="2">
+                <selectionEntry type="upgrade" import="true" name="Scatter laser" hidden="false" id="ea7e-484b-dff1-3a0b" sortIndex="1" defaultAmount="1">
+                  <infoLinks>
+                    <infoLink name="Scatter laser" id="e259-e336-cb48-6873" hidden="false" type="profile" targetId="5f6b-6056-4af7-4eae"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shuriken cannon" hidden="false" id="87de-0dcf-aa70-8162" sortIndex="2">
                   <costs>
                     <cost name="pts" typeId="40d8-7900-73a1-1378" value="1"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Shuriken cannon" id="a2fb-5a10-c102-12e5" hidden="false" type="profile" targetId="8991-a44b-6497-4096"/>
+                  </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Aeldari missile launcher" hidden="false" id="d409-86a1-f49a-0488" sortIndex="3">
+                <selectionEntry type="upgrade" import="true" name="Aeldari missile launcher" hidden="false" id="a772-2d2e-347a-12df" sortIndex="3">
                   <costs>
                     <cost name="pts" typeId="40d8-7900-73a1-1378" value="22"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Aeldari missile launcher * - Starshot" id="ef6b-20b5-e18f-8706" hidden="false" type="profile" targetId="8810-e735-a434-4b90"/>
+                    <infoLink name="Aeldari missile launcher * - Sunburst" id="8675-44ae-c2dc-41ca" hidden="false" type="profile" targetId="a881-a7a2-0e74-49c8"/>
+                  </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="76e7-23a4-e436-7c75" sortIndex="4">
+                <selectionEntry type="upgrade" import="true" name="Starcannon" hidden="false" id="16ac-f2b0-d878-8076" sortIndex="4">
                   <costs>
                     <cost name="pts" typeId="40d8-7900-73a1-1378" value="30"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Starcannon" id="e90a-7b1d-a2e0-49a9" hidden="false" type="profile" targetId="e881-13e0-752e-4dc8"/>
+                  </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Bright lance" hidden="false" id="e039-7235-61bf-67e5" sortIndex="5">
+                <selectionEntry type="upgrade" import="true" name="Bright lance" hidden="false" id="0a7b-996d-0237-e7c6" sortIndex="5">
                   <costs>
                     <cost name="pts" typeId="40d8-7900-73a1-1378" value="37"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Bright lance" id="2ac7-3fc3-3e84-63e1" hidden="false" type="profile" targetId="2c99-e69e-e54c-4e81"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e2f-6d09-3859-8e5c"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d130-868a-12a8-5dae"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b754-cb8d-17fc-0014"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0466-a044-0583-19d3"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -4269,6 +4413,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="fde7-fa1e-ac60-d50f" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -4320,6 +4467,9 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Webway Strike" hidden="false" id="b38e-73f9-ca7d-76b3" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -4453,6 +4603,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de9f-c863-ecb6-4db5"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="f2d6-a4f2-7025-ffa2" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Fire Dragons" hidden="false" id="1b6e-2869-c1fe-f18f" defaultAmount="5" sortIndex="1">
@@ -4477,6 +4628,9 @@
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="f82e-3e5a-71bc-b457" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4541,6 +4695,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="7967-f027-82fa-153d" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Dire Avenger Exarch" hidden="false" id="e6d7-b4fc-2910-eed1" defaultAmount="0" sortIndex="2">
               <costs>
@@ -4621,6 +4778,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35d2-93f2-6485-e2e7"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="89bf-156c-a516-03be" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4714,6 +4872,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b227-a24b-11fa-8cf0"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="2b07-b492-cabd-c337" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Dark Reapers" hidden="false" id="6f1f-968f-d66b-4660" defaultAmount="5" sortIndex="1">
@@ -4739,6 +4898,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="32af-9eec-d741-f8c9" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4832,6 +4994,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3da-b578-a2a8-8478"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="4158-64f7-dddd-7c9b" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Howling Banshees" hidden="false" id="27d6-8c53-cd8d-7bee" defaultAmount="5" sortIndex="1">
@@ -4865,6 +5028,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="5efd-673a-18b6-1416" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5108,6 +5274,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85ae-6900-e6f7-9172"/>
                   </constraints>
                 </entryLink>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="f5e9-8a72-150c-6d87" type="selectionEntry" targetId="8c09-4075-aed9-7cbf"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Striking Scorpions" hidden="false" id="5522-b4d3-cf71-f12b" defaultAmount="5">
@@ -5149,6 +5316,9 @@
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Webway Strike" hidden="false" id="70a1-5f2c-bc24-a2a9" type="selectionEntry" targetId="33c5-9434-42ce-236f"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -5533,6 +5703,19 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db60-b790-ec6d-a63b"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Webway Strike" hidden="false" id="0b67-8efa-6997-64e5">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="abe0-737a-6d85-1c8e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02e5-63d1-d70d-e88c"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="40d8-7900-73a1-1378" value="4"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Webway strike" id="8db9-80ca-a428-405f" hidden="false" type="rule" targetId="3df8-43e6-602c-46e8"/>
+                <infoLink name="Infiltrator" id="16ae-4bc9-088b-d724" hidden="false" type="rule" targetId="276b-ef81-2a62-da70"/>
+              </infoLinks>
+            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c74e-1261-442f-ff1d"/>
@@ -5606,6 +5789,11 @@
           </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="forces" scope="roster" childId="2e66-e4c5-ffac-abe1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="146d-5b8b-1299-1c8f">
           <conditions>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="2e66-e4c5-ffac-abe1" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
@@ -5773,6 +5961,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="e8e7-4167-2b44-18ea" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wasps" hidden="true" id="0f4c-6a58-3f73-4c81">
       <categoryLinks>
@@ -5863,6 +6054,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="6345-18cc-e941-cf30" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wraithseer" hidden="false" id="bbb8-74f3-a674-249d">
       <categoryLinks>
@@ -5972,6 +6166,9 @@
       <infoLinks>
         <infoLink name="Wraithbone" id="61f0-e708-2cb5-01bd" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="001b-4eae-faea-0037" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shadow Spectres" hidden="false" id="1217-8ae9-025e-f2d7">
       <selectionEntryGroups>
@@ -6110,6 +6307,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Traits (normal)" hidden="false" id="7a70-52a0-2d24-7953" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shadow Spectres" hidden="true" id="ba05-4086-2365-1d35">
       <selectionEntryGroups>
@@ -6247,6 +6447,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Traits (normal)" hidden="false" id="6159-9edc-3d78-7d61" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hornets" hidden="false" id="bcae-d888-81cd-689e">
       <selectionEntries>
@@ -6333,6 +6536,9 @@
         <categoryLink targetId="8ba0-ef12-9165-c50c" id="0d08-d6a1-72cb-2e3c" primary="true" name="Fast Attack"/>
         <categoryLink targetId="243a-2cd5-61a0-1b44" id="ced9-7b33-929a-7f71" primary="false" name="Vehicle"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="c481-b8ef-167d-3ebb" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Nightwing" hidden="false" id="b547-d340-ba46-7958">
       <categoryLinks>
@@ -6384,6 +6590,7 @@
       </rules>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="53c1-da82-9554-d9d0" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9"/>
+        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="72c7-6acb-300d-a4cf" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Phoenix" hidden="false" id="1383-6b7d-98c6-6958">
@@ -6455,6 +6662,7 @@
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Vehicle Equipment" hidden="false" id="22c9-f095-6479-6306" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9"/>
+            <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="8bd1-6a4c-2a99-03cb" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="571"/>
@@ -6466,6 +6674,48 @@
         <infoLink name="Deflect" id="fc31-e4cc-e827-84fc" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
         <infoLink name="Vector dancer" id="adde-ee2d-f348-d159" hidden="false" type="rule" targetId="7abb-d1de-7291-488c"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Webway Strike" hidden="false" id="33c5-9434-42ce-236f">
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="1"/>
+      </costs>
+      <comment>1 wound</comment>
+      <infoLinks>
+        <infoLink name="Webway strike" id="7444-fad9-665c-e934" hidden="false" type="rule" targetId="3df8-43e6-602c-46e8"/>
+        <infoLink name="Infiltrator" id="219c-5b6b-7581-66b4" hidden="false" type="rule" targetId="276b-ef81-2a62-da70"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dbc4-ccf3-d850-6a40"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dd3-0d8b-1c2d-f5d6"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Webway Strike" hidden="false" id="8c09-4075-aed9-7cbf">
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="2"/>
+      </costs>
+      <comment>2 wounds</comment>
+      <infoLinks>
+        <infoLink name="Infiltrator" id="2f55-bd50-0553-80b0" hidden="false" type="rule" targetId="276b-ef81-2a62-da70"/>
+        <infoLink name="Webway strike" id="9248-2a5b-585a-618d" hidden="false" type="rule" targetId="3df8-43e6-602c-46e8"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1216-770b-8812-290d"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da4b-970c-2a35-d615"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Webway Strike" hidden="false" id="2e9d-6d1d-0817-ba0d">
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="3"/>
+      </costs>
+      <comment>3 wounds</comment>
+      <infoLinks>
+        <infoLink name="Infiltrator" id="ce1b-7c79-6bab-dad0" hidden="false" type="rule" targetId="276b-ef81-2a62-da70"/>
+        <infoLink name="Webway strike" id="8f55-c898-b205-d177" hidden="false" type="rule" targetId="3df8-43e6-602c-46e8"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="56b7-9de3-d327-15fe"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fa0-6ffb-5858-34ed"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -11357,7 +11607,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
     <categoryEntry name="&lt;Ynnari&gt;" id="5e0f-9657-0ec8-f73e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry name="Aspect Focus" id="f023-cbae-babc-866e" hidden="false" childForcesLabel="" sortIndex="2">
+    <forceEntry name="Aspect Focus" id="f023-cbae-babc-866e" hidden="false" sortIndex="2">
       <categoryLinks>
         <categoryLink name="Configuration" hidden="false" id="660d-cdb5-05c8-0fb3" targetId="251a-e788-36d5-a036"/>
         <categoryLink name="HQ" hidden="false" id="6685-0760-012a-88f6" targetId="681b-82fd-7cc4-8ef8">
@@ -11505,7 +11755,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
       <rules>
         <rule name="Aspect Focus" id="38a3-242e-35ff-1737" hidden="false">
           <description>- &lt;Aspect&gt; units can be taken as Troops.
-- Non-&lt;Aspect&gt; Troops become Elite choices </description>
+- Non-&lt;Aspect&gt; Troops become Elite choices</description>
         </rule>
       </rules>
     </forceEntry>
