@@ -60,6 +60,9 @@
     <categoryEntry name="No Battlefield Role" id="41ed-bf57-7d27-9690" hidden="false">
       <description>For units in force creation that do not use a slot.</description>
     </categoryEntry>
+    <categoryEntry name="Wound" id="20f8-1fc5-5e76-2bf2" hidden="false">
+      <description>Wound</description>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="No Archetype" id="59f5-9244-6426-aff0" hidden="false" sortIndex="1">
@@ -1512,7 +1515,7 @@ If multiple models in a unit have the same weapon with this rule, the correspond
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">Anti-Air, AT(1)</characteristic>
+        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">Anti-Air, AT(2)</characteristic>
       </characteristics>
     </profile>
     <profile name="Combi-Bolter" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="4c63-b921-d03d-1a54">
@@ -2083,6 +2086,11 @@ If multiple models in a unit have the same weapon with this rule, the correspond
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbd9-e4b9-c3eb-b800"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f2e-f390-acc0-242e"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Wound" hidden="true" id="b6f3-e2e3-23f7-1b38" defaultAmount="1">
+      <categoryLinks>
+        <categoryLink targetId="20f8-1fc5-5e76-2bf2" id="4e47-6a4d-ea05-2c03" primary="false" name="Wound"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

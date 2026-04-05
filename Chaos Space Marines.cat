@@ -4228,6 +4228,462 @@
         <infoLink name="Plague Belcher" id="2080-0bc8-6b19-4edc" hidden="false" type="profile" targetId="2638-aca9-25c6-97b3"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chaos Space Marines" hidden="false" id="2eab-f348-e280-6795">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="" id="328d-5a96-9765-6010" hidden="false">
+          <comment>unit</comment>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Members - 5 to 20" id="b888-34a1-fa4e-7d4c" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Champion" id="4ac3-74da-2ba1-50fd" hidden="false" sortIndex="1">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d07-55a8-0141-f4bc"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f46e-d662-6caa-4b8b"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="model" import="true" name="Chaos Space Marine Champion" hidden="false" id="e8c3-5833-035c-a4e0" sortIndex="1" defaultAmount="1">
+                      <costs>
+                        <cost name="pts" typeId="40d8-7900-73a1-1378" value="37"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Chaos Space Marine Champion" id="b7c3-47a8-1402-f9dd" hidden="false" type="profile" targetId="2a7e-a167-2b84-5862"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Astartes Chainsword" hidden="false" id="7ac2-631e-ef4c-94b5" type="selectionEntry" targetId="1f16-d755-aeeb-96e2">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="49e0-8dc0-3ad7-4223"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ea-9c38-19ef-7b3a"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Bolt Pistol" hidden="false" id="54cf-1f90-f74b-9c78" type="selectionEntry" targetId="c67e-2307-aba8-0eb7">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fb7-6bce-6812-53c4"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c96-d98e-9e79-5636"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Bolter" hidden="false" id="56d8-4af9-c81f-2678" type="selectionEntry" targetId="cabd-0adf-c3c6-c0c2">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bce8-e875-a394-88a6"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="310a-4355-545f-f80b"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Frag Grenade" hidden="false" id="40a3-8f24-0ce2-0268" type="selectionEntry" targetId="4b36-4099-9c01-b261"/>
+                        <entryLink import="true" name="Krak Grenades" hidden="false" id="9a5f-56dc-314b-ea65" type="selectionEntry" targetId="8871-afd8-0283-8c9f"/>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Aspiring Champion" hidden="false" id="cd38-1582-1ebb-344b" sortIndex="2">
+                      <costs>
+                        <cost name="pts" typeId="40d8-7900-73a1-1378" value="47"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Aspiring Champion" id="11fc-952c-d8fb-7eec" hidden="false" type="profile" targetId="feaa-ba79-fcfc-2a1c"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Astartes Chainsword" hidden="false" id="09f1-40cb-7f9f-92b2" type="selectionEntry" targetId="1f16-d755-aeeb-96e2">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3ba-d63b-0fc0-2827"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b231-b1c2-595e-183c"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Bolt Pistol" hidden="false" id="c967-f3b2-a19f-1d1a" type="selectionEntry" targetId="c67e-2307-aba8-0eb7">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c876-2faa-842e-f9c4"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fda-734b-fb12-5e83"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Bolter" hidden="false" id="d03d-b68b-2aa9-5b1e" type="selectionEntry" targetId="cabd-0adf-c3c6-c0c2">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1daf-7a29-b18f-40e0"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ea3-d6c8-e637-0e16"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Frag Grenade" hidden="false" id="39ae-d6e6-a546-4c86" type="selectionEntry" targetId="4b36-4099-9c01-b261"/>
+                        <entryLink import="true" name="Krak Grenades" hidden="false" id="23c0-40f2-d82d-7b1a" type="selectionEntry" targetId="8871-afd8-0283-8c9f"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="9685-4d27-8fa7-c9cb"/>
+                <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="6451-9f57-b33f-f454"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Chaos Space Marine" hidden="false" id="29b5-2569-cc85-80e8" sortIndex="2" defaultAmount="4">
+                  <costs>
+                    <cost name="pts" typeId="40d8-7900-73a1-1378" value="37"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Chaos Space Marine" id="a0e4-6bf1-82d9-efb5" hidden="false" type="profile" targetId="4a70-3096-cf44-5292"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Bolter" hidden="false" id="3313-a0dd-aaad-dc9a" type="selectionEntry" targetId="cabd-0adf-c3c6-c0c2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a8e-8de0-4eb8-f9cf"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4f6-f267-5572-ee7e"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="de2c-2c14-a42f-529d" type="selectionEntry" targetId="c67e-2307-aba8-0eb7">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3353-6f1f-2396-4724"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1f5-52fa-3381-7138"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="4751-4738-e222-813e" type="selectionEntry" targetId="1f16-d755-aeeb-96e2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5592-081e-1ab4-9701"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77d4-098d-6471-abd8"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Frag Grenade" hidden="false" id="ef19-fa9b-1800-0af1" type="selectionEntry" targetId="4b36-4099-9c01-b261"/>
+                    <entryLink import="true" name="Krak Grenades" hidden="false" id="cfe5-dac3-6a7a-1de7" type="selectionEntry" targetId="8871-afd8-0283-8c9f"/>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Chaos Space Marine with special weapon" hidden="false" id="285c-4ca2-1b73-1e0b" defaultAmount="0" sortIndex="3">
+                  <costs>
+                    <cost name="pts" typeId="40d8-7900-73a1-1378" value="37"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Chaos Space Marine" id="00d1-26ee-8b90-0416" hidden="false" type="profile" targetId="4a70-3096-cf44-5292"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt Pistol" hidden="false" id="06d7-fefd-3bc1-47a5" type="selectionEntry" targetId="c67e-2307-aba8-0eb7">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="573c-71f3-1ede-bc5c"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6734-72c2-e5ad-9a07"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="e81a-0b5e-ace1-60de" type="selectionEntry" targetId="1f16-d755-aeeb-96e2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43f0-7808-f70e-c8c1"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="344f-64ed-2f59-58d2"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Frag Grenade" hidden="false" id="9183-208f-c2a5-d9b0" type="selectionEntry" targetId="4b36-4099-9c01-b261"/>
+                    <entryLink import="true" name="Krak Grenades" hidden="false" id="611d-b515-6c28-7732" type="selectionEntry" targetId="8871-afd8-0283-8c9f"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6865-ebce-e655-618a"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="6865-ebce-e655-618a">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon" id="3435-f1bf-d6c1-49cb" hidden="false" sortIndex="1">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="922d-57ca-caa3-1a3b" sortIndex="1" defaultAmount="1">
+                          <infoLinks>
+                            <infoLink name="Flamer" id="4547-585d-c505-a5bd" hidden="false" type="profile" targetId="623e-2c28-128d-d10e"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="800d-f0f8-0a84-f08a" sortIndex="2">
+                          <costs>
+                            <cost name="pts" typeId="40d8-7900-73a1-1378" value="13"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Heavy Bolter" id="6e71-b11e-912b-b9c4" hidden="false" type="profile" targetId="266d-8823-310b-e1db"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="e455-a990-af9a-55d0" sortIndex="3">
+                          <costs>
+                            <cost name="pts" typeId="40d8-7900-73a1-1378" value="13"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Meltagun" id="5410-58de-99d9-855c" hidden="false" type="profile" targetId="fd5a-6b78-49f3-5d1f"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Plasma Gun" hidden="false" id="daa5-307e-73b9-a809" sortIndex="4">
+                          <costs>
+                            <cost name="pts" typeId="40d8-7900-73a1-1378" value="17"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Plasma Gun - Standard" id="3210-8837-a9dc-b1a7" hidden="false" type="profile" targetId="182f-090f-8805-0dc3"/>
+                            <infoLink name="Plasma Gun - Supercharge" id="b6c7-3141-bd62-f6aa" hidden="false" type="profile" targetId="a3bb-87d2-d176-7e16"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Reaper Chaincannon" hidden="false" id="7471-fe58-8290-87a2" sortIndex="5">
+                          <costs>
+                            <cost name="pts" typeId="40d8-7900-73a1-1378" value="19"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Reaper Chaincannon" id="aef9-9650-7e50-89e2" hidden="false" type="profile" targetId="d979-df81-b2dc-3912"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="1c67-aa7f-cdab-c8d7" sortIndex="6">
+                          <costs>
+                            <cost name="pts" typeId="40d8-7900-73a1-1378" value="21"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Autocannon" id="b968-4180-d01d-94cf" hidden="false" type="profile" targetId="7f36-c8ba-64a2-6f91"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="2b19-f727-480d-934a" sortIndex="7">
+                          <costs>
+                            <cost name="pts" typeId="40d8-7900-73a1-1378" value="35"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="➤ Missile Launcher - Frag Missile" id="e4a9-41b3-8581-1e7d" hidden="false" type="profile" targetId="690b-3d31-660c-86d3"/>
+                            <infoLink name="➤ Missile Launcher - Krak Missile" id="d058-0636-f13e-97f4" hidden="false" type="profile" targetId="2181-32a2-6baf-beb1"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="e975-7b27-5774-977b" sortIndex="8">
+                          <costs>
+                            <cost name="pts" typeId="40d8-7900-73a1-1378" value="64"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="d805-30a2-c220-d2c0" hidden="false" type="profile" targetId="6c58-ebbe-7f83-02b8"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1033-78bb-ec83-a13c"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7356-794c-7bfe-5fe3"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Chaos Space Marine with Heavy Chainaxe" hidden="false" id="be95-0624-c4ad-12ed" defaultAmount="0" sortIndex="4">
+                  <costs>
+                    <cost name="pts" typeId="40d8-7900-73a1-1378" value="41"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Chaos Space Marine" id="0cf3-f7ae-dfce-8b73" hidden="false" type="profile" targetId="4a70-3096-cf44-5292"/>
+                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Heavy Chainaxe" hidden="false" id="d196-bf19-ac52-1259">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d3c-bcce-e4b3-a2ef"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f530-b1b0-1833-4eec"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Heavy Chainaxe" id="05de-05f9-90c6-59cb" hidden="false" type="profile" targetId="7c74-282d-1850-4211"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Frag Grenade" hidden="false" id="473f-4f33-83ea-8ec9" type="selectionEntry" targetId="4b36-4099-9c01-b261"/>
+                    <entryLink import="true" name="Krak Grenades" hidden="false" id="b684-d73c-201d-595f" type="selectionEntry" targetId="8871-afd8-0283-8c9f"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a8c3-e730-beda-ad8c"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="a8c3-e730-beda-ad8c">
+                      <repeats>
+                        <repeat value="5" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Veteran Abilities" id="4e95-a04c-7320-9803" hidden="false">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b070-6f1b-c01a-fef3"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6dd1-fafd-bb3a-59de"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Veteran Abilities" hidden="false" id="f164-b88c-aecb-eeb5" type="selectionEntryGroup" targetId="6c93-db6b-2591-edf7"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Mark of Chaos" id="cdd8-e407-0cf4-bcdb" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="d45e-c7b7-b155-c879">
+                      <costs>
+                        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Mark of Khorne" id="53e4-ff65-1be1-83a3" hidden="false" type="rule" targetId="29a3-29ca-26dd-95b6"/>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43c7-1b3e-53ab-373f" includeChildSelections="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Khorne" hidden="false" id="125a-c9cd-6b92-5943" targetId="8e9b-38f2-b7be-b9cc" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="13f8-1971-9b42-8ec4">
+                      <infoLinks>
+                        <infoLink name="Mark of Nurgle" id="da49-1be3-dd6c-6dc7" hidden="false" type="rule" targetId="bc6a-3f9c-5861-3f87"/>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63bf-2437-bed4-4c4a" includeChildSelections="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Nurgle" hidden="false" id="c887-5195-4433-4e36" targetId="3ef7-49c0-2583-79fc" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="2243-210b-0510-f834">
+                      <infoLinks>
+                        <infoLink name="Mark of Slaanesh" id="be4a-3ba3-6d9a-fd9c" hidden="false" type="rule" targetId="1577-5bee-8914-6750"/>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33c4-6b37-6a62-e5c9" includeChildSelections="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Slaanesh" hidden="false" id="69c4-f463-c5e1-21b5" targetId="f443-a396-7f6d-f665" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="d854-991c-5ef8-b439">
+                      <infoLinks>
+                        <infoLink name="Mark of Tzeentch" id="5947-df2d-b138-edd6" hidden="false" type="rule" targetId="3932-3917-7aea-d44e"/>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier type="increment" value="5" field="40d8-7900-73a1-1378">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="839a-d7fd-4d06-db96" includeChildSelections="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Tzeentch" hidden="false" id="ffc7-b290-01e7-c57e" targetId="7ec6-eaa6-dbca-db49" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1093-6e29-d14b-526b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Favoured Unit" hidden="false" id="7cbc-9f48-dadd-d803" type="selectionEntry" targetId="7041-2288-8a6e-2bad">
+              <comment>khorne</comment>
+            </entryLink>
+            <entryLink import="true" name="Favoured Unit" hidden="false" id="f97d-1156-e3f3-cc53" type="selectionEntry" targetId="0fda-e48f-60b1-d5bf">
+              <comment>nurgle</comment>
+            </entryLink>
+            <entryLink import="true" name="Favoured Unit" hidden="false" id="f4df-d2f3-2a1c-fa7e" type="selectionEntry" targetId="0806-c8a8-818c-e648">
+              <comment>slaanesh</comment>
+            </entryLink>
+            <entryLink import="true" name="Favoured Unit" hidden="false" id="218c-2979-d6a6-8ffc" type="selectionEntry" targetId="12e9-21b2-1e97-14c2">
+              <comment>tzeentch</comment>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="2a68-9526-9cb0-16c3" id="52d0-ef99-9c0d-8710" primary="true" name="Troops"/>
+        <categoryLink targetId="79f3-f25d-2e24-7130" id="9dfe-5b0e-a075-c36d" primary="false" name="Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Favoured Unit" hidden="true" id="7041-2288-8a6e-2bad">
+      <comment>Khorne</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8e9b-38f2-b7be-b9cc" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="d533-d61a-3813-9267">
+          <conditions>
+            <condition type="equalTo" value="8" field="selections" scope="parent" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d533-d61a-3813-9267"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Personal Icon" id="fd31-c4d8-0790-e71c" hidden="false" type="profile" targetId="e7a2-a89f-2431-7c22"/>
+        <infoLink name="Favoured Units" id="eb80-d685-d869-6d00" hidden="false" type="rule" targetId="fcf0-cba2-536b-fa4d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Favoured Unit" hidden="true" id="0fda-e48f-60b1-d5bf">
+      <comment>Nurgle</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3ef7-49c0-2583-79fc" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="7c95-0e96-f1f3-22e8">
+          <conditions>
+            <condition type="equalTo" value="7" field="selections" scope="parent" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7c95-0e96-f1f3-22e8"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Favoured Units" id="67c3-e419-3497-7ddb" hidden="false" type="rule" targetId="fcf0-cba2-536b-fa4d"/>
+        <infoLink name="Personal Icon" id="3c3c-9e09-590d-5e2b" hidden="false" type="profile" targetId="e7a2-a89f-2431-7c22"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Favoured Unit" hidden="true" id="0806-c8a8-818c-e648">
+      <comment>Slaanesh</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="f443-a396-7f6d-f665" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="b7e0-77e7-9407-5f44">
+          <conditions>
+            <condition type="equalTo" value="6" field="selections" scope="parent" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b7e0-77e7-9407-5f44"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Personal Icon" id="7af3-cb48-bc30-4e78" hidden="false" type="profile" targetId="e7a2-a89f-2431-7c22"/>
+        <infoLink name="Favoured Units" id="6b2f-21fa-0fa0-62ad" hidden="false" type="rule" targetId="fcf0-cba2-536b-fa4d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Favoured Unit" hidden="true" id="12e9-21b2-1e97-14c2">
+      <comment>Tzeentch</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ec6-eaa6-dbca-db49" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="1" field="9a19-5386-8024-a88a">
+          <conditions>
+            <condition type="equalTo" value="9" field="selections" scope="parent" childId="model" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9a19-5386-8024-a88a"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Personal Icon" id="e30a-14a8-1751-9691" hidden="false" type="profile" targetId="e7a2-a89f-2431-7c22"/>
+        <infoLink name="Favoured Units" id="a92c-39ed-8581-7930" hidden="false" type="rule" targetId="fcf0-cba2-536b-fa4d"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Plague Champion" typeId="a016-3bd5-58b1-188d" typeName="Unit" hidden="false" id="f9a8-e91c-5ed3-1383">
@@ -5232,7 +5688,7 @@ If a result is applied for the third time, the unit is destroyed. Place a chaos 
         <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">AT(2)</characteristic>
+        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">AT(3)</characteristic>
       </characteristics>
     </profile>
     <profile name="Reaper Chaincannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="b33b-e235-33aa-3fe4">
@@ -6117,6 +6573,64 @@ If a result is applied for the third time, the unit is destroyed. Place a chaos 
         <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">Flames, Poison(4+)</characteristic>
       </characteristics>
     </profile>
+    <profile name="Chaos Space Marine" typeId="a016-3bd5-58b1-188d" typeName="Unit" hidden="false" id="4a70-3096-cf44-5292">
+      <characteristics>
+        <characteristic name="M" typeId="2734-8af3-55f8-d225">6&quot;</characteristic>
+        <characteristic name="WS" typeId="b8b1-cb7e-422b-9e59">3+</characteristic>
+        <characteristic name="BS" typeId="2134-4e17-7efb-7cdd">3+</characteristic>
+        <characteristic name="S" typeId="355a-95af-e32c-6a76">4</characteristic>
+        <characteristic name="T" typeId="f0a6-a47d-9895-24fd">4</characteristic>
+        <characteristic name="W" typeId="c1fc-cf0a-04a8-aa5d">2</characteristic>
+        <characteristic name="I" typeId="4f40-356e-7cce-48e8">4</characteristic>
+        <characteristic name="A" typeId="2813-4494-0abe-7149">2</characteristic>
+        <characteristic name="LD" typeId="1a6c-9e94-a0f5-84ec">7</characteristic>
+        <characteristic name="SV" typeId="512f-e34e-70e2-c6d9">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chaos Space Marine Champion" typeId="a016-3bd5-58b1-188d" typeName="Unit" hidden="false" id="2a7e-a167-2b84-5862">
+      <characteristics>
+        <characteristic name="M" typeId="2734-8af3-55f8-d225">6&quot;</characteristic>
+        <characteristic name="WS" typeId="b8b1-cb7e-422b-9e59">3+</characteristic>
+        <characteristic name="BS" typeId="2134-4e17-7efb-7cdd">3+</characteristic>
+        <characteristic name="S" typeId="355a-95af-e32c-6a76">4</characteristic>
+        <characteristic name="T" typeId="f0a6-a47d-9895-24fd">4</characteristic>
+        <characteristic name="W" typeId="c1fc-cf0a-04a8-aa5d">2</characteristic>
+        <characteristic name="I" typeId="4f40-356e-7cce-48e8">4</characteristic>
+        <characteristic name="A" typeId="2813-4494-0abe-7149">2</characteristic>
+        <characteristic name="LD" typeId="1a6c-9e94-a0f5-84ec">7</characteristic>
+        <characteristic name="SV" typeId="512f-e34e-70e2-c6d9">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Aspiring Champion" typeId="a016-3bd5-58b1-188d" typeName="Unit" hidden="false" id="feaa-ba79-fcfc-2a1c">
+      <characteristics>
+        <characteristic name="M" typeId="2734-8af3-55f8-d225">6&quot;</characteristic>
+        <characteristic name="WS" typeId="b8b1-cb7e-422b-9e59">3+</characteristic>
+        <characteristic name="BS" typeId="2134-4e17-7efb-7cdd">3+</characteristic>
+        <characteristic name="S" typeId="355a-95af-e32c-6a76">4</characteristic>
+        <characteristic name="T" typeId="f0a6-a47d-9895-24fd">4</characteristic>
+        <characteristic name="W" typeId="c1fc-cf0a-04a8-aa5d">2</characteristic>
+        <characteristic name="I" typeId="4f40-356e-7cce-48e8">4</characteristic>
+        <characteristic name="A" typeId="2813-4494-0abe-7149">2</characteristic>
+        <characteristic name="LD" typeId="1a6c-9e94-a0f5-84ec">8</characteristic>
+        <characteristic name="SV" typeId="512f-e34e-70e2-c6d9">3+</characteristic>
+      </characteristics>
+      <comment>Chaos Space Marines unit</comment>
+    </profile>
+    <profile name="Heavy Chainaxe" typeId="77f2-c286-4a8e-85d6" typeName="Melee Weapons" hidden="false" id="7c74-282d-1850-4211">
+      <characteristics>
+        <characteristic name="Range" typeId="17a8-c6d1-4902-3240">-</characteristic>
+        <characteristic name="Type" typeId="85b8-b86f-84a1-6a8a">Melee</characteristic>
+        <characteristic name="S" typeId="dfe1-ab2e-bf82-b051">+3</characteristic>
+        <characteristic name="AP" typeId="5769-5be9-c3dd-1b76">-3</characteristic>
+        <characteristic name="D" typeId="40a0-b76f-918f-50a5">2</characteristic>
+        <characteristic name="Keywords" typeId="a78e-ed35-c409-5cda">AT(1), Deadly(5+), Slow(-1), Unwieldy</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Personal Icon" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="e7a2-a89f-2431-7c22">
+      <characteristics>
+        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">A friendly Daemon unit arriving within 3&quot; of the bearer via Deep strike does not scatter. The icon must be present on the table at the beginning of the battle round in order to be used.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Plaguecaster" hidden="false" id="0da4-e096-e46a-c337" type="selectionEntry" targetId="28c2-0f89-0cbd-df2f"/>
@@ -6201,9 +6715,10 @@ If a result is applied for the third time, the unit is destroyed. Place a chaos 
     <entryLink import="true" name="Flawless Blades" hidden="false" id="a7ba-ddf0-7be0-b82b" targetId="7de6-2277-ad0b-9f09" type="selectionEntry"/>
     <entryLink import="true" name="Eightbound" hidden="false" id="2b14-9574-4397-7688" targetId="6dea-38cf-2dd5-b6dc" type="selectionEntry"/>
     <entryLink import="true" name="Deathshroud Terminators" hidden="false" id="0fa9-9e87-c0ba-6d9f" targetId="63dd-fb6b-c8a5-9544" type="selectionEntry"/>
+    <entryLink import="true" name="Chaos Space Marines" hidden="false" id="9196-a03e-7f11-be59" type="selectionEntry" targetId="2eab-f348-e280-6795"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Veteran Abilities" id="6c93-db6b-2591-edf7" hidden="false">
+    <selectionEntryGroup name="Veteran Abilities" id="6c93-db6b-2591-edf7" hidden="false" collapsible="true">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Counter-Attack" hidden="false" id="a793-3d01-ddae-81a7">
           <infoLinks>
@@ -6249,7 +6764,7 @@ If a result is applied for the third time, the unit is destroyed. Place a chaos 
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
           </costs>
           <modifiers>
-            <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+            <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
               </repeats>
@@ -6264,7 +6779,7 @@ If a result is applied for the third time, the unit is destroyed. Place a chaos 
             <infoLink name="Infiltrator" id="4079-db1b-6574-2cfb" hidden="false" type="rule" targetId="276b-ef81-2a62-da70"/>
           </infoLinks>
           <modifiers>
-            <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+            <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
               </repeats>
@@ -6273,6 +6788,9 @@ If a result is applied for the third time, the unit is destroyed. Place a chaos 
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0844-a375-efee-c297" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Outflank" hidden="false" id="7a11-3430-7639-d4dd">
           <infoLinks>
@@ -6288,6 +6806,9 @@ If a result is applied for the third time, the unit is destroyed. Place a chaos 
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="689b-6f24-212f-f9fb" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Tank Hunter" hidden="false" id="0467-29b1-91a6-6162">
           <infoLinks>
@@ -6336,41 +6857,7 @@ If a result is applied for the third time, the unit is destroyed. Place a chaos 
           </constraints>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Mark of Chaos" id="a522-beb8-6a76-8a45" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Mark of Khorne" hidden="false" id="1294-1714-1e95-e0ef">
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="2"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mark of Nurgle" hidden="false" id="3dca-c2d6-8b51-e8cc">
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="1"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mark of Slaanesh" hidden="false" id="36d8-9fee-7678-382d">
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="1"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mark of Tzeentch" hidden="false" id="01ef-26c3-0d12-f880">
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="2"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d2b5-9f8a-ece6-2a19-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2b5-9f8a-ece6-2a19-max" includeChildSelections="false"/>
-      </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Mark of Khorne" hidden="false" id="3701-f037-cfb9-3ecb" type="selectionEntry" targetId="a76e-f49a-6ef4-5ea2">
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
+      <comment>Normal</comment>
     </selectionEntryGroup>
     <selectionEntryGroup name="Vehicle Equipment" id="411c-f77a-b1e1-e4e6" hidden="false">
       <selectionEntries>
@@ -6450,31 +6937,117 @@ If a result is applied for the third time, the unit is destroyed. Place a chaos 
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Armory" id="2d1a-9a4b-914a-3031" hidden="false">
+    <selectionEntryGroup name="Veteran Abilities" id="f548-fa9e-8868-35a3" hidden="false" collapsible="true">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="test" hidden="false" id="d39c-c1a1-4067-622f">
+        <selectionEntry type="upgrade" import="true" name="Counter-Attack" hidden="false" id="a822-5283-15f8-957d">
+          <infoLinks>
+            <infoLink name="Counter-Attack" id="2fc4-d4b4-1376-d174" hidden="false" type="rule" targetId="83c8-4946-28d7-8001"/>
+          </infoLinks>
           <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="4"/>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b403-bfa6-7b54-c21f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Favoured Enemy" hidden="false" id="5f76-5efc-b9e3-1e92">
+          <infoLinks>
+            <infoLink name="Favoured Enemy" id="631f-0515-b682-e7a9" hidden="false" type="rule" targetId="b911-91ea-4118-b7ac"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c1e-29b4-2383-23bd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Furious Charge" hidden="false" id="f072-3bb6-a338-94a0">
+          <infoLinks>
+            <infoLink name="Furious Charge" id="c701-28a1-fbbe-4baf" hidden="false" type="rule" targetId="8140-a6a8-b99c-8fb3"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23f3-d50c-de5f-eac2" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Outflank" hidden="false" id="a268-c19a-b771-ba5d">
+          <infoLinks>
+            <infoLink name="Outflank" id="612f-06e7-a724-85b0" hidden="false" type="rule" targetId="e09e-1612-1aa1-4d45"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ba7-e566-f590-66bd" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tank Hunter" hidden="false" id="cc29-88cb-02b2-26bf">
+          <infoLinks>
+            <infoLink name="Tank hunter" id="6b20-c0ba-4734-f879" hidden="false" type="profile" targetId="86f5-a113-dbcc-9b0c"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c44-947d-8330-8a65" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Terrain Expert" hidden="false" id="59f4-f431-2ae9-b21a">
+          <infoLinks>
+            <infoLink name="Move Through Cover" id="90fa-8316-67b9-8608" hidden="false" type="rule" targetId="3b94-b5d5-ebe7-cb17"/>
+            <infoLink name="Use Cover" id="047a-6544-f366-1143" hidden="false" type="rule" targetId="7a04-95b4-d929-fe4e"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="increment" value="2" field="40d8-7900-73a1-1378">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d182-ad87-5c01-7271" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Archetypes" id="c2bf-f320-498e-f996" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Archetypes" hidden="false" id="42ad-d092-9990-fe8c" targetId="53ae-eaa7-784e-7fc7" primary="true"/>
-      </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="force" shared="true" id="cc3f-aae6-20ac-6f40" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2500-386c-8661-973b" includeChildSelections="true"/>
-      </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Plaguehost" hidden="false" id="66f3-3d81-bd43-bd15" type="selectionEntry" targetId="7cb7-8125-c854-c6b7"/>
-      </entryLinks>
+      <comment>Monstrous Creatures/Vehicles</comment>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule name="Summoning" id="39d0-d291-fcff-36db" hidden="false">
-      <description>The unit must be set up in reserve and arrive on the table via deepstrike.</description>
+      <description>If the army contains any units from the &quot;&quot;Chaos Daemons&quot;&quot; codex, these units must start the game in reserve, with the exception of Nurglings who can be deployed regularly.
+Character models are not allowed to join a unit from the Chaos Daemons codex.
+Chaos Daemons can not be used to fulfil mandatory AOP selections.</description>
     </rule>
     <rule name="Not Mandatory HQ" id="36c9-3534-db35-edcb" hidden="false">
       <description>Can not be the mandatory HQ selection.</description>
@@ -6497,17 +7070,17 @@ If a result is applied for the third time, the unit is destroyed. Place a chaos 
       <description>If the unit consists of 7, 14 or 21 models at the start of the game, the squad leader gets an additional attack and the &quot;Personal Icon&quot; equipment.</description>
     </rule>
     <rule name="Mark of Slaanesh" id="1577-5bee-8914-6750" hidden="false">
-      <description>The model gets +1T. 
-A character model or Monstrous Creature gains additionally +1W. 
-Vehicles may roll 2D6 during each Reinforcement phase. 
-On a roll of 7+ they may remove one temporary damage result or one permanent damage result or restore one lost HP.
+      <description>The model gains +1 Initiative.
+A character model or Monstrous Creature additionally gains additionally +2&quot; Movement.
+Vehicles lower the Ld or close combat result of hostile models by -1 within a 18&quot; range and by -2 within 9&quot;.
+Counts as a veteran ability.
 If a unit has a Mark, its effects are already included in the profile.</description>
     </rule>
     <rule name="Mark of Khorne" id="29a3-29ca-26dd-95b6" hidden="false">
-      <description>The model gets +1T. 
-A character model or Monstrous Creature gains additionally +1W. 
-Vehicles may roll 2D6 during each Reinforcement phase. 
-On a roll of 7+ they may remove one temporary damage result or one permanent damage result or restore one lost HP.
+      <description>The model gains +1 Attack
+A character model or Monstrous Creature gains additionally +1 Strength.
+Vehicles cause double hits when performing a Tank Shock.
+Counts as a veteran ability.
 If a unit has a Mark, its effects are already included in the profile.</description>
     </rule>
     <rule name="Mark of Nurgle" id="bc6a-3f9c-5861-3f87" hidden="false">
@@ -6515,14 +7088,35 @@ If a unit has a Mark, its effects are already included in the profile.</descript
 A character model or Monstrous Creature gains additionally +1W. 
 Vehicles may roll 2D6 during each Reinforcement phase. 
 On a roll of 7+ they may remove one temporary damage result or one permanent damage result or restore one lost HP.
+Counts as a veteran ability.
 If a unit has a Mark, its effects are already included in the profile.</description>
     </rule>
     <rule name="Mark of Tzeentch" id="3932-3917-7aea-d44e" hidden="false">
-      <description>The model gets +1T. 
-A character model or Monstrous Creature gains additionally +1W. 
-Vehicles may roll 2D6 during each Reinforcement phase. 
-On a roll of 7+ they may remove one temporary damage result or one permanent damage result or restore one lost HP.
+      <description>The model gains the &quot;Warded&quot; ability.
+A character model or Monstrous Creature becomes a psyker and knows 1 power from any discipline.
+If the model is already a psyker, instead it can manifest and deny an additional power per turn.
+Vehicles get a Warpflamer weapon (Range: 9&quot;, Type: Assault 4, S: 4, AP: -1, Dmg: 1, Flames).
+Counts as a veteran ability.
 If a unit has a Mark, its effects are already included in the profile.</description>
+    </rule>
+    <rule name="Favoured Units" id="fcf0-cba2-536b-fa4d" hidden="false">
+      <description>If a unit has a Mark of Chaos and starts the game with a number of models equal to the deity&apos;s sacred number (or a multiple thereof), it counts as favored. 
+Squad leaders receive +1 attack and a personal icon. Squad leaders are single models within a unit that have sole access to the armory. 
+The sacred numbers are as follow: 9 for Tzeentch, 8 for Khorne, 7 for Nurgle and 6 for Slaanesh.      </description>
+    </rule>
+    <rule name="Mark of Chaos Undivided" id="c48e-8a4a-d584-3829" hidden="false">
+      <description>The first time this model kills an enemy unit, it receives the benefits of one Mark of Chaos like a non-character model.
+If it kills a second unit, it gains the additional benefit like a character model would.
+After the third kill it receives one Daemon weapon ability from the chosen god.
+After the fourth kill the models base stats are replaced by those of a Daemon Prince of the chosen god.
+If the model loses its last Wound before getting at least one Mark of Chaos benefit, it is replaced with a Chaos Spawn under the control of the opposing player.
+If a unit has a Mark, its effects are already included in the profile.    </description>
+    </rule>
+    <rule name="Animosity of the Gods" id="fc39-3a40-cc1c-6c06" hidden="false">
+      <description>When creating your army list, choose your most expensive HQ model. Its Mark of Chaos determines which marks and/or units may be used. A model with a Mark of Chaos may only join units with the same mark or none at all.
+
+
+See rulebook for full chart.</description>
     </rule>
   </sharedRules>
   <categoryEntries>
@@ -6546,5 +7140,19 @@ If a unit has a Mark, its effects are already included in the profile.</descript
       </modifiers>
     </categoryEntry>
     <categoryEntry name="Archetypes" id="53ae-eaa7-784e-7fc7" hidden="false"/>
+    <categoryEntry name="Khorne" id="8e9b-38f2-b7be-b9cc" hidden="false"/>
+    <categoryEntry name="Nurgle" id="3ef7-49c0-2583-79fc" hidden="false"/>
+    <categoryEntry name="Slaanesh" id="f443-a396-7f6d-f665" hidden="false"/>
+    <categoryEntry name="Tzeentch" id="7ec6-eaa6-dbca-db49" hidden="false"/>
   </categoryEntries>
+  <infoLinks>
+    <infoLink name="Favoured Units" id="23e8-2765-68d5-da40" hidden="false" type="rule" targetId="fcf0-cba2-536b-fa4d"/>
+    <infoLink name="Mark of Khorne" id="67ac-0702-d9dd-7d9a" hidden="false" type="rule" targetId="29a3-29ca-26dd-95b6"/>
+    <infoLink name="Mark of Nurgle" id="3e21-e6ad-52b2-806f" hidden="false" type="rule" targetId="bc6a-3f9c-5861-3f87"/>
+    <infoLink name="Mark of Slaanesh" id="fbe0-5154-6a7d-798c" hidden="false" type="rule" targetId="1577-5bee-8914-6750"/>
+    <infoLink name="Mark of Chaos Undivided" id="88d1-98f4-1bfa-2fbb" hidden="false" type="rule" targetId="c48e-8a4a-d584-3829"/>
+    <infoLink name="Mark of Tzeentch" id="ead3-3547-62d0-ba15" hidden="false" type="rule" targetId="3932-3917-7aea-d44e"/>
+    <infoLink name="Summoning" id="095c-8a4a-47cd-c80d" hidden="false" type="rule" targetId="39d0-d291-fcff-36db"/>
+    <infoLink name="Animosity of the Gods" id="8116-0d06-fe61-3488" hidden="false" type="rule" targetId="fc39-3a40-cc1c-6c06"/>
+  </infoLinks>
 </catalogue>
