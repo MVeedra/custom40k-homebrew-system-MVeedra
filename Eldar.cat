@@ -63,7 +63,6 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Traits (character)" hidden="false" id="6e07-63b5-dba8-f989" type="selectionEntryGroup" targetId="68db-5f35-ea0f-59d9" collapsible="true"/>
         <entryLink import="true" name="Weapons Autarch" hidden="false" id="41ca-caad-6370-52ff" type="selectionEntryGroup" targetId="07fa-066a-6e90-463a"/>
         <entryLink import="true" name="Equipment Autarch" hidden="false" id="e737-9168-3046-ff88" type="selectionEntryGroup" targetId="52e9-7cc4-5299-59fa"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="3ede-0866-3089-7dcc" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
@@ -73,6 +72,7 @@
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="1"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Traits" hidden="false" id="d0e0-ea63-1d97-f6e5" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Avatar of Khaine" hidden="false" id="30fc-45d3-ee1b-431a">
@@ -128,7 +128,7 @@
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="87a0-cac1-d943-33ee"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="2487-27fc-65eb-2768" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="cb50-af86-a6e7-0a1e" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="1" field="87a0-cac1-d943-33ee">
@@ -137,6 +137,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Farseer" hidden="false" id="e645-0062-685d-4cae">
       <selectionEntries>
@@ -199,12 +205,13 @@
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="340e-9abc-ab0d-65e7"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Traits (character)" hidden="false" id="013e-0b19-5226-55ed" type="selectionEntryGroup" targetId="68db-5f35-ea0f-59d9"/>
         <entryLink import="true" name="Equipment Psyker" hidden="false" id="c7de-fbf6-e94a-d879" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
         <entryLink import="true" name="Weapons Psyker" hidden="false" id="22dd-563a-04af-9690" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="f1df-8319-c48e-8e9c" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="3"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="39a3-ce2d-48c9-5e6a" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="4"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="bfbb-a2cc-7d69-5faa" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
+        <entryLink import="true" name="Traits" hidden="false" id="3040-8c62-8487-9800" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
+        <entryLink import="true" name="Traits" hidden="false" id="79cd-3b49-a4ae-9f34" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="c323-982c-aaf6-81e7" hidden="false">
@@ -218,6 +225,13 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+        <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Spiritseer" hidden="false" id="0b8e-c8cf-bb1b-40b6">
       <selectionEntries>
@@ -263,13 +277,14 @@
         <infoLink name="Command Squad" id="5599-ec24-0c47-4053" hidden="false" type="rule" targetId="3bb3-3db8-a1f6-9b22"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (character)" hidden="false" id="a46f-29bf-96d0-5507" type="selectionEntryGroup" targetId="68db-5f35-ea0f-59d9"/>
         <entryLink import="true" name="Equipment Psyker" hidden="false" id="05e4-006e-0586-521e" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
         <entryLink import="true" name="Weapons Psyker" hidden="false" id="97e3-94d0-1565-ebf3" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
         <entryLink import="true" name="Smite" hidden="false" id="24f2-c0d3-42f6-66af" type="selectionEntry" targetId="eae4-8949-6416-c634"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="fb5d-f5e4-187b-af2b" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="3e1c-f395-dc05-cf46" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="3e99-d264-6d99-f469" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
+        <entryLink import="true" name="Traits" hidden="false" id="1a3e-4fa9-3a21-1ee4" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
+        <entryLink import="true" name="Traits" hidden="false" id="5719-057c-78ba-12d3" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="a0ae-2d3a-68b2-504b" hidden="false">
@@ -277,6 +292,13 @@
         </rule>
       </rules>
       <comment>Elite</comment>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+        <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Yncarne" hidden="false" id="4d8b-6d4f-32f7-414f">
       <selectionEntries>
@@ -321,7 +343,8 @@
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bf27-89d7-be8e-3235"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="ec4e-bc56-ab29-b4d5" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="fe80-aded-d73e-25c6" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
+        <entryLink import="true" name="Traits" hidden="false" id="982a-dc3b-00e7-8a3e" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="62d6-32f3-6723-0a5e" hidden="false">
@@ -343,6 +366,13 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+        <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Guardian Defenders" hidden="false" id="6eb8-d6ab-d11f-47a4">
       <selectionEntries>
@@ -456,8 +486,8 @@
         <infoLink name="Crewed platform" id="adac-389f-2080-4912" hidden="false" type="rule" targetId="67d6-06cb-007d-49b6"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="73e5-8c28-dbf9-5dd9" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="8e38-fc29-1092-be9c" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="2595-eeb5-00f6-ad4c" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -472,6 +502,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rangers" hidden="false" id="6f0e-8c03-3a00-4130">
       <selectionEntries>
@@ -554,8 +590,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="a419-ef10-b50b-8df2" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="4bb0-0a73-d829-e0de" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="0157-ecbc-e33c-8344" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -570,6 +606,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Storm Guardians" hidden="false" id="6b28-769c-a803-4f8d">
       <selectionEntries>
@@ -711,8 +753,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="337c-401a-d94b-abcb" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="3a50-5319-d2e2-0449" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="ab99-00ac-c0dd-c3c2" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -727,6 +769,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Voidreavers" hidden="false" id="4517-88ec-1565-4f1b">
       <selectionEntries>
@@ -976,8 +1024,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="3c9c-8c49-c234-9e0a" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="7c84-8b38-d614-4b55" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="4ed7-ad93-d25c-8bcb" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -1000,6 +1048,12 @@
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d351-7e74-af56-6dcb"/>
       </constraints>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dire Avengers" hidden="false" id="fd1a-2ec1-c1f7-4068">
       <categoryLinks>
@@ -1138,8 +1192,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="6316-d218-26d2-bc5c" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="7336-4735-ea65-6f07" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="1fc1-af6b-698e-5c94" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -1149,6 +1203,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fire Dragons" hidden="false" id="2710-6f5c-b40f-402e">
       <categoryLinks>
@@ -1247,8 +1307,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="a8ee-cc22-abe9-d485" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="72a4-db49-376d-bacb" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="bbd8-56a7-99a2-79e5" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -1258,6 +1318,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="false" id="55c3-09db-c2e9-4d6e">
       <categoryLinks>
@@ -1377,8 +1443,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="c88d-234f-289f-f1c7" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="4267-1c6b-a1bf-d7ea" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="1a3f-a59c-520f-3f01" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -1388,6 +1454,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Striking Scorpions" hidden="false" id="f732-3957-7f97-4d46">
       <categoryLinks>
@@ -1517,8 +1589,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="ca0a-08fd-a7ae-5e0c" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="1da2-804a-bc26-0a51" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="c8b7-1db7-a064-7d60" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -1528,6 +1600,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Voidscarred" hidden="false" id="e86d-f895-dd78-4d45">
       <selectionEntries>
@@ -2018,14 +2096,22 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="ca85-1204-6afb-ae07" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="5f0d-cee4-bff7-b840" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
+        <entryLink import="true" name="Traits" hidden="false" id="6c73-9056-9c99-16a0" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
+        <entryLink import="true" name="Traits" hidden="false" id="6f8d-f8e3-7685-a1ba" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="618e-d8f0-9a8b-f908" hidden="false">
           <description>The Way Seeker can cast 1 power and deny 1 power per battle round. They know Smite and 1 power from either the Battle or Fate discipline.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+        <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Warlocks" hidden="false" id="a3df-0687-8a59-4596">
       <selectionEntries>
@@ -2069,8 +2155,9 @@
         <infoLink name="Seer council" id="b020-50e5-7b80-4a4e" hidden="false" type="rule" targetId="eda4-c856-189f-476d"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (character)" hidden="false" id="cc3d-fe50-172d-1bc6" type="selectionEntryGroup" targetId="68db-5f35-ea0f-59d9"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="8eff-7777-f8e4-6b57" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
+        <entryLink import="true" name="Traits" hidden="false" id="5c1d-163b-a24d-92df" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
+        <entryLink import="true" name="Traits" hidden="false" id="d219-d58a-3b59-e440" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="ed6b-9966-ca05-e112" hidden="false">
@@ -2078,6 +2165,13 @@
         </rule>
       </rules>
       <comment>Elite</comment>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+        <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wraithblades" hidden="false" id="f709-4c15-1b92-4aa4">
       <selectionEntries>
@@ -2128,7 +2222,7 @@
         <infoLink name="Wraithbone" id="058c-dba2-dd44-421c" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="6f00-c037-f318-9582" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="04f6-300d-5bf7-cf62" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -2138,6 +2232,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wraithguard" hidden="false" id="b91a-c2d9-326b-4015">
       <selectionEntries>
@@ -2188,7 +2288,7 @@
         <infoLink name="Strength &quot;D&quot;" id="ac62-63a8-e2e6-462c" hidden="false" type="rule" targetId="5cf0-3f9c-712e-4fa5"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="3a9b-3b19-3378-90b3" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="40ec-7fc4-3c09-15c2" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -2198,6 +2298,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wraithlord" hidden="false" id="6a50-7ce7-b306-4a8b">
       <selectionEntries>
@@ -2303,8 +2409,14 @@
         <infoLink name="Wraithbone" id="24c2-0670-b235-4d1e" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="bfd2-9644-c84e-22d5" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="7bee-4221-8043-1128" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shining Spears" hidden="false" id="cfe4-dc0d-0bf4-4c34">
       <categoryLinks>
@@ -2444,7 +2556,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="d65d-1d45-0484-191a" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="5572-dfff-9515-f661" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Fast Attack</comment>
       <modifiers>
@@ -2454,6 +2566,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shroud Runners" hidden="false" id="2959-311b-2626-4ef2">
       <selectionEntries>
@@ -2507,8 +2625,14 @@
         <infoLink name="Use Cover" id="9501-e2c9-1405-466e" hidden="false" type="rule" targetId="7a04-95b4-d929-fe4e"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="54cb-fdef-5d9e-8bbb" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="2f89-f5f4-91b0-abc1" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Swooping Hawks" hidden="false" id="4813-a5b9-19dc-491d">
       <categoryLinks>
@@ -2647,7 +2771,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="e487-7ae4-2b1b-8af9" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="a2a9-5268-7c02-f555" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Fast Attack</comment>
       <modifiers>
@@ -2657,6 +2781,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Warp Spiders" hidden="false" id="cb4d-28bb-3ca9-4cc9">
       <categoryLinks>
@@ -2758,7 +2888,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="8be9-dc32-f86e-335c" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="d5c3-7a33-6cab-3cf6" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Fast Attack</comment>
       <modifiers>
@@ -2768,6 +2898,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Windriders" hidden="false" id="7c4c-fe54-afae-4149">
       <selectionEntries>
@@ -2812,7 +2948,7 @@
         <infoLink name="Battle Focus" id="8393-5533-2fdb-4160" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="22b5-0461-2ef5-35b5" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="9517-c7d2-a964-3613" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Fast Attack</comment>
       <modifiers>
@@ -2822,6 +2958,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dark Reapers" hidden="false" id="d0cb-4947-fdb5-4a4d">
       <categoryLinks>
@@ -2932,8 +3074,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="94e9-812f-8e71-0c12" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="239b-481a-754a-d423" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="798f-cf35-715e-511a" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Heavy Support</comment>
       <modifiers>
@@ -2943,6 +3085,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Support Weapons" hidden="false" id="6a21-6a5b-758f-4c54">
       <selectionEntries>
@@ -3012,9 +3160,15 @@
         <infoLink name="Support Weapons crew" id="b3ed-e8fb-a37f-4263" hidden="false" type="rule" targetId="ed8d-141a-3052-4527"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="80fc-286e-1ace-bb67" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="5c9b-4749-380d-0d3c" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="b2f2-8a92-da45-f2b0" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vyper" hidden="false" id="d658-0141-a182-4c3c">
       <selectionEntries>
@@ -3101,8 +3255,14 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="20fa-511f-0900-3e75" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9" collapsible="true"/>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="0f01-d9bf-1390-eadb" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="8ea7-dd22-0cc9-2462" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Falcon" hidden="false" id="5f2c-edba-135e-4478">
       <selectionEntries>
@@ -3200,13 +3360,19 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="829e-a989-7555-e6be" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9" collapsible="true"/>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="0396-eedf-b39b-dd41" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="ee8b-30bc-52f8-4c41" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
       <rules>
         <rule name="Transport" id="86c3-1af3-300e-cbc4" hidden="false">
           <description>This model has a transport capacity of 6 infantry models.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fire Prism" hidden="false" id="0e35-fa64-79db-4b9b">
       <selectionEntries>
@@ -3269,8 +3435,14 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="e1fa-3dab-562e-37d5" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9" collapsible="true"/>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="b520-b18d-b4d3-031c" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="20c9-8238-6d8d-26f3" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Night Spinner" hidden="false" id="6ebd-3957-8ae0-441b">
       <selectionEntries>
@@ -3331,8 +3503,14 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="2027-7e4f-850a-ca20" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9" collapsible="true"/>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="60f5-12fd-e160-6d2d" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="715b-753f-44e0-4197" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="War Walkers" hidden="false" id="6113-51a3-acb2-457e">
       <selectionEntries>
@@ -3408,8 +3586,14 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="5ad5-aa36-56d1-2f02" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9" collapsible="true"/>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="48bd-5c1c-0840-bc3a" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="4330-21c4-3859-f8e2" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wave Serpent" hidden="false" id="ce99-ac37-7382-4aca">
       <selectionEntries>
@@ -3506,13 +3690,19 @@
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="de18-e95c-9c1b-3d29" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9" collapsible="true"/>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="27f1-0541-6547-c415" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="13f4-ade7-c3ab-7488" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
       <rules>
         <rule name="Transport" id="6b15-2f38-0721-9c7d" hidden="false">
           <description>This model has a transport capacity of 12 infantry models.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crimson Hunter" hidden="false" id="99ac-9c31-9353-4cb0">
       <selectionEntries>
@@ -3599,8 +3789,14 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="cacb-5cd8-3424-a011" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9" collapsible="true"/>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="ecac-4d92-5385-3368" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="bf52-18ef-8376-780c" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Spiritseer" hidden="false" id="6e53-46c1-f3ad-1507">
       <selectionEntries>
@@ -3646,13 +3842,14 @@
         <infoLink name="Command Squad" id="3bff-3830-233b-95a5" hidden="false" type="rule" targetId="3bb3-3db8-a1f6-9b22"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (character)" hidden="false" id="2004-cc83-2cb1-3f3d" type="selectionEntryGroup" targetId="68db-5f35-ea0f-59d9"/>
         <entryLink import="true" name="Equipment Psyker" hidden="false" id="caae-7694-2995-78f7" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
         <entryLink import="true" name="Weapons Psyker" hidden="false" id="5f46-f663-16ef-fe82" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
         <entryLink import="true" name="Smite" hidden="false" id="39c8-570f-0d49-61db" type="selectionEntry" targetId="eae4-8949-6416-c634"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="f0dc-2fbb-1cb7-80e3" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="e42c-d6cd-821d-f8a8" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="983c-1871-0c57-0fb5" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
+        <entryLink import="true" name="Traits" hidden="false" id="629c-76ec-ea32-94f3" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
+        <entryLink import="true" name="Traits" hidden="false" id="76f8-ce47-314e-0fe1" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="3ca9-9944-8556-8f92" hidden="false">
@@ -3670,6 +3867,13 @@
           </repeats>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+        <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Warlocks" hidden="false" id="7dd9-fef3-2fb8-c4d4">
       <selectionEntries>
@@ -3713,8 +3917,9 @@
         <infoLink name="Seer council" id="83e3-57c7-b9cc-d45d" hidden="false" type="rule" targetId="eda4-c856-189f-476d"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (character)" hidden="false" id="8c92-4114-d7c6-fde4" type="selectionEntryGroup" targetId="68db-5f35-ea0f-59d9"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="6d36-04d9-1aea-10a2" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
+        <entryLink import="true" name="Traits" hidden="false" id="7c38-e5e3-04b0-7db3" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
+        <entryLink import="true" name="Traits" hidden="false" id="450d-ab1d-b581-ee22" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="3b03-27bd-73a7-5499" hidden="false">
@@ -3732,6 +3937,13 @@
           </repeats>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+        <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wraithblades" hidden="true" id="6b5e-d538-67f3-bde5">
       <selectionEntries>
@@ -3782,7 +3994,7 @@
         <infoLink name="Wraithbone" id="b879-1638-71e2-6064" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="104a-0006-061f-f768" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="379f-98a0-239f-2a03" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -3792,6 +4004,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wraithguard" hidden="true" id="cb9e-e2b0-219a-ce3d">
       <selectionEntries>
@@ -3842,7 +4060,7 @@
         <infoLink name="Strength &quot;D&quot;" id="fee9-3712-fc62-0fb4" hidden="false" type="rule" targetId="5cf0-3f9c-712e-4fa5"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="4615-e0f9-7bc6-4353" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="792d-76ae-39c6-5087" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -3852,6 +4070,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Voidreavers" hidden="true" id="7471-0a05-dbfc-460e">
       <selectionEntries>
@@ -4101,8 +4325,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="0c7a-5111-26e8-59b1" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="489d-cd3b-3616-49d7" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="47cf-75f8-db37-94ca" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -4117,6 +4341,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Storm Guardians" hidden="true" id="fdbd-7c15-a7ae-1171">
       <selectionEntries>
@@ -4258,8 +4488,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="ce21-f470-5f45-1d00" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="dc96-7f9f-731b-2f03" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="46cb-72a3-0c1a-1ef5" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -4274,6 +4504,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Guardian Defenders" hidden="true" id="c9d9-b724-d52a-0291">
       <selectionEntries>
@@ -4387,8 +4623,8 @@
         <infoLink name="Crewed platform" id="0c10-61d1-9020-55d9" hidden="false" type="rule" targetId="67d6-06cb-007d-49b6"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="be40-2188-cee1-aa92" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="2c01-b1c8-7780-1f8d" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="88a8-1a90-1c5b-a3eb" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -4403,6 +4639,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rangers" hidden="true" id="3fe4-fb1d-a931-9832">
       <selectionEntries>
@@ -4485,8 +4727,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="e0fb-1b0d-e49f-513b" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="321e-9f33-9860-4b23" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="0c5e-b277-aaba-340f" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -4501,6 +4743,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fire Dragons" hidden="true" id="099d-09a8-4f10-b889">
       <categoryLinks>
@@ -4598,8 +4846,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="5b65-e9c2-43b9-a3fd" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="b099-c9e6-0742-d231" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="765a-0e8a-be34-4ee4" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -4612,6 +4860,8 @@
       <costs>
         <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
         <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dire Avengers" hidden="true" id="12fc-858a-1f1c-f17b">
@@ -4750,8 +5000,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="5be9-8f09-d116-ea78" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="7a7f-2e54-f3e5-f33e" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="5fd4-edc3-1388-3e9d" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -4761,6 +5011,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Dark Reapers" hidden="true" id="82aa-16df-fc0d-a25c">
       <categoryLinks>
@@ -4870,8 +5126,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="8fea-efef-9428-c525" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="f35e-11ab-6b60-7ee9" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="d02b-7ccc-6053-9c50" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -4881,6 +5137,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Howling Banshees" hidden="true" id="0b02-3210-26a8-b01c">
       <categoryLinks>
@@ -4999,8 +5261,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="0059-f745-d15c-45df" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="1815-87a4-0fa3-0ab3" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="07a6-64d5-6f3d-2dd5" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -5010,6 +5272,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shining Spears" hidden="true" id="28da-072e-2cbe-78e5">
       <categoryLinks>
@@ -5148,7 +5416,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="0c4d-f4a2-47af-a6ff" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="d665-e187-24c3-323d" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -5158,6 +5426,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Striking Scorpions" hidden="true" id="460c-0c77-3e66-edc6">
       <categoryLinks>
@@ -5286,8 +5560,8 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="818c-ae7b-db48-7db5" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="0d48-95a3-482d-2e3d" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
+        <entryLink import="true" name="Traits" hidden="false" id="bff3-c3a5-14fa-fc63" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -5297,6 +5571,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Swooping Hawks" hidden="true" id="2b58-adc0-9744-934f">
       <categoryLinks>
@@ -5434,7 +5714,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="99cb-e51a-b51a-ff34" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="5a2c-c0c3-eba4-3ad4" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -5444,6 +5724,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Warp Spiders" hidden="true" id="8423-58ee-b080-bcaa">
       <categoryLinks>
@@ -5544,7 +5830,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="ded7-a8ce-d0aa-16e9" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="3124-8c09-96fd-6b51" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -5554,6 +5840,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Windriders" hidden="true" id="6206-f09c-67b6-6d3f">
       <selectionEntries>
@@ -5598,7 +5890,7 @@
         <infoLink name="Battle Focus" id="f972-ed67-af64-ea28" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="7149-448f-f9f7-f90b" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="790a-a99f-03fe-42a1" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -5608,6 +5900,12 @@
           </conditions>
         </modifier>
       </modifiers>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vindicare Assassin" hidden="true" id="3016-b48e-50d0-8582">
       <selectionEntries>
@@ -5725,6 +6023,7 @@
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Webway Strike" hidden="false" id="6322-c7ec-abe2-0d46" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
+        <entryLink import="true" name="Traits" hidden="false" id="7549-6fef-5f83-ca69" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Legacies" hidden="false" id="db2b-5a42-6474-2cb0" defaultAmount="1">
@@ -5813,9 +6112,7 @@
           <modifiers>
             <modifier type="set" value="2" field="8588-cb03-e790-2f7c">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="7090-05ae-5175-9d79" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="f376-5bd3-a379-4d72" shared="true" includeChildSelections="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="29b5-3cb2-017c-d641" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9312-bf36-337b-4a0d" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5912,8 +6209,14 @@
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="e8e7-4167-2b44-18ea" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="214b-0750-9868-4e06" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wasps" hidden="true" id="0f4c-6a58-3f73-4c81">
       <categoryLinks>
@@ -6005,8 +6308,14 @@
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="6345-18cc-e941-cf30" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="c82c-636a-de5d-8f54" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wraithseer" hidden="false" id="bbb8-74f3-a674-249d">
       <categoryLinks>
@@ -6125,8 +6434,16 @@
         <infoLink name="Wraithbone" id="61f0-e708-2cb5-01bd" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="001b-4eae-faea-0037" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="8693-d625-8192-d2fa" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
+        <entryLink import="true" name="Traits" hidden="false" id="4077-96b7-682e-b2a8" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+        <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shadow Spectres" hidden="false" id="1217-8ae9-025e-f2d7">
       <selectionEntryGroups>
@@ -6266,8 +6583,14 @@
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="7a70-52a0-2d24-7953" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="ef8f-f53c-c9b8-6652" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shadow Spectres" hidden="true" id="ba05-4086-2365-1d35">
       <selectionEntryGroups>
@@ -6406,8 +6729,14 @@
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Traits (normal)" hidden="false" id="6159-9edc-3d78-7d61" type="selectionEntryGroup" targetId="5ff4-631e-7199-8efd"/>
+        <entryLink import="true" name="Traits" hidden="false" id="52ab-56e1-5c7f-429e" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="1"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Hornets" hidden="false" id="bcae-d888-81cd-689e">
       <selectionEntries>
@@ -6495,8 +6824,14 @@
         <categoryLink targetId="243a-2cd5-61a0-1b44" id="ced9-7b33-929a-7f71" primary="false" name="Vehicle"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="c481-b8ef-167d-3ebb" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="8770-a974-740e-6849" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Nightwing" hidden="false" id="b547-d340-ba46-7958">
       <categoryLinks>
@@ -6548,8 +6883,14 @@
       </rules>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="53c1-da82-9554-d9d0" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9"/>
-        <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="72c7-6acb-300d-a4cf" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
+        <entryLink import="true" name="Traits" hidden="false" id="0c73-7baa-8410-453f" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Phoenix" hidden="false" id="1383-6b7d-98c6-6958">
       <categoryLinks>
@@ -6620,7 +6961,6 @@
           </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Vehicle Equipment" hidden="false" id="22c9-f095-6479-6306" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9"/>
-            <entryLink import="true" name="Traits (monstrous creature/vehicle)" hidden="false" id="8bd1-6a4c-2a99-03cb" type="selectionEntryGroup" targetId="eb49-433b-566e-317c"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="571"/>
@@ -6632,6 +6972,15 @@
         <infoLink name="Deflect" id="fc31-e4cc-e827-84fc" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
         <infoLink name="Vector dancer" id="adde-ee2d-f348-d159" hidden="false" type="rule" targetId="7abb-d1de-7291-488c"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+        <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+        <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+        <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Traits" hidden="false" id="3ec6-ab3c-b9f4-560b" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Webway Strike" hidden="false" id="98be-190d-bd75-3a7b">
       <comment>Characters and Command Squads</comment>
@@ -6674,6 +7023,395 @@
         <cost name="pts" typeId="40d8-7900-73a1-1378" value="1"/>
         <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Traits" hidden="false" id="9073-510b-1922-7e24" defaultAmount="1">
+      <comment>Category Selection</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="079f-792e-e8b4-ecf0"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="250a-d32b-9ca8-b70b"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="251a-e788-36d5-a036" id="2be4-03e6-766e-e8fe" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="" id="9b34-dd30-7fed-f5a6" hidden="false">
+          <comment>traits</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Students of Vaul" hidden="false" id="ebef-1d7c-fe25-f99d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b693-4852-ccf4-4ac7"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Students of Vaul" id="bb27-3bfd-3e26-569b" hidden="false" type="profile" targetId="23a5-4b85-2e62-7b3a"/>
+              </infoLinks>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="5963-0ef4-6641-6d6f" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Students of Vaul" hidden="false" id="d85c-2f79-bf4d-4f62" targetId="830e-8110-46a7-9fe1" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Black Guardians" hidden="false" id="e9a8-bb7b-2739-1318">
+              <infoLinks>
+                <infoLink name="Black Guardians" id="a0d4-8a78-8013-70a5" hidden="false" type="profile" targetId="6627-234f-9002-4e38"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c0f-20d2-c698-e1ea"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Black Guardians" hidden="false" id="6b7e-e538-4def-2d64" targetId="7099-9d80-4cef-c9b5" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Children of Khaine" hidden="false" id="fa95-0d52-41af-6111">
+              <infoLinks>
+                <infoLink name="Children of Khaine" id="b76f-b47d-597f-f738" hidden="false" type="profile" targetId="7898-6606-cdcf-4667"/>
+              </infoLinks>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c898-ec20-d4ea-70af"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Children of Khaine" hidden="false" id="85f9-e7d8-9738-dc71" targetId="bca9-054d-5c1f-9eb1" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Children of Morai-Heg" hidden="false" id="a1a7-4719-d583-dd54">
+              <infoLinks>
+                <infoLink name="Children of Morai-Heg" id="9d59-5b84-ea13-e809" hidden="false" type="profile" targetId="4cb0-07b9-ab67-4088"/>
+              </infoLinks>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbf3-e9a0-b346-d823"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Children of Morai-Heg" hidden="false" id="5b73-4ad6-af07-2280" targetId="fd9c-e29a-3f59-ee9a" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Children of Prophecy" hidden="false" id="1e33-e2d4-5b68-0ba1">
+              <infoLinks>
+                <infoLink name="Children of Prophecy" id="fc57-c44c-3bb9-09c8" hidden="false" type="profile" targetId="c9dc-78ae-9d99-4bb4"/>
+              </infoLinks>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13a6-87dc-a2e0-1d8c"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="22e4-e98a-eea9-7ab5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Children of Prophecy" hidden="false" id="906a-3e2d-d1cd-4877" targetId="5283-1ece-28ae-6955" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Children of the Open Skies" hidden="false" id="882d-8c91-44c9-cfa6">
+              <infoLinks>
+                <infoLink name="Children of the Open Skies" id="b46d-f6fe-2715-6322" hidden="false" type="profile" targetId="0650-416c-65d3-4cc9"/>
+              </infoLinks>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d35-0139-906d-1bfa"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Children of the Open Skies" hidden="false" id="8c6d-1db5-f3cf-8823" targetId="7652-d74a-7345-1e8e" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Combined War Host" hidden="false" id="5923-ffc8-977b-aece">
+              <infoLinks>
+                <infoLink name="Combined War Host" id="1cb0-c3ef-e999-0650" hidden="false" type="profile" targetId="30cd-6cbd-8abe-42c7"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f0c-6f3c-30a7-5694"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Combined Warhost" hidden="false" id="ecd7-bfc5-5fb0-a80d" targetId="9312-bf36-337b-4a0d" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Elite Citizenry" hidden="false" id="30f7-bfe2-c9c9-6cbc">
+              <infoLinks>
+                <infoLink name="Elite Citizenry" id="b1bd-ba16-2779-6bb1" hidden="false" type="profile" targetId="8b74-7d10-6eb7-4099"/>
+              </infoLinks>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7695-6373-7b73-0996"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="5963-0ef4-6641-6d6f" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Elite Citizenry" hidden="false" id="4305-9bfb-a208-c3fb" targetId="5bd6-07d6-d6c2-a906" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Expert Crafters" hidden="false" id="780f-0fa5-67a3-f8f5">
+              <infoLinks>
+                <infoLink name="Expert Crafters" id="5a18-8343-da4d-fdb8" hidden="false" type="profile" targetId="93ce-7be4-ccce-4283"/>
+              </infoLinks>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4769-6a3c-0d61-8045"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="5963-0ef4-6641-6d6f" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Expert Crafters" hidden="false" id="7816-06b7-7984-e2c1" targetId="936f-bc6e-3a01-6219" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Grim" hidden="false" id="a5c3-d8fe-190a-eb04">
+              <infoLinks>
+                <infoLink name="Grim" id="4503-4fc8-3a8d-fe19" hidden="false" type="profile" targetId="7f32-6b9f-81d9-449b"/>
+              </infoLinks>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c11-45fe-c9d5-d366"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Grim" hidden="false" id="3bac-543b-4e37-d9f4" targetId="d667-98e7-cf76-ca69" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hail of Doom" hidden="false" id="66d2-2ca7-08d2-16c7">
+              <infoLinks>
+                <infoLink name="Hail of Doom" id="caef-d477-7c35-3405" hidden="false" type="profile" targetId="a977-9708-6dff-4be4"/>
+              </infoLinks>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e3f-86aa-191a-947d"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="5963-0ef4-6641-6d6f" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Hail of Doom" hidden="false" id="ded0-d82a-8d95-b594" targetId="4408-5d8f-5dab-bf3d" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Masterful Shots" hidden="false" id="ffde-0339-f845-23d3">
+              <infoLinks>
+                <infoLink name="Masterful Shots" id="6ecd-d335-0cf1-72ca" hidden="false" type="profile" targetId="fecf-567d-ec5c-489f"/>
+              </infoLinks>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd84-2808-cbc5-0b64"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="5963-0ef4-6641-6d6f" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Masterful Shots" hidden="false" id="427f-70a3-ea38-69fe" targetId="7ceb-cd9d-b944-7d34" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Masters of Concealment" hidden="false" id="0636-6f48-3197-6ac8">
+              <infoLinks>
+                <infoLink name="Masters of Concealment" id="dbd6-b2e5-ff94-3107" hidden="false" type="profile" targetId="4db6-7f4e-e25c-7788"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c53-56fc-f621-8598"/>
+              </constraints>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="3" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="3" field="5963-0ef4-6641-6d6f" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Masters of Concealment" hidden="false" id="4e8c-d97f-a5ec-aa66" targetId="da0d-0661-2722-4e00" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mobile Fighters" hidden="false" id="c1d6-79a6-8c00-c93b">
+              <infoLinks>
+                <infoLink name="Mobile Fighters" id="46c1-cc4b-ec6e-4ed3" hidden="false" type="profile" targetId="1b25-dad2-072d-7d8b"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a5b-74d9-b597-f9d8"/>
+              </constraints>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Mobile Fighters" hidden="false" id="bcf5-d1c0-5a8e-1dd6" targetId="c98f-cffe-2866-77d4" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Savage Blades" hidden="false" id="4b09-7b5b-31e7-7b3f">
+              <infoLinks>
+                <infoLink name="Savage Blades" id="190c-4968-a547-6f4c" hidden="false" type="profile" targetId="e23f-446b-dcbf-1d20"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a9e-9be2-1d27-637d"/>
+              </constraints>
+              <costs>
+                <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+                <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+                <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="40d8-7900-73a1-1378">
+                  <repeats>
+                    <repeat value="1" repeats="5" field="77d0-5202-ac27-34e5" scope="force" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <categoryLinks>
+                <categoryLink name="Savage Blades" hidden="false" id="4d4c-4eca-924c-e527" targetId="98df-8c80-b895-40e7" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="self" shared="true" id="443d-60e5-0311-c381"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -9237,6 +9975,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
     <entryLink import="true" name="Hornets" hidden="false" id="4e1b-83cf-665f-2dff" type="selectionEntry" targetId="bcae-d888-81cd-689e"/>
     <entryLink import="true" name="Nightwing" hidden="false" id="f483-122a-5110-ed84" type="selectionEntry" targetId="b547-d340-ba46-7958"/>
     <entryLink import="true" name="Phoenix" hidden="false" id="4145-95fe-a210-259b" type="selectionEntry" targetId="1383-6b7d-98c6-6958"/>
+    <entryLink import="true" name="Traits" hidden="false" id="bdab-cbc7-8c7e-351b" type="selectionEntry" targetId="9073-510b-1922-7e24"/>
   </entryLinks>
   <sharedRules>
     <rule name="Battle Focus" id="6bf6-be1d-576f-4aa9" hidden="false">
@@ -9686,429 +10425,6 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
         <constraint type="min" value="-1" field="selections" scope="parent" shared="true" id="df7a-8fc6-4ab4-b480" includeChildSelections="false"/>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="eb3a-b95f-25fa-2e23" includeChildSelections="false"/>
       </constraints>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Traits" id="5ff4-631e-7199-8efd" hidden="false" collapsible="true">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Black Guardians" hidden="false" id="8f4f-a6e6-8916-3a1c">
-          <infoLinks>
-            <infoLink name="Black Guardians" id="9151-dfab-6cb1-8c7b" hidden="false" type="profile" targetId="6627-234f-9002-4e38"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48d6-6ada-efd0-bd0e"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Children of Khaine" hidden="false" id="67ca-ebe8-f942-d6b3">
-          <infoLinks>
-            <infoLink name="Children of Khaine" id="5e6e-8cdb-3909-adc2" hidden="false" type="profile" targetId="7898-6606-cdcf-4667"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53c7-b849-2290-d244"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Children of Morai-Heg" hidden="false" id="ca1d-6eb9-6ad8-6782">
-          <infoLinks>
-            <infoLink name="Children of Morai-Heg" id="993a-e9b5-9eb8-b90f" hidden="false" type="profile" targetId="4cb0-07b9-ab67-4088"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2197-c26b-bc6d-8689"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Children of Prophecy (Psyker only)" hidden="false" id="04e2-1273-140d-ea29">
-          <infoLinks>
-            <infoLink name="Children of Prophecy" id="d9aa-2f36-c4b8-bc21" hidden="false" type="profile" targetId="c9dc-78ae-9d99-4bb4"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b27-c7d2-8b6a-d34f"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Children of the Open Skies" hidden="false" id="c059-b39b-bdde-a4e4">
-          <infoLinks>
-            <infoLink name="Children of the Open Skies" id="a8a8-e366-e105-aa38" hidden="false" type="profile" targetId="0650-416c-65d3-4cc9"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14c4-197c-0fa9-a4f7"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Combined War Host" hidden="false" id="7090-05ae-5175-9d79">
-          <infoLinks>
-            <infoLink name="Combined War Host" id="9ba3-0d47-0c33-c52c" hidden="false" type="profile" targetId="30cd-6cbd-8abe-42c7"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05e7-faa5-6e06-2476"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Elite Citizenry" hidden="false" id="62d4-857d-b6f7-fb9e">
-          <infoLinks>
-            <infoLink name="Elite Citizenry" id="8b11-9ee4-27f3-4e90" hidden="false" type="profile" targetId="8b74-7d10-6eb7-4099"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4341-c6f9-88c3-1de6"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Expert Crafters" hidden="false" id="9a05-f134-9cb0-489e">
-          <infoLinks>
-            <infoLink name="Expert Crafters" id="d979-5bf7-7bba-bafc" hidden="false" type="profile" targetId="93ce-7be4-ccce-4283"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e42-1564-a5b0-8ee2"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Grim" hidden="false" id="cff4-be92-1681-6672">
-          <infoLinks>
-            <infoLink name="Grim" id="d66e-7062-36e8-5ee4" hidden="false" type="profile" targetId="7f32-6b9f-81d9-449b"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5731-eef2-fd5f-1a7d"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hail of Doom" hidden="false" id="0dab-8a23-4e19-4511">
-          <infoLinks>
-            <infoLink name="Hail of Doom" id="f759-ce05-3397-07b2" hidden="false" type="profile" targetId="a977-9708-6dff-4be4"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef65-0cc8-bfa8-7340"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Masterful Shots" hidden="false" id="4ff2-d262-2853-5fa4">
-          <infoLinks>
-            <infoLink name="Masterful Shots" id="4a98-ddf9-8b8b-4de6" hidden="false" type="profile" targetId="fecf-567d-ec5c-489f"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de6e-5e1b-45a1-18fd"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Masters of Concealment" hidden="false" id="16b7-c0c7-7dd8-dff0">
-          <infoLinks>
-            <infoLink name="Masters of Concealment" id="50d0-69e6-2a6e-41a6" hidden="false" type="profile" targetId="4db6-7f4e-e25c-7788"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87db-df08-f67e-5759"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="3"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mobile Fighters" hidden="false" id="ba5c-e114-a9f5-5809">
-          <infoLinks>
-            <infoLink name="Mobile Fighters" id="cd27-9261-ab77-2548" hidden="false" type="profile" targetId="1b25-dad2-072d-7d8b"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea27-5851-04a9-ecba"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Savage Blades" hidden="false" id="abf2-c773-3313-77cf">
-          <infoLinks>
-            <infoLink name="Savage Blades" id="14fe-b0c3-1429-9a97" hidden="false" type="profile" targetId="e23f-446b-dcbf-1d20"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4004-f859-0730-e05d"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cf51-4cb5-644c-2dcc" includeChildSelections="false"/>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bd22-166a-59d1-e642" includeChildSelections="false"/>
-      </constraints>
-      <comment>normal</comment>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Traits" id="68db-5f35-ea0f-59d9" hidden="false" collapsible="true">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Black Guardians" hidden="false" id="a50b-e059-3a3c-94b1">
-          <infoLinks>
-            <infoLink name="Black Guardians" id="c914-b0aa-cac0-ef69" hidden="false" type="profile" targetId="6627-234f-9002-4e38"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b172-bf76-7405-3282"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Children of Khaine" hidden="false" id="2d05-5dfa-7c67-c94d">
-          <infoLinks>
-            <infoLink name="Children of Khaine" id="8b06-f290-415a-f5c9" hidden="false" type="profile" targetId="7898-6606-cdcf-4667"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="587e-aeda-3fad-74c9"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Children of Morai-Heg" hidden="false" id="2b27-d4a2-3248-a2fd">
-          <infoLinks>
-            <infoLink name="Children of Morai-Heg" id="4849-31da-5714-6074" hidden="false" type="profile" targetId="4cb0-07b9-ab67-4088"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d29-8ce0-0fc1-5d2d"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Children of Prophecy (Psyker only)" hidden="false" id="ec12-38a0-4198-ec8d">
-          <infoLinks>
-            <infoLink name="Children of Prophecy" id="1e30-a557-d5f5-1dc2" hidden="false" type="profile" targetId="c9dc-78ae-9d99-4bb4"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b021-9983-4a56-00c6"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Children of the Open Skies" hidden="false" id="fb2d-4182-c151-2490">
-          <infoLinks>
-            <infoLink name="Children of the Open Skies" id="aa6b-81ca-ecfe-c664" hidden="false" type="profile" targetId="0650-416c-65d3-4cc9"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e594-8f01-cdd6-4f63"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Combined War Host" hidden="false" id="f376-5bd3-a379-4d72">
-          <infoLinks>
-            <infoLink name="Combined War Host" id="89d8-c43a-e73b-bd04" hidden="false" type="profile" targetId="30cd-6cbd-8abe-42c7"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="520c-c088-3447-0e0a"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Elite Citizenry" hidden="false" id="a7b4-15ca-7d93-569a">
-          <infoLinks>
-            <infoLink name="Elite Citizenry" id="07c9-0aad-3f45-219c" hidden="false" type="profile" targetId="8b74-7d10-6eb7-4099"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf0c-4acf-ac31-94de"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Expert Crafters" hidden="false" id="4b19-ddf3-e502-3371">
-          <infoLinks>
-            <infoLink name="Expert Crafters" id="0300-b8b8-4cac-f221" hidden="false" type="profile" targetId="93ce-7be4-ccce-4283"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da85-97a5-2296-5516"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Grim" hidden="false" id="6fc5-2888-7d09-018e">
-          <infoLinks>
-            <infoLink name="Grim" id="1672-a1ff-1f28-8a04" hidden="false" type="profile" targetId="7f32-6b9f-81d9-449b"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e6c-9e5f-c995-0adc"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hail of Doom" hidden="false" id="908b-7992-d884-9ccf">
-          <infoLinks>
-            <infoLink name="Hail of Doom" id="4b41-3099-048a-3cbc" hidden="false" type="profile" targetId="a977-9708-6dff-4be4"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82c4-0d94-67bc-4dba"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Masterful Shots" hidden="false" id="5e62-e7a8-ebe4-94f0">
-          <infoLinks>
-            <infoLink name="Masterful Shots" id="e962-cb83-872e-8535" hidden="false" type="profile" targetId="fecf-567d-ec5c-489f"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c82a-206d-b763-654e"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Masters of Concealment" hidden="false" id="6c31-2106-952a-47ed">
-          <infoLinks>
-            <infoLink name="Masters of Concealment" id="1783-fc86-9ccc-61d3" hidden="false" type="profile" targetId="4db6-7f4e-e25c-7788"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7435-bf86-2128-609d"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mobile Fighters" hidden="false" id="8d92-fb9a-3008-79fd">
-          <infoLinks>
-            <infoLink name="Mobile Fighters" id="78a5-6734-7d3c-f85d" hidden="false" type="profile" targetId="1b25-dad2-072d-7d8b"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2e0-ea0d-43a0-59c2"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Savage Blades" hidden="false" id="f67c-b3a3-3817-d59b">
-          <infoLinks>
-            <infoLink name="Savage Blades" id="56f4-86af-d25d-65e4" hidden="false" type="profile" targetId="e23f-446b-dcbf-1d20"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6447-f7e9-96e8-6d03"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0f2d-9958-3bd3-e447" includeChildSelections="false"/>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3da1-53f1-c72e-ebc0" includeChildSelections="false"/>
-      </constraints>
-      <comment>character</comment>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Traits" id="eb49-433b-566e-317c" hidden="false" collapsible="true">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Children of Prophecy (Psyker only)" hidden="false" id="a706-844b-3b13-9ba5">
-          <infoLinks>
-            <infoLink name="Children of Prophecy" id="2f79-3448-0a55-8a97" hidden="false" type="profile" targetId="c9dc-78ae-9d99-4bb4"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dc0-45e2-1bb3-155a"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Combined War Host" hidden="false" id="29b5-3cb2-017c-d641">
-          <infoLinks>
-            <infoLink name="Combined War Host" id="7060-321f-ecb7-d83e" hidden="false" type="profile" targetId="30cd-6cbd-8abe-42c7"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e155-d22c-2a39-8d02"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Elite Citizenry" hidden="false" id="7fdc-2877-a416-4c9f">
-          <infoLinks>
-            <infoLink name="Elite Citizenry" id="d03f-c6c2-a018-b8c3" hidden="false" type="profile" targetId="8b74-7d10-6eb7-4099"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3a3-8ace-2d25-60eb"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Expert Crafters" hidden="false" id="5fda-4b29-2bca-560e">
-          <infoLinks>
-            <infoLink name="Expert Crafters" id="6b87-8a6a-0f59-a1c9" hidden="false" type="profile" targetId="93ce-7be4-ccce-4283"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f871-0c51-de65-2f52"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hail of Doom" hidden="false" id="54df-2f0a-e7e8-be39">
-          <infoLinks>
-            <infoLink name="Hail of Doom" id="d0e8-a38a-b97f-7f18" hidden="false" type="profile" targetId="a977-9708-6dff-4be4"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c6f-e902-f86e-eb13"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Masterful Shots" hidden="false" id="a5bd-6afb-70aa-4b6f">
-          <infoLinks>
-            <infoLink name="Masterful Shots" id="9f91-82ff-f815-10a7" hidden="false" type="profile" targetId="fecf-567d-ec5c-489f"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50b1-b982-46de-7981"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Masters of Concealment" hidden="false" id="cb59-b48d-2ae7-ddd5">
-          <infoLinks>
-            <infoLink name="Masters of Concealment" id="09b4-70a6-389c-4830" hidden="false" type="profile" targetId="4db6-7f4e-e25c-7788"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8de0-6a91-9af2-bbba"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="3"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Students of Vaul" hidden="false" id="257a-c38c-3431-3161">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcf6-d51b-a223-a4c9"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Students of Vaul" id="e133-cbcf-dbcb-b64d" hidden="false" type="profile" targetId="23a5-4b85-2e62-7b3a"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cfd4-f6dd-504c-4b98" includeChildSelections="false"/>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="37ba-3292-beb5-f1c6" includeChildSelections="false"/>
-      </constraints>
-      <comment>monstrous creature/vehicle</comment>
     </selectionEntryGroup>
     <selectionEntryGroup name="Weapons" id="88b0-13a3-e262-8c69" hidden="false" collapsible="true">
       <selectionEntries>
@@ -11568,12 +11884,556 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
       </modifiers>
       <comment>Wraithseer</comment>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Traits" id="a93d-1369-b109-8af3" hidden="false">
+      <comment>Normal/Character New</comment>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Savage Blades" hidden="true" id="8793-a935-8a3e-8b4c" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Savage Blades" id="396f-e726-f435-bb95" hidden="false" type="profile" targetId="e23f-446b-dcbf-1d20"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="077a-cc67-ce9b-5365"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e04f-5a6f-8e7c-8397"/>
+          </constraints>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="98df-8c80-b895-40e7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="e04f-5a6f-8e7c-8397">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="98df-8c80-b895-40e7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Black Guardians" hidden="true" id="8eab-8e8b-a5f0-b488" defaultAmount="0">
+          <infoLinks>
+            <infoLink name="Black Guardians" id="068b-78b4-98dd-5b1f" hidden="false" type="profile" targetId="6627-234f-9002-4e38"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf50-cc0a-6163-16fb"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="229e-8b22-77b4-f7b9"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7099-9d80-4cef-c9b5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="229e-8b22-77b4-f7b9">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7099-9d80-4cef-c9b5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Children of Khaine" hidden="true" id="4456-768b-8768-6f3c" defaultAmount="0">
+          <infoLinks>
+            <infoLink name="Children of Khaine" id="5a70-20df-492b-8804" hidden="false" type="profile" targetId="7898-6606-cdcf-4667"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51db-0493-abae-856d"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e787-541c-e328-f0a6"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bca9-054d-5c1f-9eb1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="e787-541c-e328-f0a6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="bca9-054d-5c1f-9eb1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Children of Morai-Heg" hidden="true" id="b6bd-f098-1e72-5098" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Children of Morai-Heg" id="58c1-7398-0b71-5756" hidden="false" type="profile" targetId="4cb0-07b9-ab67-4088"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a764-c445-ece6-b2f6"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f6e6-4bc7-04bc-6e04"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fd9c-e29a-3f59-ee9a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="f6e6-4bc7-04bc-6e04">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fd9c-e29a-3f59-ee9a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Children of the Open Skies" hidden="true" id="2bbb-1e5c-45ff-707a" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Children of the Open Skies" id="aaf8-d123-d4bc-110e" hidden="false" type="profile" targetId="0650-416c-65d3-4cc9"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e66-ef0f-0d68-cfde"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4a24-2c99-a267-97d0"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7652-d74a-7345-1e8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="4a24-2c99-a267-97d0">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7652-d74a-7345-1e8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Elite Citizenry" hidden="true" id="27f5-3ef3-370d-3557" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Elite Citizenry" id="63b6-48a8-d9a5-7781" hidden="false" type="profile" targetId="8b74-7d10-6eb7-4099"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dde-b4c0-678e-468c"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e53a-d2ce-4ff3-5333"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5bd6-07d6-d6c2-a906" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="e53a-d2ce-4ff3-5333">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5bd6-07d6-d6c2-a906" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Expert Crafters" hidden="true" id="13e1-8263-c94d-6b6f" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Expert Crafters" id="b596-46d6-f37a-e375" hidden="false" type="profile" targetId="93ce-7be4-ccce-4283"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="577d-1e14-0994-5559"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b89e-a34c-0918-b270"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="936f-bc6e-3a01-6219" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="b89e-a34c-0918-b270">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="936f-bc6e-3a01-6219" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grim" hidden="true" id="17e1-c35f-4b7f-9163" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Grim" id="3d99-6f27-f7ec-25e1" hidden="false" type="profile" targetId="7f32-6b9f-81d9-449b"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77a3-db35-f2fc-3ff5"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b5c3-cae7-0659-2678"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d667-98e7-cf76-ca69" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="b5c3-cae7-0659-2678">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d667-98e7-cf76-ca69" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hail of Doom" hidden="true" id="8b2e-05a0-9337-5927" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Hail of Doom" id="90e5-158f-eef1-0dab" hidden="false" type="profile" targetId="a977-9708-6dff-4be4"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afaf-bfc2-94ec-8bdf"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="388c-53c8-b916-32cd"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4408-5d8f-5dab-bf3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="388c-53c8-b916-32cd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4408-5d8f-5dab-bf3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Masterful Shots" hidden="true" id="98c5-e044-815b-2b06" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Masterful Shots" id="bf1c-df60-4eab-8a3f" hidden="false" type="profile" targetId="fecf-567d-ec5c-489f"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08d3-b926-3d6e-823c"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="533a-73f9-b23c-f684"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7ceb-cd9d-b944-7d34" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="533a-73f9-b23c-f684">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7ceb-cd9d-b944-7d34" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Masters of Concealment" hidden="true" id="284c-8484-90cc-61d9" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Masters of Concealment" id="ed81-36e4-0022-ff03" hidden="false" type="profile" targetId="4db6-7f4e-e25c-7788"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c86a-9ac9-faad-5172"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5523-a166-83ee-6d9e"/>
+          </constraints>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="da0d-0661-2722-4e00" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="5523-a166-83ee-6d9e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="da0d-0661-2722-4e00" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Mobile Fighters" hidden="true" id="9026-8387-e965-e557" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Mobile Fighters" id="30c6-21db-1ea4-636c" hidden="false" type="profile" targetId="1b25-dad2-072d-7d8b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48c9-af8b-f0e2-1972"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5321-b646-98fc-2a21"/>
+          </constraints>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c98f-cffe-2866-77d4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="5321-b646-98fc-2a21">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c98f-cffe-2866-77d4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Traits" id="3618-1f7c-3bd2-6eca" hidden="false">
+      <comment>Pykers</comment>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Children of Prophecy" hidden="true" id="4bfa-5107-2949-3956" defaultAmount="0">
+          <infoLinks>
+            <infoLink name="Children of Prophecy" id="6627-f769-8b50-5aa6" hidden="false" type="profile" targetId="c9dc-78ae-9d99-4bb4"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbda-9e78-e085-f76a"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="adf1-9500-dfdd-8244"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5283-1ece-28ae-6955" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="adf1-9500-dfdd-8244">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5283-1ece-28ae-6955" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Traits" id="9f38-c1e6-89b6-3518" hidden="false">
+      <comment>Monstrous Creature/Vehicle New</comment>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Elite Citizenry" hidden="true" id="0854-697e-0f1b-a28f" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Elite Citizenry" id="53b5-3a03-4c13-debc" hidden="false" type="profile" targetId="8b74-7d10-6eb7-4099"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf34-fef9-89b1-0afa"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7925-0ed3-d6f8-8857"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5bd6-07d6-d6c2-a906" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="7925-0ed3-d6f8-8857">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5bd6-07d6-d6c2-a906" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Expert Crafters" hidden="true" id="521e-f2ab-add7-b7b1" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Expert Crafters" id="2c2b-0c72-4028-5e32" hidden="false" type="profile" targetId="93ce-7be4-ccce-4283"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b14c-7518-3f4c-79a7"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="752c-a61d-4221-6cf1"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="936f-bc6e-3a01-6219" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="752c-a61d-4221-6cf1">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="936f-bc6e-3a01-6219" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hail of Doom" hidden="true" id="8388-813b-8c75-d435" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Hail of Doom" id="8498-6cec-4cf4-180d" hidden="false" type="profile" targetId="a977-9708-6dff-4be4"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edf8-4284-69d8-f16e"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ff97-e8f0-46e3-3893"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4408-5d8f-5dab-bf3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="ff97-e8f0-46e3-3893">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4408-5d8f-5dab-bf3d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Masterful Shots" hidden="true" id="c4ae-0fb3-897b-adaa" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Masterful Shots" id="3b0f-8989-a3ef-828e" hidden="false" type="profile" targetId="fecf-567d-ec5c-489f"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="672d-64cb-3360-62a8"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b281-b633-1a52-23fc"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7ceb-cd9d-b944-7d34" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="b281-b633-1a52-23fc">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7ceb-cd9d-b944-7d34" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Masters of Concealment" hidden="true" id="24a1-0e93-7d9c-9e92" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Masters of Concealment" id="1a69-6356-8200-2d0a" hidden="false" type="profile" targetId="4db6-7f4e-e25c-7788"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fda-9e4b-ad59-3d14"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="38a3-de24-c2f6-145f"/>
+          </constraints>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="da0d-0661-2722-4e00" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="38a3-de24-c2f6-145f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="da0d-0661-2722-4e00" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Students of Vaul" hidden="true" id="4513-9110-33d7-03ec" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Students of Vaul" id="54b2-ba90-a46a-cb8a" hidden="false" type="profile" targetId="23a5-4b85-2e62-7b3a"/>
+          </infoLinks>
+          <costs>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1fa-d56c-d123-289f"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f5a3-d405-c576-a197"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="830e-8110-46a7-9fe1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="f5a3-d405-c576-a197">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="830e-8110-46a7-9fe1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
     <categoryEntry name="&lt;Wraith&gt;" id="c4d8-5938-e24f-6224" hidden="false"/>
     <categoryEntry name="&lt;Aspect&gt;" id="4a11-a28a-f800-7557" hidden="false"/>
     <categoryEntry name="&lt;Corsairs&gt;" id="f1ae-55e8-23e1-3477" hidden="false"/>
     <categoryEntry name="&lt;Ynnari&gt;" id="5e0f-9657-0ec8-f73e" hidden="false"/>
+    <categoryEntry name="Black Guardians" id="7099-9d80-4cef-c9b5" hidden="false"/>
+    <categoryEntry name="Children of Khaine" id="bca9-054d-5c1f-9eb1" hidden="false"/>
+    <categoryEntry name="Children of Morai-Heg" id="fd9c-e29a-3f59-ee9a" hidden="false"/>
+    <categoryEntry name="Children of Prophecy" id="5283-1ece-28ae-6955" hidden="false"/>
+    <categoryEntry name="Children of the Open Skies" id="7652-d74a-7345-1e8e" hidden="false"/>
+    <categoryEntry name="Combined Warhost" id="9312-bf36-337b-4a0d" hidden="false"/>
+    <categoryEntry name="Elite Citizenry" id="5bd6-07d6-d6c2-a906" hidden="false"/>
+    <categoryEntry name="Expert Crafters" id="936f-bc6e-3a01-6219" hidden="false"/>
+    <categoryEntry name="Grim" id="d667-98e7-cf76-ca69" hidden="false"/>
+    <categoryEntry name="Hail of Doom" id="4408-5d8f-5dab-bf3d" hidden="false"/>
+    <categoryEntry name="Masterful Shots" id="7ceb-cd9d-b944-7d34" hidden="false"/>
+    <categoryEntry name="Masters of Concealment" id="da0d-0661-2722-4e00" hidden="false"/>
+    <categoryEntry name="Mobile Fighters" id="c98f-cffe-2866-77d4" hidden="false"/>
+    <categoryEntry name="Savage Blades" id="98df-8c80-b895-40e7" hidden="false"/>
+    <categoryEntry name="Students of Vaul" id="830e-8110-46a7-9fe1" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Aspect Focus" id="f023-cbae-babc-866e" hidden="false" sortIndex="2">
@@ -12491,12 +13351,14 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
     </forceEntry>
   </forceEntries>
   <infoLinks>
-    <infoLink name="Webway strike" id="174a-45d6-5bb3-36f4" hidden="false" type="rule" targetId="3df8-43e6-602c-46e8"/>
     <infoLink name="Battle Focus" id="cf72-e00c-fc84-a120" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
     <infoLink name="Shuriken" id="6b6a-ef03-1cce-2a2d" hidden="false" type="rule" targetId="5fea-acb8-d34d-49ae"/>
     <infoLink name="Visitors of the Black Library" id="dd07-5f42-968c-ebbe" hidden="false" type="rule" targetId="3a9a-34fa-2b7c-fa10"/>
   </infoLinks>
   <costTypes>
     <costType name="Wounds" id="de3a-1d44-d586-bd9d" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Normal" id="77d0-5202-ac27-34e5" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Monstrous Creature/Vehicle" id="5963-0ef4-6641-6d6f" defaultCostLimit="-1" hidden="true"/>
+    <costType name="Psyker" id="22e4-e98a-eea9-7ab5" defaultCostLimit="-1" hidden="true"/>
   </costTypes>
 </catalogue>
