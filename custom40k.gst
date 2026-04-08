@@ -63,6 +63,8 @@
     <categoryEntry name="Wound" id="20f8-1fc5-5e76-2bf2" hidden="false">
       <description>Wound</description>
     </categoryEntry>
+    <categoryEntry name="Lords of War" id="b76c-6f67-2cd9-2b59" hidden="false"/>
+    <categoryEntry name="Epic Battle" id="776d-e8af-72c2-666e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="No Archetype" id="59f5-9244-6426-aff0" hidden="false" sortIndex="1">
@@ -118,6 +120,7 @@
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="48f0-83f7-ceab-4eca"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b927-c525-c949-2c34"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="d9af-2296-b964-6ec2" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="2cbc-35b8-7656-e51e" targetId="e998-b6e1-9f43-6739">
@@ -209,6 +212,19 @@
           </constraints>
         </categoryLink>
         <categoryLink name="No Battlefield Role" hidden="false" id="dbb3-5877-0069-1710" targetId="41ed-bf57-7d27-9690"/>
+        <categoryLink name="Lords of War" hidden="false" id="2d06-b290-117f-54f4" targetId="b76c-6f67-2cd9-2b59">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="76fe-f2f3-2ede-20e8"/>
+            <constraint type="max" value="33" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="b4fb-c953-12b0-3b15" percentValue="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="76fe-f2f3-2ede-20e8">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="776d-e8af-72c2-666e" shared="true" includeChildSelections="true" childName="Epic Battle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Free Army" id="c934-704f-061c-2efe" hidden="false" sortIndex="99">
@@ -222,7 +238,138 @@
         <categoryLink name="Troops" hidden="false" id="91e4-ff18-d065-0044" targetId="2a68-9526-9cb0-16c3"/>
         <categoryLink name="Heavy Support" hidden="false" id="c63a-e267-02d1-4887" targetId="3aa5-2835-2e04-82bb"/>
         <categoryLink name="Configuration" hidden="false" id="b07b-777b-03bc-339c" targetId="251a-e788-36d5-a036"/>
+        <categoryLink name="Lords of War" hidden="false" id="0f7f-aeac-0cde-4da9" targetId="b76c-6f67-2cd9-2b59"/>
       </categoryLinks>
+    </forceEntry>
+    <forceEntry name="Skirmish (1000 - 1500 pts)" id="db7f-ac2c-c3bd-94ea" hidden="false" sortIndex="1">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="b088-f977-694a-e826" targetId="251a-e788-36d5-a036"/>
+        <categoryLink name="HQ" hidden="false" id="3dff-92ae-0f71-3672" targetId="681b-82fd-7cc4-8ef8">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6427-3584-e223-e489"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea5d-4a7b-5b20-b648"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="ea5d-4a7b-5b20-b648">
+              <repeats>
+                <repeat value="2" repeats="1" field="selections" scope="force" childId="47d2-3c20-e297-a13d" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Entourage" hidden="false" id="30e4-66bd-7162-519f" targetId="52d7-1195-e33c-e9b2">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e599-1125-ed44-7544"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="a6b3-aca4-9b04-2d89" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7fea-df02-083b-9b92" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="738a-c9c1-9eb2-b6ea" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="052a-9845-6531-42f3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="2" field="e599-1125-ed44-7544">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="a6b3-aca4-9b04-2d89" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="7fea-df02-083b-9b92" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="738a-c9c1-9eb2-b6ea" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="052a-9845-6531-42f3" shared="true" roundUp="false" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Entourage" id="b906-ed7f-ecb3-2c49" hidden="false">
+              <description>For each Greater Demon of the same Chaos god, up to two units with this rule can be can be chosen that do not occupy an HQ slot.</description>
+            </rule>
+          </rules>
+        </categoryLink>
+        <categoryLink name="Troops" hidden="false" id="0fce-46cc-6212-3fb7" targetId="2a68-9526-9cb0-16c3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b7d-494e-614f-79de"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8908-c6b4-8a36-4964"/>
+            <constraint type="min" value="25" field="40d8-7900-73a1-1378" scope="parent" shared="true" id="0829-9db5-3dfc-a5ef" percentValue="true"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elite" hidden="false" id="5cc2-c749-1c02-e47a" targetId="e998-b6e1-9f43-6739">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f955-42ad-b272-d469"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="64d6-bc06-5790-80ac"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="64d6-bc06-5790-80ac">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="187a-b1be-ad57-93fd" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="681b-82fd-7cc4-8ef8" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Advisor Ability</comment>
+            </modifier>
+            <modifier type="set" value="5" field="64d6-bc06-5790-80ac">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="187a-b1be-ad57-93fd" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="681b-82fd-7cc4-8ef8" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Advisor Ability</comment>
+            </modifier>
+            <modifier type="set" value="6" field="64d6-bc06-5790-80ac">
+              <conditions>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="187a-b1be-ad57-93fd" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="3" field="selections" scope="force" childId="681b-82fd-7cc4-8ef8" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Advisor Ability</comment>
+            </modifier>
+            <modifier type="set" value="7" field="64d6-bc06-5790-80ac">
+              <conditions>
+                <condition type="atLeast" value="4" field="selections" scope="force" childId="187a-b1be-ad57-93fd" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="4" field="selections" scope="force" childId="681b-82fd-7cc4-8ef8" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Advisor Ability</comment>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="9ce8-bd03-05ee-ffdf" targetId="8ba0-ef12-9165-c50c">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c12b-dd10-9a4d-55ac"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4eec-c71c-f975-4c0f"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="4eec-c71c-f975-4c0f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="f95a-9672-0495-85f2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="681b-82fd-7cc4-8ef8" childId="e799-f5de-e8eb-3364" shared="true"/>
+              </conditions>
+              <comment>Bound Beast Ability</comment>
+            </modifier>
+            <modifier type="set" value="5" field="4eec-c71c-f975-4c0f">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="force" childId="f95a-9672-0495-85f2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="2" field="selections" scope="681b-82fd-7cc4-8ef8" childId="e799-f5de-e8eb-3364" shared="true"/>
+              </conditions>
+              <comment>Bound Beast Ability</comment>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="Heavy Support" hidden="false" id="4e13-e9bd-5465-b0ac" targetId="3aa5-2835-2e04-82bb">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5715-0869-b7da-fa2a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7725-de1c-c092-296f"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Transports" hidden="false" id="d984-ed43-c751-3423" targetId="8046-e26a-aa36-3308">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6097-a4fe-97f0-c25e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a14-c987-c495-0ebb"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="No Battlefield Role" hidden="false" id="9368-68e8-f3c1-eea7" targetId="41ed-bf57-7d27-9690"/>
+      </categoryLinks>
+      <comment>Only the forceorg slots are implemented</comment>
     </forceEntry>
   </forceEntries>
   <costTypes>
@@ -284,7 +431,7 @@
     </profileType>
     <profileType name="Equipment" id="03e4-280e-70a0-4395" hidden="false">
       <characteristicTypes>
-        <characteristicType name="Keywords" id="0207-88db-7926-4ba6"/>
+        <characteristicType name="Description" id="0207-88db-7926-4ba6"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Traits" id="766f-e609-4aa9-47e8" hidden="false">
@@ -294,7 +441,7 @@
     </profileType>
     <profileType name="Vehicle_Equipment" id="57f5-93cf-6d5d-4dca" hidden="false">
       <characteristicTypes>
-        <characteristicType name="Keywords" id="0207-88db-7926-4ba6"/>
+        <characteristicType name="Description" id="0207-88db-7926-4ba6"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Psychic Powers" id="be7d-d5d5-f5cf-be4f" hidden="false">
@@ -559,6 +706,93 @@ Flyers always count as having moved 24”when not in Hover mode, regardless of t
 This does not prevent them from firing their weapons, as specified under Activation.</description>
     </rule>
     <rule name="Shock Troops" id="278a-3a30-ec5d-a9b9" hidden="false"/>
+    <rule name="Berserk(5+)" id="046f-37ea-9fcd-4a77" hidden="false">
+      <description>The model gains a 5+ invulnerability save, but it does not work against weapons with Strength 8 or higher.
+Limitations
+Cannot use the Escape command.
+Cannot use the Take Cover defensive reaction.</description>
+    </rule>
+    <rule name="Shield Breaker (-X)" id="5f59-c652-0251-8315" hidden="false">
+      <description>Invulnerability saves of enemy models are degraded by -X.</description>
+    </rule>
+    <rule name="Shield Breaker (-3)" id="f0cb-26d2-875e-9024" hidden="false">
+      <description>Invulnerability saves of enemy models are degraded by -3.</description>
+    </rule>
+    <rule name="Deadly (X+)" id="fb78-0a00-9391-6b3e" hidden="false">
+      <description>Wound rolls of X+ increase the Damage value of the attack by +1.</description>
+    </rule>
+    <rule name="Deadly (5+)" id="ef17-b147-5dea-ddde" hidden="false">
+      <description>Wound rolls of 5+ increase the Damage value of the attack by +1.</description>
+    </rule>
+    <rule name="Beam" id="f248-b1f4-8796-6385" hidden="false">
+      <description>Choose a target and make a hit roll with the weapon as normal.
+If the hit is successful, draw a 1mm straight line from the nearest point of the shooting model’s base to the nearest point of a model in the target unit.
+Make a wound roll against the target unit and any other units the line passes over.
+
+</description>
+    </rule>
+    <rule name="Army Building Basics" id="e930-8e50-09e6-d206" hidden="false">
+      <description>Army size recommendation is 1000-1500 points per player.
+At least 25% of the point limit must be spent on Troops (including upgrades).
+The army may select one unique item from the Armory.
+No allies may be included.
+No Archetypes may be selected.</description>
+      <comment>Skirmish</comment>
+    </rule>
+    <rule name="Unit Restrictions" id="277a-4ab6-7641-3269" hidden="false">
+      <description>HQ models may not take “once per army” upgrades.
+HQ units and Character models may not exceed 150 points with upgrades.
+No single unit may exceed 300 points with upgrades (Troops are exempt).
+Units with the “Squadron” rule may only field one model per slot.
+All units occupy an Army Organisation slot, even if their rules state otherwise.</description>
+      <comment>Skirmish</comment>
+    </rule>
+    <rule name="Stat &amp; Equipment Caps" id="c31f-f6d7-cb61-0f0b" hidden="false">
+      <description>No unit may have or gain a 2+ armour save or better from equipment or abilities.
+No unit may have or gain a 4+ invulnerable save or better from equipment or abilities.
+No unit may have or gain Toughness 8 or better from equipment or abilities.
+No weapon may have or gain Damage 3 or better from equipment or abilities.
+No unit may have a combined armour value of 34 or better (sum of Front + Side + Rear; include Quantum Shielding for Necron vehicles).</description>
+      <comment>Skirmish</comment>
+    </rule>
+    <rule name="Abilities &amp; Powers" id="5f41-35c6-76d9-f6f1" hidden="false">
+      <description>No unit may cast more than one psychic power per turn (applies equally to prayers, incantations, and similar mechanics).</description>
+      <comment>Skirmish</comment>
+    </rule>
+    <rule name="Army Organization Plan (AOP) Rules" id="6909-a46b-ffb0-9e1a" hidden="false">
+      <description>If a faction cannot fill a slot due to these restrictions, that slot counts as filled when determining eligibility for a second Army Organisation Plan (AOP).</description>
+    </rule>
+    <rule name="Game Setup" id="4958-c645-ec7a-fa7a" hidden="false">
+      <description>Recommended table size: 48”×48” to 72”×48”.</description>
+      <comment>Skirmish</comment>
+    </rule>
+    <rule name="Epic Battle" id="e477-8f6a-7473-9276" hidden="false">
+      <description>A total of 33% of the point limit may be spent on Lord of War units.</description>
+    </rule>
+    <rule name="Poison (X+)" id="7f9f-87e4-47e8-038c" hidden="false">
+      <description>To would rolls of X+ against creatures always succeed.</description>
+    </rule>
+    <rule name="Poison (4+)" id="1f34-5b2f-fe64-e94d" hidden="false">
+      <description>To would rolls of 4+ against creatures always succeed.</description>
+    </rule>
+    <rule name="Shred" id="9679-3020-04ce-3fff" hidden="false">
+      <description>The model may re-roll to wound rolls with this weapon.</description>
+    </rule>
+    <rule name="Combi" id="d932-40ea-92c5-0add" hidden="false">
+      <description>Combination weapons, like the &quot;Combi-melta,&quot; combine two profiles into one. 
+A combi-weapon can fire both profiles simultaneously at the same target, with a -1 penalty to hit.</description>
+    </rule>
+    <rule name="Poison (3+)" id="68f8-25c2-047a-519e" hidden="false">
+      <description>To would rolls of 3+ against creatures always succeed.</description>
+    </rule>
+    <rule name="Precision (X+)" id="e14c-ac32-43d3-4935" hidden="false">
+      <description>Successful to hit rolls of X+ automatically wound creatures. 
+Can’t be used with “Barrage” or “Explosive” weapons.</description>
+    </rule>
+    <rule name="Precision (4+)" id="c248-b243-22a7-c943" hidden="false">
+      <description>Successful to hit rolls of 4+ automatically wound creatures. 
+Can’t be used with “Barrage” or “Explosive” weapons.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile name="Seeking" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="ca8b-f755-8dbc-cc7f">
@@ -1068,34 +1302,34 @@ If multiple models in a unit have the same weapon with this rule, the correspond
         <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">-</characteristic>
       </characteristics>
     </profile>
-    <profile name="Force Axe" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="1a2b-d518-5338-72e1">
+    <profile name="Force Axe" typeId="77f2-c286-4a8e-85d6" typeName="Melee Weapons" hidden="false" id="1a2b-d518-5338-72e1">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">Force weapon</characteristic>
+        <characteristic name="Range" typeId="17a8-c6d1-4902-3240">-</characteristic>
+        <characteristic name="Type" typeId="85b8-b86f-84a1-6a8a">Melee</characteristic>
+        <characteristic name="S" typeId="dfe1-ab2e-bf82-b051">+2</characteristic>
+        <characteristic name="AP" typeId="5769-5be9-c3dd-1b76">-2</characteristic>
+        <characteristic name="D" typeId="40a0-b76f-918f-50a5">1</characteristic>
+        <characteristic name="Keywords" typeId="a78e-ed35-c409-5cda">Force weapon</characteristic>
       </characteristics>
     </profile>
-    <profile name="Force Staff" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="a3f9-9a5c-1607-5851">
+    <profile name="Force Staff" typeId="77f2-c286-4a8e-85d6" typeName="Melee Weapons" hidden="false" id="a3f9-9a5c-1607-5851">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-d466">+3</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">Force weapon</characteristic>
+        <characteristic name="Range" typeId="17a8-c6d1-4902-3240">-</characteristic>
+        <characteristic name="Type" typeId="85b8-b86f-84a1-6a8a">Melee</characteristic>
+        <characteristic name="S" typeId="dfe1-ab2e-bf82-b051">+3</characteristic>
+        <characteristic name="AP" typeId="5769-5be9-c3dd-1b76">-1</characteristic>
+        <characteristic name="D" typeId="40a0-b76f-918f-50a5">1</characteristic>
+        <characteristic name="Keywords" typeId="a78e-ed35-c409-5cda">Force weapon</characteristic>
       </characteristics>
     </profile>
-    <profile name="Force Sword" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="8be6-2c37-3db4-0cdd">
+    <profile name="Force Sword" typeId="77f2-c286-4a8e-85d6" typeName="Melee Weapons" hidden="false" id="8be6-2c37-3db4-0cdd">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">Force weapon</characteristic>
+        <characteristic name="Range" typeId="17a8-c6d1-4902-3240">-</characteristic>
+        <characteristic name="Type" typeId="85b8-b86f-84a1-6a8a">Melee</characteristic>
+        <characteristic name="S" typeId="dfe1-ab2e-bf82-b051">+1</characteristic>
+        <characteristic name="AP" typeId="5769-5be9-c3dd-1b76">-3</characteristic>
+        <characteristic name="D" typeId="40a0-b76f-918f-50a5">1</characteristic>
+        <characteristic name="Keywords" typeId="a78e-ed35-c409-5cda">Force weapon</characteristic>
       </characteristics>
     </profile>
     <profile name="Frag Cannon - Frag Round" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="4a0c-bafd-d6d9-0d1a">
@@ -1235,7 +1469,7 @@ If multiple models in a unit have the same weapon with this rule, the correspond
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-5</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">AT(1), Melter</characteristic>
+        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">AT(1), Melta</characteristic>
       </characteristics>
     </profile>
     <profile name="Modified Bolt Rifle - Assault Ammo" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="eccd-1694-e9dc-1925">
@@ -1358,14 +1592,14 @@ If multiple models in a unit have the same weapon with this rule, the correspond
         <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">Unwieldy</characteristic>
       </characteristics>
     </profile>
-    <profile name="Power Maul" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="2a63-53c1-2e92-79ae">
+    <profile name="Power Maul" typeId="77f2-c286-4a8e-85d6" typeName="Melee Weapons" hidden="false" id="2a63-53c1-2e92-79ae">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
-        <characteristic name="S" typeId="59b1-319e-ec13-d466">+3</characteristic>
-        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">-</characteristic>
+        <characteristic name="Range" typeId="17a8-c6d1-4902-3240">-</characteristic>
+        <characteristic name="Type" typeId="85b8-b86f-84a1-6a8a">Melee</characteristic>
+        <characteristic name="S" typeId="dfe1-ab2e-bf82-b051">+3</characteristic>
+        <characteristic name="AP" typeId="5769-5be9-c3dd-1b76">-1</characteristic>
+        <characteristic name="D" typeId="40a0-b76f-918f-50a5">1</characteristic>
+        <characteristic name="Keywords" typeId="a78e-ed35-c409-5cda">-</characteristic>
       </characteristics>
     </profile>
     <profile name="Power Sword" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="0a4a-549e-e8ba-6957">
@@ -1598,9 +1832,9 @@ If multiple models in a unit have the same weapon with this rule, the correspond
         <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">Armor Piercing(5+)</characteristic>
       </characteristics>
     </profile>
-    <profile name="Terminator Armor" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="c17f-f8bc-d8b8-68f6">
+    <profile name="Terminator Armor" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="c17f-f8bc-d8b8-68f6">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model has a 5+ invulnerability save.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model has a 5+ invulnerability save.</characteristic>
       </characteristics>
     </profile>
     <profile name="Entourage" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="736a-db78-4976-c492">
@@ -2024,6 +2258,46 @@ If multiple models in a unit have the same weapon with this rule, the correspond
         <characteristic name="Complexity" typeId="8ee5-1aad-da49-39b2">Basic</characteristic>
       </characteristics>
     </profile>
+    <profile name="➤ Grenade Launcher - Krak Grenade" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="914f-1fb7-5c1e-5186">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="➤ Grenade Launcher - Frag Grenade" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="9bdf-5c18-49c9-6079">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">Explosive</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lasgun" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="8135-55c0-db4b-55fc">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid fire 1</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Laspistol" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Ranged Weapons" hidden="false" id="b5ce-7a4e-f23f-7543">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 1</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+        <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">-</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Plasma Gun" hidden="false" id="9da0-b35f-27e6-da49">
@@ -2090,6 +2364,49 @@ If multiple models in a unit have the same weapon with this rule, the correspond
     <selectionEntry type="upgrade" import="true" name="Wound" hidden="true" id="b6f3-e2e3-23f7-1b38" defaultAmount="1">
       <categoryLinks>
         <categoryLink targetId="20f8-1fc5-5e76-2bf2" id="4e47-6a4d-ea05-2c03" primary="false" name="Wound"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Skirmish Rules" hidden="true" id="6f8e-fd0a-9395-ea1b">
+      <infoLinks>
+        <infoLink name="Army Building Basics" id="ec47-172b-383d-712d" hidden="false" type="rule" targetId="e930-8e50-09e6-d206"/>
+        <infoLink name="Unit Restrictions" id="3e77-bc99-4cbe-9512" hidden="false" type="rule" targetId="277a-4ab6-7641-3269"/>
+        <infoLink name="Stat &amp; Equipment Caps" id="b680-ab51-9d0e-dc09" hidden="false" type="rule" targetId="c31f-f6d7-cb61-0f0b"/>
+        <infoLink name="Abilities &amp; Powers" id="4dcd-2e3d-1448-d490" hidden="false" type="rule" targetId="5f41-35c6-76d9-f6f1"/>
+        <infoLink name="Army Organization Plan (AOP) Rules" id="c92b-21c9-00a7-0276" hidden="false" type="rule" targetId="6909-a46b-ffb0-9e1a"/>
+        <infoLink name="Game Setup" id="4258-5bc9-2174-8575" hidden="false" type="rule" targetId="4958-c645-ec7a-fa7a"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="251a-e788-36d5-a036" id="210f-6d52-d461-3b55" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e2e-a1af-0810-6cc2"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="db7f-ac2c-c3bd-94ea" shared="true" includeChildSelections="true" childName="Skirmish (1000 - 1500 pts)"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>Temporary fix for complicated restrictions</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Epic Battle (4000+ pts)" hidden="false" id="2376-1d85-b2ae-0a01">
+      <infoLinks>
+        <infoLink name="Epic Battle" id="62a4-4289-d680-94ce" hidden="false" type="rule" targetId="e477-8f6a-7473-9276"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="db7f-ac2c-c3bd-94ea" shared="true" includeChildSelections="true" childName="Skirmish (1000 - 1500 pts)"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6969-0c70-0cc5-02da"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="776d-e8af-72c2-666e" id="ef50-2732-9045-76d8" primary="false" name="Epic Battle"/>
+        <categoryLink targetId="251a-e788-36d5-a036" id="05fb-c02c-888d-13e2" primary="true" name="Configuration"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2400,4 +2717,8 @@ If multiple models in a unit have the same weapon with this rule, the correspond
       </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Skirmish Rules" hidden="false" id="7375-66ed-bbd3-6479" type="selectionEntry" targetId="6f8e-fd0a-9395-ea1b"/>
+    <entryLink import="true" name="Epic Battle (4000+ pts)" hidden="false" id="65cd-02e6-f201-225b" type="selectionEntry" targetId="2376-1d85-b2ae-0a01"/>
+  </entryLinks>
 </gameSystem>

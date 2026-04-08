@@ -63,8 +63,8 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Weapons Autarch" hidden="false" id="41ca-caad-6370-52ff" type="selectionEntryGroup" targetId="07fa-066a-6e90-463a"/>
-        <entryLink import="true" name="Equipment Autarch" hidden="false" id="e737-9168-3046-ff88" type="selectionEntryGroup" targetId="52e9-7cc4-5299-59fa"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="41ca-caad-6370-52ff" type="selectionEntryGroup" targetId="07fa-066a-6e90-463a"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="e737-9168-3046-ff88" type="selectionEntryGroup" targetId="52e9-7cc4-5299-59fa"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="3ede-0866-3089-7dcc" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="08cc-4c9a-04c0-2c79" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="aab3-61a6-2286-a979" type="selectionEntry" targetId="98be-190d-bd75-3a7b">
@@ -73,6 +73,7 @@
           </costs>
         </entryLink>
         <entryLink import="true" name="Traits" hidden="false" id="d0e0-ea63-1d97-f6e5" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
+        <entryLink import="true" name="Infantry only" hidden="false" id="a0c4-a073-9f42-ed34" type="selectionEntryGroup" targetId="418f-dba5-42f1-fa77"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Avatar of Khaine" hidden="false" id="30fc-45d3-ee1b-431a">
@@ -205,13 +206,14 @@
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="340e-9abc-ab0d-65e7"/>
       </constraints>
       <entryLinks>
-        <entryLink import="true" name="Equipment Psyker" hidden="false" id="c7de-fbf6-e94a-d879" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
-        <entryLink import="true" name="Weapons Psyker" hidden="false" id="22dd-563a-04af-9690" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="c7de-fbf6-e94a-d879" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="22dd-563a-04af-9690" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="f1df-8319-c48e-8e9c" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="3"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="39a3-ce2d-48c9-5e6a" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="4"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="bfbb-a2cc-7d69-5faa" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
         <entryLink import="true" name="Traits" hidden="false" id="3040-8c62-8487-9800" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
         <entryLink import="true" name="Traits" hidden="false" id="79cd-3b49-a4ae-9f34" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
+        <entryLink import="true" name="Infantry only" hidden="false" id="6cd7-c753-550e-682e" type="selectionEntryGroup" targetId="d47d-8d71-326e-7884"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="c323-982c-aaf6-81e7" hidden="false">
@@ -277,14 +279,15 @@
         <infoLink name="Command Squad" id="5599-ec24-0c47-4053" hidden="false" type="rule" targetId="3bb3-3db8-a1f6-9b22"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Equipment Psyker" hidden="false" id="05e4-006e-0586-521e" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
-        <entryLink import="true" name="Weapons Psyker" hidden="false" id="97e3-94d0-1565-ebf3" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="05e4-006e-0586-521e" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="97e3-94d0-1565-ebf3" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
         <entryLink import="true" name="Smite" hidden="false" id="24f2-c0d3-42f6-66af" type="selectionEntry" targetId="eae4-8949-6416-c634"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="fb5d-f5e4-187b-af2b" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="3e1c-f395-dc05-cf46" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="3e99-d264-6d99-f469" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
         <entryLink import="true" name="Traits" hidden="false" id="1a3e-4fa9-3a21-1ee4" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
         <entryLink import="true" name="Traits" hidden="false" id="5719-057c-78ba-12d3" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
+        <entryLink import="true" name="Infantry only" hidden="false" id="f876-4d2e-090a-f0b5" type="selectionEntryGroup" targetId="d47d-8d71-326e-7884"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="a0ae-2d3a-68b2-504b" hidden="false">
@@ -1181,7 +1184,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1383-fd05-8c1f-8fe5"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="27c2-678b-b552-f3c7" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Exarch Powers" hidden="false" id="27c2-678b-b552-f3c7" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -1272,7 +1275,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="caae-ef4a-9bfb-e3fc"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="c184-b07a-a743-5068" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Exarch Powers" hidden="false" id="c184-b07a-a743-5068" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Fire Dragons" hidden="false" id="baaf-50df-43a7-49e64" defaultAmount="5" sortIndex="1">
@@ -1399,7 +1402,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec64-ff7e-4455-ca7d"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="45fa-778f-e80a-ab2b" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Exarch Powers" hidden="false" id="45fa-778f-e80a-ab2b" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Howling Banshees" hidden="false" id="7f75-ec0a-5481-45a24" defaultAmount="5" sortIndex="1">
@@ -1537,7 +1540,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c58-6134-0b2c-7b54"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="ac43-cf3d-3ed9-4a30" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Exarch Powers" hidden="false" id="ac43-cf3d-3ed9-4a30" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Striking Scorpions" hidden="false" id="5d2d-0d51-2cbc-42d84" defaultAmount="5">
@@ -2128,8 +2131,8 @@
             <infoLink name="Warlocks" id="441d-001f-4da7-4c90" hidden="false" type="profile" targetId="b390-3535-d82d-4b19"/>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="Equipment Psyker" hidden="false" id="a05e-f2ca-3d70-90a6" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
-            <entryLink import="true" name="Weapons Psyker" hidden="false" id="405a-9881-c5a1-ce12" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
+            <entryLink import="true" name="Equipment" hidden="false" id="a05e-f2ca-3d70-90a6" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
+            <entryLink import="true" name="Weapons" hidden="false" id="405a-9881-c5a1-ce12" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
             <entryLink import="true" name="Legacy Armory" hidden="false" id="decf-4c71-fc72-40fb" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
             <entryLink import="true" name="Ynnari Armory" hidden="false" id="52f5-2518-d875-9db0" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
           </entryLinks>
@@ -2158,6 +2161,7 @@
         <entryLink import="true" name="Webway Strike" hidden="false" id="8eff-7777-f8e4-6b57" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
         <entryLink import="true" name="Traits" hidden="false" id="5c1d-163b-a24d-92df" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
         <entryLink import="true" name="Traits" hidden="false" id="d219-d58a-3b59-e440" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
+        <entryLink import="true" name="Infantry only" hidden="false" id="f401-0d34-745c-942b" type="selectionEntryGroup" targetId="d47d-8d71-326e-7884"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="ed6b-9966-ca05-e112" hidden="false">
@@ -2511,7 +2515,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd43-ea58-1e13-06b6"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="a9ba-8ab2-6c3e-24ba" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Exarch Powers" hidden="false" id="a9ba-8ab2-6c3e-24ba" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Shining Spears" hidden="false" id="aa3c-7fea-207b-45034" defaultAmount="3">
@@ -2720,7 +2724,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60b5-8adb-33ca-a4ea"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="54b9-dcc9-1e34-5014" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Exarch Powers" hidden="false" id="54b9-dcc9-1e34-5014" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Swooping Hawks" hidden="false" id="31e8-f65b-5162-48454" defaultAmount="5">
@@ -2855,7 +2859,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58f1-3fa3-d5d8-998e"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="b65e-41f8-d23d-9d2b" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Exarch Powers" hidden="false" id="b65e-41f8-d23d-9d2b" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Warp Spiders" hidden="false" id="22f8-a9aa-5531-471e4" defaultAmount="5">
@@ -3038,7 +3042,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a42f-310f-26e8-1df9"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="0d51-7e7f-8087-1004" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Exarch Powers" hidden="false" id="0d51-7e7f-8087-1004" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Dark Reapers" hidden="false" id="b19a-ec0b-3ecf-45604" defaultAmount="5" sortIndex="1">
@@ -3777,7 +3781,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8de-d045-436f-68a0"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="e675-b50a-e891-78bd" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Exarch Powers" hidden="false" id="e675-b50a-e891-78bd" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -3842,14 +3846,15 @@
         <infoLink name="Command Squad" id="3bff-3830-233b-95a5" hidden="false" type="rule" targetId="3bb3-3db8-a1f6-9b22"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Equipment Psyker" hidden="false" id="caae-7694-2995-78f7" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
-        <entryLink import="true" name="Weapons Psyker" hidden="false" id="5f46-f663-16ef-fe82" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="caae-7694-2995-78f7" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="5f46-f663-16ef-fe82" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
         <entryLink import="true" name="Smite" hidden="false" id="39c8-570f-0d49-61db" type="selectionEntry" targetId="eae4-8949-6416-c634"/>
         <entryLink import="true" name="Legacy Armory" hidden="false" id="f0dc-2fbb-1cb7-80e3" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
         <entryLink import="true" name="Ynnari Armory" hidden="false" id="e42c-d6cd-821d-f8a8" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
         <entryLink import="true" name="Webway Strike" hidden="false" id="983c-1871-0c57-0fb5" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
         <entryLink import="true" name="Traits" hidden="false" id="629c-76ec-ea32-94f3" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
         <entryLink import="true" name="Traits" hidden="false" id="76f8-ce47-314e-0fe1" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
+        <entryLink import="true" name="Infantry only" hidden="false" id="831b-a866-e016-191b" type="selectionEntryGroup" targetId="d47d-8d71-326e-7884"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="3ca9-9944-8556-8f92" hidden="false">
@@ -3890,8 +3895,8 @@
             <infoLink name="Warlocks" id="0424-8fb1-ee8b-f0f8" hidden="false" type="profile" targetId="b390-3535-d82d-4b19"/>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="Equipment Psyker" hidden="false" id="41bd-732c-4e44-9fdb" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
-            <entryLink import="true" name="Weapons Psyker" hidden="false" id="9baf-e68d-fbc4-34b1" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
+            <entryLink import="true" name="Equipment" hidden="false" id="41bd-732c-4e44-9fdb" type="selectionEntryGroup" targetId="4329-3405-971c-f3db"/>
+            <entryLink import="true" name="Weapons" hidden="false" id="9baf-e68d-fbc4-34b1" type="selectionEntryGroup" targetId="88b0-13a3-e262-8c69"/>
             <entryLink import="true" name="Legacy Armory" hidden="false" id="5941-9f4b-57f9-7436" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="2"/>
             <entryLink import="true" name="Ynnari Armory" hidden="false" id="3da9-8b1a-72f4-f919" type="selectionEntryGroup" targetId="f0a4-2e96-0811-3754" sortIndex="3"/>
           </entryLinks>
@@ -3920,6 +3925,7 @@
         <entryLink import="true" name="Webway Strike" hidden="false" id="6d36-04d9-1aea-10a2" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
         <entryLink import="true" name="Traits" hidden="false" id="7c38-e5e3-04b0-7db3" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
         <entryLink import="true" name="Traits" hidden="false" id="450d-ab1d-b581-ee22" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
+        <entryLink import="true" name="Infantry only" hidden="false" id="5b86-9d3c-dcb2-87c9" type="selectionEntryGroup" targetId="d47d-8d71-326e-7884"/>
       </entryLinks>
       <rules>
         <rule name="Psyker" id="3b03-27bd-73a7-5499" hidden="false">
@@ -6346,7 +6352,7 @@
           <entryLinks>
             <entryLink import="true" name="Smite" hidden="false" id="a09e-b60b-4671-0fda" type="selectionEntry" targetId="eae4-8949-6416-c634"/>
             <entryLink import="true" name="Wraith" hidden="false" id="2332-e2a9-10ec-7468" type="selectionEntryGroup" targetId="1011-a87a-cf35-bc0d"/>
-            <entryLink import="true" name="Equipment Psyker" hidden="false" id="6901-56af-dc33-01cc" type="selectionEntryGroup" targetId="4329-3405-971c-f3db" sortIndex="2"/>
+            <entryLink import="true" name="Equipment" hidden="false" id="6901-56af-dc33-01cc" type="selectionEntryGroup" targetId="4329-3405-971c-f3db" sortIndex="2"/>
             <entryLink import="true" name="Legacy Armory" hidden="false" id="fe39-6eaf-300c-8e04" type="selectionEntryGroup" targetId="cb50-c1d0-992e-511b" sortIndex="3"/>
             <entryLink import="true" name="Ynnari Armory" hidden="false" id="d43a-4801-af3c-6084" type="selectionEntryGroup" targetId="de8e-c607-a74d-af0d" sortIndex="4"/>
           </entryLinks>
@@ -6552,7 +6558,7 @@
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink import="true" name="Exarch Powers" hidden="false" id="c6e0-bd3f-fca2-cff9" type="selectionEntryGroup" targetId="e7a0-25e9-2a4e-f517"/>
-                <entryLink import="true" name="Exemplar Exarch Powers" hidden="false" id="fa4e-f8cc-d9f8-6707" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
+                <entryLink import="true" name="Exarch Powers" hidden="false" id="fa4e-f8cc-d9f8-6707" type="selectionEntryGroup" targetId="412b-5678-98ce-101b"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -7034,7 +7040,7 @@
         <categoryLink targetId="251a-e788-36d5-a036" id="2be4-03e6-766e-e8fe" primary="true" name="Configuration"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="" id="9b34-dd30-7fed-f5a6" hidden="false">
+        <selectionEntryGroup id="9b34-dd30-7fed-f5a6" hidden="false">
           <comment>traits</comment>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Students of Vaul" hidden="false" id="ebef-1d7c-fe25-f99d">
@@ -7412,6 +7418,17 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Phoenix gem" hidden="false" id="8a4b-4832-a07c-f3b0">
+      <infoLinks>
+        <infoLink name="Phoenix gem" id="a6ff-8f78-113e-28b8" hidden="false" type="profile" targetId="58d7-cab9-dd15-4dad"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a84e-b12f-b090-f37b" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -7961,170 +7978,170 @@
     </profile>
     <profile name="Aspect armor" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="0fe9-e608-2ce7-47e6">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains a 5+ invulnerability save.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains a 5+ invulnerability save.</characteristic>
       </characteristics>
     </profile>
     <profile name="Champion of Ynnead" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="b329-429c-e1e8-4da2">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">Everytime a model dies within 6&quot; of this model it gains one temporary wound. The wound is lost at the end of the battle round. Can only have one temporary wound at a time.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">Everytime a model dies within 6&quot; of this model it gains one temporary wound. The wound is lost at the end of the battle round. Can only have one temporary wound at a time.</characteristic>
       </characteristics>
     </profile>
     <profile name="Crystal body" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="1a0a-b32f-6a35-43be">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains +1 Toughness. Unique.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains +1 Toughness. Unique.</characteristic>
       </characteristics>
     </profile>
     <profile name="Eldar jetbike" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="6e46-95e0-bdec-4cfd">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains +6&quot; Movement, +1 Toughness, +1 Wound, a twin shuriken catapult and the ability &quot;Jet bike&quot;. Only for infantry.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains +6&quot; Movement, +1 Toughness, +1 Wound, a twin shuriken catapult and the ability &quot;Jet bike&quot;. Only for infantry.</characteristic>
       </characteristics>
     </profile>
     <profile name="Faolchu&apos;s wings" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="6382-7c9e-4503-4a17">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains +6&quot; Movement and the ability &quot;Jump pack infantry&quot;. Additionally, it gains the &quot;Sky Dive&quot; ability (see Swooping Hawks). Only for infantry.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains +6&quot; Movement and the ability &quot;Jump pack&quot;. Additionally, it gains the &quot;Sky Dive&quot; ability (see Swooping Hawks). Only for infantry.</characteristic>
       </characteristics>
     </profile>
     <profile name="Fire blade" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="f5b9-0a1b-1c18-493b">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">One melee weapon of the model gains Precision(5+) and cumulative -2 AP. Unique. Can&apos;t be combined with other blades.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">One melee weapon of the model gains Precision(5+) and cumulative -2 AP. Unique. Can&apos;t be combined with other blades.</characteristic>
       </characteristics>
     </profile>
     <profile name="Forcefield" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="3e99-197a-f534-4d08">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains a 4+ invulnerability save.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains a 4+ invulnerability save.</characteristic>
       </characteristics>
     </profile>
     <profile name="Ghosthelm" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="c789-58cd-5273-4168">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model ignores the first Perils of the warp attack of the game.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model ignores the first Perils of the warp attack of the game.</characteristic>
       </characteristics>
     </profile>
     <profile name="Heavy armor plating" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="ab09-fd8a-8e7e-4da0">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains a 3+ save.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains a 3+ save.</characteristic>
       </characteristics>
     </profile>
     <profile name="Hungering blade" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="3196-40d4-35e3-4816">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">One melee weapon of the model gains cumulative Flurry(4). Unique. Can&apos;t be combined with other blades.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">One melee weapon of the model gains cumulative Flurry(4). Unique. Can&apos;t be combined with other blades.</characteristic>
       </characteristics>
     </profile>
     <profile name="Mandiblaster" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="6cb3-32dd-dd54-4cde">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">During the model&apos;s initiave step, roll a D6. On a 4+, one enemy unit in melee suffers an automatic wound with S:4 AP:-2 D:1.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">During the model&apos;s initiave step, roll a D6. On a 4+, one enemy unit in melee suffers an automatic wound with S:4 AP:-2 D:1.</characteristic>
       </characteristics>
     </profile>
     <profile name="Marksman honours" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="5c60-c125-bd60-48de">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains +1 Ballistic skill.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains +1 Ballistic skill.</characteristic>
       </characteristics>
     </profile>
     <profile name="Master-crafted weapon" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="067c-4ecf-e552-45f9">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model may re-roll one to hit roll per activation. Must be purchased for each weapon seperately.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model may re-roll one to hit roll per activation. Must be purchased for each weapon seperately.</characteristic>
       </characteristics>
     </profile>
     <profile name="Mirrorgaze" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="3dbf-dbb4-cc95-420a">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains the &quot;Deflect&quot; and &quot;Parry&quot; abilities. Unique.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains the &quot;Deflect&quot; and &quot;Parry&quot; abilities. Unique.</characteristic>
       </characteristics>
     </profile>
     <profile name="Paragon of fate" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="e608-3c1b-de37-459f">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains +1 Toughness, Wounds and Attacks. The model and its attached unit may re-roll any single die per activation. Unique.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains +1 Toughness, Wounds and Attacks. The model and its attached unit may re-roll any single die per activation. Unique.</characteristic>
       </characteristics>
     </profile>
     <profile name="Paragon of war" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="e7a3-9d86-da00-49da">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains +1 Strength, Toughness, Wounds and Attacks. It can chose a single Exarch power. Unique.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains +1 Strength, Toughness, Wounds and Attacks. It can chose a single Exarch power. Unique.</characteristic>
       </characteristics>
     </profile>
     <profile name="Phoenix gem" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="58d7-cab9-dd15-4dad">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">Roll a die the first time the model is eliminated: 
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">Roll a die the first time the model is eliminated: 
 1,2 - Remove the model.
-3,4 - Set it back up with 1 wound. 
+3,4 - Set it back up with 1 wound. 
 5,6 - Set it up again with 2 wounds. Unique.</characteristic>
       </characteristics>
     </profile>
     <profile name="Psychic mastery" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="9724-d530-408e-4502">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The models gains +1 to all tests for manifesting a psychic power.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The models gains +1 to all tests for manifesting a psychic power.</characteristic>
       </characteristics>
     </profile>
     <profile name="Psychic training" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="1e41-f014-356d-4fec">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model knows one additional psychic power from one of their chosen psychic disciplines. If it already knows all powers from each discipline, it may instead learn one power from a new discipline it has access to. Can be taken multiple times.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model knows one additional psychic power from one of their chosen psychic disciplines. If it already knows all powers from each discipline, it may instead learn one power from a new discipline it has access to. Can be taken multiple times.</characteristic>
       </characteristics>
     </profile>
     <profile name="Rune armor" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="3f1a-c689-61d9-4a8f">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains a 4+ invulnerability save.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains a 4+ invulnerability save.</characteristic>
       </characteristics>
     </profile>
     <profile name="Runes of warding" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="7ef0-b0f6-ba54-49dc">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">Add +1 to rolls to deny enemy psychic powers.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">Add +1 to rolls to deny enemy psychic powers.</characteristic>
       </characteristics>
     </profile>
     <profile name="Shrine relic" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="79d5-d142-26c6-4438">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">One weapon of the model gains one of the following:
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">One weapon of the model gains one of the following:
 - Additional +6&quot; Range (only for ranged weapons)
 - Additional +1 Strength
 - Additional -1 AP
 - Additional +1 AT
-Every enhancement is unique per army.</characteristic>
+Every enhancement is unique per army. Can be taken multiple times.</characteristic>
       </characteristics>
     </profile>
     <profile name="Silent blade" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="2059-4f11-4336-4ada">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">One melee weapon of the model gains Shield breaker(-2). Unique. Can&apos;t be combined with other blades.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">One melee weapon of the model gains Shield breaker(-2). Unique. Can&apos;t be combined with other blades.</characteristic>
       </characteristics>
     </profile>
     <profile name="Sorrow blade" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="b871-3478-e396-44c5">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">One melee weapon of the model gains +1 Strength and Decimate. Unique. Can&apos;t be combined with other blades.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">One melee weapon of the model gains +1 Strength and Decimate. Unique. Can&apos;t be combined with other blades.</characteristic>
       </characteristics>
     </profile>
     <profile name="Spirit stones" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="7dfa-5048-7256-4939">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model can manifest and deny an additional psychic power per turn.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model can manifest and deny an additional psychic power per turn.</characteristic>
       </characteristics>
     </profile>
     <profile name="Swordsman honours" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="dcf7-f413-343a-4c94">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains +1 Weapon skill.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains +1 Weapon skill.</characteristic>
       </characteristics>
     </profile>
     <profile name="Teleport homing beacon" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="2a77-620f-0902-4b21">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">A friendly unit arriving within 3&quot; of the bearer via Deep strike does not scatter. The Teleport homer must be present on the table at the beginning of the battle round in order to be used.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">A friendly unit arriving within 3&quot; of the bearer via Deep strike does not scatter. The Teleport homer must be present on the table at the beginning of the battle round in order to be used.</characteristic>
       </characteristics>
     </profile>
     <profile name="The Lost Shroud" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="cf99-2c95-9bed-4c3d">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">To wound rolls against the bearer suffer a -1 penalty. (Unique)</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">To wound rolls against the bearer suffer a -1 penalty. (Unique)</characteristic>
       </characteristics>
     </profile>
     <profile name="Trophy" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="dde9-75e9-e202-487a">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains the ability &quot;Terrifying(-1)&quot;.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains the ability &quot;Terrifying(-1)&quot;.</characteristic>
       </characteristics>
     </profile>
     <profile name="Vaul&apos;s cuirass" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="b068-4fbd-749a-47ea">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains a 2+ save.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains a 2+ save.</characteristic>
       </characteristics>
     </profile>
     <profile name="Warden" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="bc7d-5557-1c6c-4d29">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains the &quot;Bodyguard&quot; and &quot;Command squad&quot; abilities.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains the &quot;Bodyguard&quot; and &quot;Command squad&quot; abilities.</characteristic>
       </characteristics>
     </profile>
     <profile name="Warp jump generator" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="0ce6-74c8-f8be-483b">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains +6&quot; Movement and the ability &quot;Jump pack infantry&quot;. Additionally, it gains the &quot;Shunting&quot; ability (see Warp Spiders). Only for infantry.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains +6&quot; Movement and the ability &quot;Jump pack&quot;. Additionally, it gains the &quot;Shunting&quot; ability (see Warp Spiders). Only for infantry.</characteristic>
       </characteristics>
     </profile>
     <profile name="Black Guardians" typeId="766f-e609-4aa9-47e8" typeName="Traits" hidden="false" id="6627-234f-9002-4e38">
@@ -8819,45 +8836,44 @@ Every enhancement is unique per army.</characteristic>
     </profile>
     <profile name="Crystal targeting matrix" typeId="57f5-93cf-6d5d-4dca" typeName="Vehicle_Equipment" hidden="false" id="86c7-c6b3-462f-452c">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model ignores negative to hit modifiers from equipment or abilities.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model ignores negative to hit modifiers from equipment or abilities.</characteristic>
       </characteristics>
     </profile>
     <profile name="Ghostwalk matrix" typeId="57f5-93cf-6d5d-4dca" typeName="Vehicle_Equipment" hidden="false" id="2d47-ca56-23cd-4318">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains &quot;Move through cover&quot;.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains &quot;Move through cover&quot;.</characteristic>
       </characteristics>
     </profile>
     <profile name="Holo-field" typeId="57f5-93cf-6d5d-4dca" typeName="Vehicle_Equipment" hidden="false" id="553f-886a-926e-46c1">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">Enemies must roll twice on the vehicle damage chart and apply the lower result. Does not work on the consecutive rolls for suffering &quot;Heavy structural damage&quot;.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">Roll one die for each glancing and penetrating hit against the model. You may substitute any of the following vehicle damage results with your own roll.</characteristic>
       </characteristics>
     </profile>
     <profile name="Improved targeting" typeId="57f5-93cf-6d5d-4dca" typeName="Vehicle_Equipment" hidden="false" id="34d4-53c0-250c-47a8">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model does not have to declare its ranged weapons at all targets before firing, and can choose a new target for each weapon.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model does not have to declare its ranged weapons at all targets before firing, and can choose a new target for each weapon.</characteristic>
       </characteristics>
     </profile>
     <profile name="Jammer" typeId="57f5-93cf-6d5d-4dca" typeName="Vehicle_Equipment" hidden="false" id="3841-27f0-9710-4a6e">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">Equipment such as icons or homing beacons do not function within 6&quot; of the model. Additionally, units arriving via deep strike that land within 12&quot; roll 4D6 instead of 2D6 for scattering.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">Equipment such as icons or homing beacons do not function within 6&quot; of the model. Additionally, units arriving via deep strike that land within 12&quot; roll 4D6 instead of 2D6 for scattering.</characteristic>
       </characteristics>
     </profile>
     <profile name="Spirit stones" typeId="57f5-93cf-6d5d-4dca" typeName="Vehicle_Equipment" hidden="false" id="0cd4-e4ef-6109-4fe0">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model ignores the first temporary vehicle damage each round.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model ignores the first temporary vehicle damage each round.</characteristic>
       </characteristics>
     </profile>
     <profile name="Smoke Launcher" typeId="57f5-93cf-6d5d-4dca" typeName="Vehicle_Equipment" hidden="false" id="6bdd-671f-77c2-4924">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model can use its Smoke Launcher once per game:
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model can use its Smoke Launcher once per game:
 - During normal activation, instead of firing weapons.
-- If it has not yet carried out its order this round and is targeted by an enemy unit.
-Enemy units can only deal glancing hits with ranged attacks until the next activation.</characteristic>
+- If it has not yet carried out its order this round and is targeted by an enemy unit. The order is consumed by doing so.</characteristic>
       </characteristics>
     </profile>
     <profile name="Star engines" typeId="57f5-93cf-6d5d-4dca" typeName="Vehicle_Equipment" hidden="false" id="a5b5-edc3-3224-4a5c">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains the &quot;Fast&quot; ability.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains the &quot;Fast&quot; ability.</characteristic>
       </characteristics>
     </profile>
     <profile name="Falcon" typeId="59b4-be0a-1831-66da" typeName="Vehicle" hidden="false" id="7040-c714-a2fd-4b17">
@@ -9333,42 +9349,42 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
     </profile>
     <profile name="Shimmershield" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="b4cd-d726-9d7d-6621">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model and its attached unit gain a 4+ invulnerability save in melee.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model and its attached unit gain a 4+ invulnerability save in melee.</characteristic>
       </characteristics>
     </profile>
     <profile name="Forceshield" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="7834-f296-8f0b-e0e5">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains the &quot;Deflect&quot; and &quot;Parry&quot; abilities.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains the &quot;Deflect&quot; and &quot;Parry&quot; abilities.</characteristic>
       </characteristics>
     </profile>
     <profile name="Gloom field" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="9c38-fd4b-67c2-70c7">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">Enemy units that are at least 12&quot; away from the unit reduce their weapon range by 6&quot;.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">Enemies that target the unit and are at least 12&quot; away from it reduce their weapon range by 6&quot;.</characteristic>
       </characteristics>
     </profile>
     <profile name="Wireweave net" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="12fd-feeb-0291-c919">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">Once per game, after this unit used Defensive fire, the attacker suffers 1D6+1 automatic wounds and reduces their charging range by 2&quot;.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">Once per game, after this unit used Defensive fire, the attacker suffers 1D6+1 automatic wounds and reduces their charging range by 2&quot;.</characteristic>
       </characteristics>
     </profile>
     <profile name="Mistshield" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="b797-4f65-5c2d-488c">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model and it&apos;s attached unit gain a 5+ invulnerability save against ranged attacks.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model and it&apos;s attached unit gain a 5+ invulnerability save against ranged attacks.</characteristic>
       </characteristics>
     </profile>
     <profile name="Serpent shield" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="0ae5-3cbc-fb1b-af61">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model and its attached unit have a 5+ invulnerability save against ranged attacks. If the unit got 2 Serpent scale platforms, the invulnerability save is improved to 4+.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model and its attached unit have a 5+ invulnerability save against ranged attacks. If the unit got 2 Serpent scale platforms, the invulnerability save is improved to 4+.</characteristic>
       </characteristics>
     </profile>
     <profile name="Channeler stones" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="3a55-3647-6822-9d4d">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">Once per turn, the damage of a wound against the model or attached unit can be reduced by 1. The ability must be declared after armor and invulnerability saves. Does not work against weapons with a strength of 8 or above.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">Once per turn, the damage of a wound against the model or attached unit can be reduced by 1. The ability must be declared after armor and invulnerability saves. Does not work against weapons with a strength of 8 or above.</characteristic>
       </characteristics>
     </profile>
     <profile name="Faolchu" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="0f1a-b84b-0e91-c3ca">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">All weapons of the unit gain +1 AP when shooting at targets that benefit from cover.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">All weapons of the unit gain +1 AP when shooting at targets that benefit from cover.</characteristic>
       </characteristics>
     </profile>
     <profile name="Destructor" typeId="be7d-d5d5-f5cf-be4f" typeName="Psychic Powers" hidden="false" id="2297-85d9-72c3-6d22">
@@ -9615,27 +9631,27 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
     </profile>
     <profile name="Fate Reader" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="6b0c-9f64-c28f-ec87">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">Any one die from either player may be re-rolled once per battle round. Unique. Ulthwé only.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">Any one die from either player may be re-rolled once per battle round. Unique. Ulthwé only.</characteristic>
       </characteristics>
     </profile>
     <profile name="Master of Ambush" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="75d5-598e-30a9-659a">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">After both players assigned orders during the first battle round, remove up to one unit from your own army and re-redploy it anywhere on the table that is more than 9&quot; away from the enemy deployment zone and units. Unique. Alaitoc only.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">After both players assigned orders during the first battle round, remove up to one unit from your own army and re-redploy it anywhere on the table that is more than 9&quot; away from the enemy deployment zone and units. Unique. Alaitoc only.</characteristic>
       </characteristics>
     </profile>
     <profile name="Natural Leader" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="591c-2cca-b7ba-4f6c">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">Select up to one friendly unit during each Command phase. All selected units gain a +1 bonus to hit rolls for their next activation. Unique. Biel-Tan only.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">Select up to one friendly unit during each Command phase. All selected units gain a +1 bonus to hit rolls for their next activation. Unique. Biel-Tan only.</characteristic>
       </characteristics>
     </profile>
     <profile name="Enduring Resolve" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="1f77-5e03-a9a3-79f0">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">All to wound rolls against the model suffer a -1 penalty. Unique. Iyanden only.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">All to wound rolls against the model suffer a -1 penalty. Unique. Iyanden only.</characteristic>
       </characteristics>
     </profile>
     <profile name="Wild Rider Chieftan" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="8742-8757-e3c1-1726">
       <characteristics>
-        <characteristic name="Keywords" typeId="0207-88db-7926-4ba6">The model gains +1 Attack. Unique. Saim-Hann only.</characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains +1 Attack. Unique. Saim-Hann only.</characteristic>
       </characteristics>
     </profile>
     <profile name="Wasp" typeId="59b4-be0a-1831-66da" typeName="Vehicle" hidden="false" id="8b63-c7bf-6bce-5955">
@@ -10752,28 +10768,6 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d8a6-bd16-6ef2-1e67" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Eldar jetbike" hidden="false" id="6141-20e4-1970-ad47">
-          <infoLinks>
-            <infoLink name="Eldar jetbike" id="9b75-4f3d-41be-4542" hidden="false" type="profile" targetId="6e46-95e0-bdec-4cfd"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="37"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04c5-4085-2bef-4c72"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Faolchu&apos;s wings" hidden="false" id="da45-c25c-5223-e1ea">
-          <infoLinks>
-            <infoLink name="Faolchu&apos;s wings" id="cef9-550c-f1f4-9869" hidden="false" type="profile" targetId="6382-7c9e-4503-4a17"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="11"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25d4-e548-5557-7b00"/>
-          </constraints>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fire blade" hidden="false" id="916a-aa27-f3d1-08de">
           <infoLinks>
             <infoLink name="Fire blade" id="605f-7ac0-283f-3aec" hidden="false" type="profile" targetId="f5b9-0a1b-1c18-493b"/>
@@ -10814,9 +10808,6 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="2"/>
           </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="592c-fafc-3233-2f95"/>
-          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Paragon of fate" hidden="false" id="c76c-a803-2829-c233">
           <infoLinks>
@@ -10827,17 +10818,6 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6349-31bd-a582-06ca" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Phoenix gem" hidden="false" id="8a4b-4832-a07c-f3b0">
-          <infoLinks>
-            <infoLink name="Phoenix gem" id="a6ff-8f78-113e-28b8" hidden="false" type="profile" targetId="58d7-cab9-dd15-4dad"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a84e-b12f-b090-f37b" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Psychic mastery" hidden="false" id="7033-c392-df9b-dd11">
@@ -10936,20 +10916,15 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdb9-b68e-7792-5df5"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warp jump generator" hidden="false" id="3d71-d67e-a44b-cab0">
-          <infoLinks>
-            <infoLink name="Warp jump generator" id="af5e-04a7-5b5f-724c" hidden="false" type="profile" targetId="0ce6-74c8-f8be-483b"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="11"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="min" value="-1" field="selections" scope="parent" shared="true" id="c6ed-bea4-cf4d-519d" includeChildSelections="false"/>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="09af-69e4-d62d-0b1c" includeChildSelections="false"/>
       </constraints>
       <comment>Psyker</comment>
+      <entryLinks>
+        <entryLink import="true" name="Phoenix gem" hidden="false" id="fee0-ec44-1201-bf9b" type="selectionEntry" targetId="8a4b-4832-a07c-f3b0"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Equipment" id="52e9-7cc4-5299-59fa" hidden="false" collapsible="true">
       <selectionEntries>
@@ -10962,28 +10937,6 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca4c-a0e7-e219-425a"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Eldar jetbike" hidden="false" id="481c-a211-e9d2-413f">
-          <infoLinks>
-            <infoLink name="Eldar jetbike" id="ddf0-be74-9a74-c1fe" hidden="false" type="profile" targetId="6e46-95e0-bdec-4cfd"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="41"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f81-1671-13fb-49f9"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Faolchu&apos;s wings" hidden="false" id="6548-6cd1-2636-c86c">
-          <infoLinks>
-            <infoLink name="Faolchu&apos;s wings" id="8f44-d65f-3eab-4d01" hidden="false" type="profile" targetId="6382-7c9e-4503-4a17"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="13"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48a2-b097-8527-55a4"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fire blade" hidden="false" id="482f-cc91-0d1a-4b7a">
@@ -11048,9 +11001,6 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="2"/>
           </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="571b-80a5-ca6d-e927"/>
-          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Paragon of war" hidden="false" id="f919-450b-da53-2b7e">
           <infoLinks>
@@ -11061,17 +11011,6 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1aae-24d5-9c65-7517" includeChildSelections="true" includeChildForces="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Phoenix gem" hidden="false" id="311d-5aa8-8785-82bc">
-          <infoLinks>
-            <infoLink name="Phoenix gem" id="3331-e530-26b3-dd1f" hidden="false" type="profile" targetId="58d7-cab9-dd15-4dad"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a834-2dfe-3975-8ab1" includeChildSelections="true" includeChildForces="true"/>
           </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Shrine relic" hidden="false" id="a9b9-3a15-3920-fe0a">
@@ -11148,20 +11087,15 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c36-b036-a0d4-47f2"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Warp jump generator" hidden="false" id="47d7-93c0-1c39-bffa">
-          <infoLinks>
-            <infoLink name="Warp jump generator" id="8254-8097-06c1-f432" hidden="false" type="profile" targetId="0ce6-74c8-f8be-483b"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="13"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="min" value="-1" field="selections" scope="parent" shared="true" id="dc5e-ec26-f651-0a5d" includeChildSelections="false"/>
         <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="7e07-3cba-6bc2-0c9b" includeChildSelections="false"/>
       </constraints>
       <comment>Autarch</comment>
+      <entryLinks>
+        <entryLink import="true" name="Phoenix gem" hidden="false" id="4734-688f-28bc-01d0" type="selectionEntry" targetId="8a4b-4832-a07c-f3b0"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Battle" id="662a-ebb0-d40e-bb36" hidden="false" collapsible="true">
       <selectionEntries>
@@ -11887,7 +11821,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
     <selectionEntryGroup name="Traits" id="a93d-1369-b109-8af3" hidden="false">
       <comment>Normal/Character New</comment>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Savage Blades" hidden="true" id="8793-a935-8a3e-8b4c" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Savage Blades" hidden="true" id="8793-a935-8a3e-8b4c">
           <infoLinks>
             <infoLink name="Savage Blades" id="396f-e726-f435-bb95" hidden="false" type="profile" targetId="e23f-446b-dcbf-1d20"/>
           </infoLinks>
@@ -11969,7 +11903,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Children of Morai-Heg" hidden="true" id="b6bd-f098-1e72-5098" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Children of Morai-Heg" hidden="true" id="b6bd-f098-1e72-5098">
           <infoLinks>
             <infoLink name="Children of Morai-Heg" id="58c1-7398-0b71-5756" hidden="false" type="profile" targetId="4cb0-07b9-ab67-4088"/>
           </infoLinks>
@@ -11996,7 +11930,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Children of the Open Skies" hidden="true" id="2bbb-1e5c-45ff-707a" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Children of the Open Skies" hidden="true" id="2bbb-1e5c-45ff-707a">
           <infoLinks>
             <infoLink name="Children of the Open Skies" id="aaf8-d123-d4bc-110e" hidden="false" type="profile" targetId="0650-416c-65d3-4cc9"/>
           </infoLinks>
@@ -12023,7 +11957,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Elite Citizenry" hidden="true" id="27f5-3ef3-370d-3557" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Elite Citizenry" hidden="true" id="27f5-3ef3-370d-3557">
           <infoLinks>
             <infoLink name="Elite Citizenry" id="63b6-48a8-d9a5-7781" hidden="false" type="profile" targetId="8b74-7d10-6eb7-4099"/>
           </infoLinks>
@@ -12050,7 +11984,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Expert Crafters" hidden="true" id="13e1-8263-c94d-6b6f" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Expert Crafters" hidden="true" id="13e1-8263-c94d-6b6f">
           <infoLinks>
             <infoLink name="Expert Crafters" id="b596-46d6-f37a-e375" hidden="false" type="profile" targetId="93ce-7be4-ccce-4283"/>
           </infoLinks>
@@ -12077,7 +12011,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Grim" hidden="true" id="17e1-c35f-4b7f-9163" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Grim" hidden="true" id="17e1-c35f-4b7f-9163">
           <infoLinks>
             <infoLink name="Grim" id="3d99-6f27-f7ec-25e1" hidden="false" type="profile" targetId="7f32-6b9f-81d9-449b"/>
           </infoLinks>
@@ -12104,7 +12038,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hail of Doom" hidden="true" id="8b2e-05a0-9337-5927" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Hail of Doom" hidden="true" id="8b2e-05a0-9337-5927">
           <infoLinks>
             <infoLink name="Hail of Doom" id="90e5-158f-eef1-0dab" hidden="false" type="profile" targetId="a977-9708-6dff-4be4"/>
           </infoLinks>
@@ -12131,7 +12065,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Masterful Shots" hidden="true" id="98c5-e044-815b-2b06" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Masterful Shots" hidden="true" id="98c5-e044-815b-2b06">
           <infoLinks>
             <infoLink name="Masterful Shots" id="bf1c-df60-4eab-8a3f" hidden="false" type="profile" targetId="fecf-567d-ec5c-489f"/>
           </infoLinks>
@@ -12158,7 +12092,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Masters of Concealment" hidden="true" id="284c-8484-90cc-61d9" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Masters of Concealment" hidden="true" id="284c-8484-90cc-61d9">
           <infoLinks>
             <infoLink name="Masters of Concealment" id="ed81-36e4-0022-ff03" hidden="false" type="profile" targetId="4db6-7f4e-e25c-7788"/>
           </infoLinks>
@@ -12185,7 +12119,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Mobile Fighters" hidden="true" id="9026-8387-e965-e557" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Mobile Fighters" hidden="true" id="9026-8387-e965-e557">
           <infoLinks>
             <infoLink name="Mobile Fighters" id="30c6-21db-1ea4-636c" hidden="false" type="profile" targetId="1b25-dad2-072d-7d8b"/>
           </infoLinks>
@@ -12249,7 +12183,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
     <selectionEntryGroup name="Traits" id="9f38-c1e6-89b6-3518" hidden="false">
       <comment>Monstrous Creature/Vehicle New</comment>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Elite Citizenry" hidden="true" id="0854-697e-0f1b-a28f" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Elite Citizenry" hidden="true" id="0854-697e-0f1b-a28f">
           <infoLinks>
             <infoLink name="Elite Citizenry" id="53b5-3a03-4c13-debc" hidden="false" type="profile" targetId="8b74-7d10-6eb7-4099"/>
           </infoLinks>
@@ -12276,7 +12210,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Expert Crafters" hidden="true" id="521e-f2ab-add7-b7b1" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Expert Crafters" hidden="true" id="521e-f2ab-add7-b7b1">
           <infoLinks>
             <infoLink name="Expert Crafters" id="2c2b-0c72-4028-5e32" hidden="false" type="profile" targetId="93ce-7be4-ccce-4283"/>
           </infoLinks>
@@ -12303,7 +12237,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Hail of Doom" hidden="true" id="8388-813b-8c75-d435" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Hail of Doom" hidden="true" id="8388-813b-8c75-d435">
           <infoLinks>
             <infoLink name="Hail of Doom" id="8498-6cec-4cf4-180d" hidden="false" type="profile" targetId="a977-9708-6dff-4be4"/>
           </infoLinks>
@@ -12330,7 +12264,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Masterful Shots" hidden="true" id="c4ae-0fb3-897b-adaa" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Masterful Shots" hidden="true" id="c4ae-0fb3-897b-adaa">
           <infoLinks>
             <infoLink name="Masterful Shots" id="3b0f-8989-a3ef-828e" hidden="false" type="profile" targetId="fecf-567d-ec5c-489f"/>
           </infoLinks>
@@ -12357,7 +12291,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Masters of Concealment" hidden="true" id="24a1-0e93-7d9c-9e92" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Masters of Concealment" hidden="true" id="24a1-0e93-7d9c-9e92">
           <infoLinks>
             <infoLink name="Masters of Concealment" id="1a69-6356-8200-2d0a" hidden="false" type="profile" targetId="4db6-7f4e-e25c-7788"/>
           </infoLinks>
@@ -12384,7 +12318,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Students of Vaul" hidden="true" id="4513-9110-33d7-03ec" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Students of Vaul" hidden="true" id="4513-9110-33d7-03ec">
           <infoLinks>
             <infoLink name="Students of Vaul" id="54b2-ba90-a46a-cb8a" hidden="false" type="profile" targetId="23a5-4b85-2e62-7b3a"/>
           </infoLinks>
@@ -12412,6 +12346,100 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Infantry only" id="d47d-8d71-326e-7884" hidden="false">
+      <comment>Psyker</comment>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Eldar jetbike" hidden="false" id="6141-20e4-1970-ad47">
+          <infoLinks>
+            <infoLink name="Eldar jetbike" id="9b75-4f3d-41be-4542" hidden="false" type="profile" targetId="6e46-95e0-bdec-4cfd"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="37"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04c5-4085-2bef-4c72"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="9af1-fceb-bb5b-9c8e" id="5cab-c8ee-2ba8-758f" primary="false" name="Jet Bike"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Faolchu&apos;s wings" hidden="false" id="da45-c25c-5223-e1ea">
+          <infoLinks>
+            <infoLink name="Faolchu&apos;s wings" id="cef9-550c-f1f4-9869" hidden="false" type="profile" targetId="6382-7c9e-4503-4a17"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="11"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25d4-e548-5557-7b00"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6158-e098-2d8e-cf43" id="16fa-9471-84e3-0c5b" primary="false" name="Jump Pack Infantry"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp jump generator" hidden="false" id="3d71-d67e-a44b-cab0">
+          <infoLinks>
+            <infoLink name="Warp jump generator" id="af5e-04a7-5b5f-724c" hidden="false" type="profile" targetId="0ce6-74c8-f8be-483b"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="11"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="6158-e098-2d8e-cf43" id="8b7c-9753-f5c5-013d" primary="false" name="Jump Pack Infantry"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6559-54d9-7d52-44e6"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Infantry only" id="418f-dba5-42f1-fa77" hidden="false">
+      <comment>Autarch</comment>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Faolchu&apos;s wings" hidden="false" id="6548-6cd1-2636-c86c">
+          <infoLinks>
+            <infoLink name="Faolchu&apos;s wings" id="8f44-d65f-3eab-4d01" hidden="false" type="profile" targetId="6382-7c9e-4503-4a17"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="13"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48a2-b097-8527-55a4"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="6158-e098-2d8e-cf43" id="ba1b-c440-2a70-f0ff" primary="false" name="Jump Pack Infantry"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Eldar jetbike" hidden="false" id="481c-a211-e9d2-413f">
+          <infoLinks>
+            <infoLink name="Eldar jetbike" id="ddf0-be74-9a74-c1fe" hidden="false" type="profile" targetId="6e46-95e0-bdec-4cfd"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="41"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f81-1671-13fb-49f9"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="9af1-fceb-bb5b-9c8e" id="e031-403a-d2d8-7faf" primary="false" name="Jet Bike"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp jump generator" hidden="false" id="47d7-93c0-1c39-bffa">
+          <infoLinks>
+            <infoLink name="Warp jump generator" id="8254-8097-06c1-f432" hidden="false" type="profile" targetId="0ce6-74c8-f8be-483b"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="13"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="6158-e098-2d8e-cf43" id="6b3b-c830-8673-f253" primary="false" name="Jump Pack Infantry"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="157e-a412-3616-0bcb"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
@@ -12489,6 +12517,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="abf5-2303-721e-0605"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b91d-d987-2963-3205"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="da93-7b63-385b-fff9" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="a2b2-0a49-a987-de79" targetId="e998-b6e1-9f43-6739">
@@ -12580,6 +12609,19 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           </constraints>
         </categoryLink>
         <categoryLink name="No Battlefield Role" hidden="false" id="0d6b-f01d-0a4f-26c1" targetId="41ed-bf57-7d27-9690"/>
+        <categoryLink name="Lords of War" hidden="false" id="749e-6412-cda0-a3cd" targetId="b76c-6f67-2cd9-2b59">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0814-c15c-88df-14c4"/>
+            <constraint type="max" value="33" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="488d-40c3-51cf-5e67" percentValue="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="0814-c15c-88df-14c4">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="776d-e8af-72c2-666e" shared="true" includeChildSelections="true" childName="Epic Battle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
       <rules>
         <rule name="Aspect Focus" id="38a3-242e-35ff-1737" hidden="false">
@@ -12641,6 +12683,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2ecf-7a74-90b9-707b"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="86a5-b34a-2218-65e4"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="c7db-8df1-12f8-8689" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="a209-99d7-e61a-f09e" targetId="e998-b6e1-9f43-6739">
@@ -12732,6 +12775,19 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           </constraints>
         </categoryLink>
         <categoryLink name="No Battlefield Role" hidden="false" id="e605-4af9-db7e-acf8" targetId="41ed-bf57-7d27-9690"/>
+        <categoryLink name="Lords of War" hidden="false" id="e25b-22f6-5d61-88a2" targetId="b76c-6f67-2cd9-2b59">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="beb8-55e5-1706-95b5"/>
+            <constraint type="max" value="33" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="e39d-2cfe-39c1-2588" percentValue="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="beb8-55e5-1706-95b5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="776d-e8af-72c2-666e" shared="true" includeChildSelections="true" childName="Epic Battle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
       <rules>
         <rule name="Exemplars of the Shrines" id="238b-7db2-5640-539f" hidden="false">
@@ -12792,6 +12848,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f543-08ae-a6bb-f570"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8cc2-9819-7eb2-9fc0"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="5631-0e0c-d02f-d9fa" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="ae8b-d7db-d512-cdf3" targetId="e998-b6e1-9f43-6739">
@@ -12883,6 +12940,19 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           </constraints>
         </categoryLink>
         <categoryLink name="No Battlefield Role" hidden="false" id="5a98-2b17-2693-894a" targetId="41ed-bf57-7d27-9690"/>
+        <categoryLink name="Lords of War" hidden="false" id="420c-d5f4-f026-723d" targetId="b76c-6f67-2cd9-2b59">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="895a-faa4-3a47-44ff"/>
+            <constraint type="max" value="33" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="3f00-8a65-039e-c2f5" percentValue="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="895a-faa4-3a47-44ff">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="776d-e8af-72c2-666e" shared="true" includeChildSelections="true" childName="Epic Battle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
       <rules>
         <rule name="New Rule" id="8558-ba3e-b8ef-c341" hidden="false">
@@ -12944,6 +13014,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5fc4-4e72-7135-7467"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a511-381e-1665-c866"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="e4c1-50da-5485-242b" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="3919-9fbc-a382-4cdc" targetId="e998-b6e1-9f43-6739">
@@ -13035,6 +13106,19 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           </constraints>
         </categoryLink>
         <categoryLink name="No Battlefield Role" hidden="false" id="3331-8b9b-a12d-4ebc" targetId="41ed-bf57-7d27-9690"/>
+        <categoryLink name="Lords of War" hidden="false" id="9740-bbed-5461-9433" targetId="b76c-6f67-2cd9-2b59">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1b3a-da2d-3785-89fb"/>
+            <constraint type="max" value="33" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="7bac-b24f-f7fe-c28a" percentValue="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="1b3a-da2d-3785-89fb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="776d-e8af-72c2-666e" shared="true" includeChildSelections="true" childName="Epic Battle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
       <rules>
         <rule name="Windhost" id="47a1-a1af-5a72-6e60" hidden="false">
@@ -13097,6 +13181,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="720d-edf5-a14f-a9fc"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="9ee0-997c-26a9-297a"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="8faa-1d98-0074-71c0" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="197a-74ea-7710-6c0e" targetId="e998-b6e1-9f43-6739">
@@ -13188,6 +13273,19 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           </constraints>
         </categoryLink>
         <categoryLink name="No Battlefield Role" hidden="false" id="64aa-0ede-b055-409d" targetId="41ed-bf57-7d27-9690"/>
+        <categoryLink name="Lords of War" hidden="false" id="521d-db52-c999-178e" targetId="b76c-6f67-2cd9-2b59">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0bf3-2fab-27c8-3c92"/>
+            <constraint type="max" value="33" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="44a0-f894-789f-f619" percentValue="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="0bf3-2fab-27c8-3c92">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="776d-e8af-72c2-666e" shared="true" includeChildSelections="true" childName="Epic Battle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
       <rules>
         <rule name="Wraithhost" id="9b85-6a2c-3eff-73ed" hidden="false">
@@ -13249,6 +13347,7 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6f4c-5ec3-aaae-f0c1"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="dd2e-1722-3004-efcc"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="e4d0-d928-aef7-dd44" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="762d-de5b-adcb-2d3e" targetId="e998-b6e1-9f43-6739">
@@ -13340,6 +13439,19 @@ Enemy units can only deal glancing hits with ranged attacks until the next activ
           </constraints>
         </categoryLink>
         <categoryLink name="No Battlefield Role" hidden="false" id="70ca-da7a-1fd2-f852" targetId="41ed-bf57-7d27-9690"/>
+        <categoryLink name="Lords of War" hidden="false" id="a0c1-4cc5-d9a3-ee8e" targetId="b76c-6f67-2cd9-2b59">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="004a-61e2-9c06-cde9"/>
+            <constraint type="max" value="33" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="188f-f5ab-b8b2-25f0" percentValue="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="-1" field="004a-61e2-9c06-cde9">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="776d-e8af-72c2-666e" shared="true" includeChildSelections="true" childName="Epic Battle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
       <rules>
         <rule name="Ynnari" id="35b1-092b-0714-2db3" hidden="false">
