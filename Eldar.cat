@@ -25,13 +25,13 @@
               </infoLinks>
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fccb-fd98-bc40-633a"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="413b-c266-8f52-9cf0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3926-7f49-cac4-4172"/>
               </constraints>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Autarch" hidden="false" id="a59f-1e1d-4bf1-45dd4" defaultAmount="1">
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="eaca-8cce-9b39-451a" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cca5-f759-7600-486b" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92f7-1b46-4290-8702"/>
               </constraints>
               <costs>
                 <cost name="pts" typeId="40d8-7900-73a1-1378" value="43"/>
@@ -49,7 +49,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7943-ed1e-cb10-364d"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7943-ed1e-cb10-364d" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Plasma grenades" hidden="false" id="da0c-6afa-ed8a-1122">
@@ -202,7 +202,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8c5-e209-60b3-24bd"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c8c5-e209-60b3-24bd" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="340e-9abc-ab0d-65e7"/>
       </constraints>
       <entryLinks>
@@ -12517,7 +12517,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="abf5-2303-721e-0605"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b91d-d987-2963-3205"/>
-            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="da93-7b63-385b-fff9" percentValue="true"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="9986-bfb9-2e46-5eae" shared="true" id="da93-7b63-385b-fff9" percentValue="true" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="a2b2-0a49-a987-de79" targetId="e998-b6e1-9f43-6739">
@@ -12683,7 +12683,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2ecf-7a74-90b9-707b"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="86a5-b34a-2218-65e4"/>
-            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="c7db-8df1-12f8-8689" percentValue="true"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="9986-bfb9-2e46-5eae" shared="true" id="eacd-f256-1685-ce7e" percentValue="true" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="a209-99d7-e61a-f09e" targetId="e998-b6e1-9f43-6739">
@@ -12848,7 +12848,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f543-08ae-a6bb-f570"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8cc2-9819-7eb2-9fc0"/>
-            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="5631-0e0c-d02f-d9fa" percentValue="true"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="9986-bfb9-2e46-5eae" shared="true" id="f9ba-ba05-551f-95fd" percentValue="true" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="ae8b-d7db-d512-cdf3" targetId="e998-b6e1-9f43-6739">
@@ -13014,7 +13014,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5fc4-4e72-7135-7467"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="a511-381e-1665-c866"/>
-            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="e4c1-50da-5485-242b" percentValue="true"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="9986-bfb9-2e46-5eae" shared="true" id="b987-eca0-0f90-f4b8" percentValue="true" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="3919-9fbc-a382-4cdc" targetId="e998-b6e1-9f43-6739">
@@ -13181,7 +13181,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="720d-edf5-a14f-a9fc"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="9ee0-997c-26a9-297a"/>
-            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="8faa-1d98-0074-71c0" percentValue="true"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="9986-bfb9-2e46-5eae" shared="true" id="05bc-fd47-a915-b46c" percentValue="true" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="197a-74ea-7710-6c0e" targetId="e998-b6e1-9f43-6739">
@@ -13347,7 +13347,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6f4c-5ec3-aaae-f0c1"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="dd2e-1722-3004-efcc"/>
-            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="e4d0-d928-aef7-dd44" percentValue="true"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="9986-bfb9-2e46-5eae" shared="true" id="2bef-2774-a8c8-ebbb" percentValue="true" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="762d-de5b-adcb-2d3e" targetId="e998-b6e1-9f43-6739">

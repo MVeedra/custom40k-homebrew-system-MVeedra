@@ -120,7 +120,7 @@
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="48f0-83f7-ceab-4eca"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b927-c525-c949-2c34"/>
-            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="d9af-2296-b964-6ec2" percentValue="true"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="f988-3de7-cab3-b372" shared="true" id="d9af-2296-b964-6ec2" percentValue="true" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="2cbc-35b8-7656-e51e" targetId="e998-b6e1-9f43-6739">
@@ -294,7 +294,7 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b7d-494e-614f-79de"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8908-c6b4-8a36-4964"/>
-            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="0829-9db5-3dfc-a5ef" percentValue="true"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="0fce-46cc-6212-3fb7" shared="true" id="0829-9db5-3dfc-a5ef" percentValue="true" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="5cc2-c749-1c02-e47a" targetId="e998-b6e1-9f43-6739">
