@@ -294,7 +294,7 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b7d-494e-614f-79de"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8908-c6b4-8a36-4964"/>
-            <constraint type="min" value="25" field="40d8-7900-73a1-1378" scope="parent" shared="true" id="0829-9db5-3dfc-a5ef" percentValue="true"/>
+            <constraint type="min" value="25" field="limit::40d8-7900-73a1-1378" scope="parent" shared="true" id="0829-9db5-3dfc-a5ef" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink name="Elite" hidden="false" id="5cc2-c749-1c02-e47a" targetId="e998-b6e1-9f43-6739">
@@ -727,9 +727,7 @@ Cannot use the Take Cover defensive reaction.</description>
     <rule name="Beam" id="f248-b1f4-8796-6385" hidden="false">
       <description>Choose a target and make a hit roll with the weapon as normal.
 If the hit is successful, draw a 1mm straight line from the nearest point of the shooting model’s base to the nearest point of a model in the target unit.
-Make a wound roll against the target unit and any other units the line passes over.
-
-</description>
+Make a wound roll against the target unit and any other units the line passes over.</description>
     </rule>
     <rule name="Army Building Basics" id="e930-8e50-09e6-d206" hidden="false">
       <description>Army size recommendation is 1000-1500 points per player.
@@ -792,6 +790,9 @@ Can’t be used with “Barrage” or “Explosive” weapons.</description>
     <rule name="Precision (4+)" id="c248-b243-22a7-c943" hidden="false">
       <description>Successful to hit rolls of 4+ automatically wound creatures. 
 Can’t be used with “Barrage” or “Explosive” weapons.</description>
+    </rule>
+    <rule name="Daemon" id="a9b2-2a61-bc33-2c3f" hidden="false">
+      <description>The model has a 5+ invulnerability save.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
