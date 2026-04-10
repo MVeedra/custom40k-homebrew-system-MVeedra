@@ -9,7 +9,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Battle Focus" id="5ff0-da5b-6aac-4229" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
-        <infoLink name="Perfected warfare" id="2451-d03e-67ba-4274" hidden="false" type="rule" targetId="6626-0fcd-43e5-437a"/>
+        <infoLink name="Perfected Warfare" id="39a6-bc27-8c81-20c8" hidden="false" type="profile" targetId="468c-579f-78fd-25ad"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Profile" id="1b42-7295-23c3-07f6" hidden="false" sortIndex="1">
@@ -21,7 +21,7 @@
               </costs>
               <infoLinks>
                 <infoLink name="Exalted Autarch" id="74ce-7783-048c-48f0" hidden="false" type="profile" targetId="726e-59bf-2c62-4aa5"/>
-                <infoLink name="Exalted Autarch" id="f0b1-a9d2-0858-4089" hidden="false" type="rule" targetId="f76e-fc97-f291-48a9"/>
+                <infoLink name="Exalted Autarch" id="0166-8393-9dff-1969" hidden="false" type="profile" targetId="9acf-fa7e-77ed-4280"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fccb-fd98-bc40-633a"/>
@@ -123,7 +123,7 @@
         <infoLink name="Fearless" id="b4ec-5e15-feb9-4ff9" hidden="false" type="rule" targetId="a80b-2144-465a-1568"/>
         <infoLink name="Greater Demon" id="2ebf-b330-ad46-4205" hidden="false" type="rule" targetId="bd01-f585-bb9a-2aff"/>
         <infoLink name="Terrifying(-2)" id="b8e8-c1b4-5a06-48d3" hidden="false" type="rule" targetId="78a0-a07d-3f6c-bc41"/>
-        <infoLink name="Molten body" id="89ed-30be-d64d-4567" hidden="false" type="rule" targetId="942a-4752-45ec-4f55"/>
+        <infoLink name="Molten body" id="d195-b9be-39a3-b4ca" hidden="false" type="profile" targetId="b67c-b83e-ebed-1c6c"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="87a0-cac1-d943-33ee"/>
@@ -175,7 +175,7 @@
               </costs>
               <infoLinks>
                 <infoLink name="Exalted Farseer" id="ad0a-fa77-3563-422f" hidden="false" type="profile" targetId="db6c-5dff-5a29-4060"/>
-                <infoLink name="Exalted Farseer" id="1d07-5cbc-7676-4f56" hidden="false" type="rule" targetId="0c37-9c58-a642-4a84"/>
+                <infoLink name="Exalted Farseer" id="2e0f-55b1-3409-985c" hidden="false" type="profile" targetId="0fac-3c61-1ebf-ee79"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Farseer" hidden="false" id="8867-8844-bfb0-4da64" defaultAmount="1" sortIndex="1">
@@ -215,11 +215,6 @@
         <entryLink import="true" name="Traits" hidden="false" id="79cd-3b49-a4ae-9f34" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
         <entryLink import="true" name="Infantry only" hidden="false" id="6cd7-c753-550e-682e" type="selectionEntryGroup" targetId="d47d-8d71-326e-7884"/>
       </entryLinks>
-      <rules>
-        <rule name="Psyker" id="c323-982c-aaf6-81e7" hidden="false">
-          <description>The model can cast 1 power and deny 1 power per battle round. It knows Smite and all powers from a chosen discipline.</description>
-        </rule>
-      </rules>
       <modifiers>
         <modifier type="set" value="1" field="340e-9abc-ab0d-65e7">
           <conditions>
@@ -234,6 +229,13 @@
         <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
         <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Psyker" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="b902-4edf-a5a1-008a">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model can cast 1 power and deny 1 power per battle round. It knows Smite and all powers from a chosen discipline.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Spiritseer" hidden="false" id="0b8e-c8cf-bb1b-40b6">
       <selectionEntries>
@@ -289,11 +291,6 @@
         <entryLink import="true" name="Traits" hidden="false" id="5719-057c-78ba-12d3" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
         <entryLink import="true" name="Infantry only" hidden="false" id="f876-4d2e-090a-f0b5" type="selectionEntryGroup" targetId="d47d-8d71-326e-7884"/>
       </entryLinks>
-      <rules>
-        <rule name="Psyker" id="a0ae-2d3a-68b2-504b" hidden="false">
-          <description>The model can cast 1 power and deny 1 power per battle round. It knows Smite and Craftsong.</description>
-        </rule>
-      </rules>
       <comment>Elite</comment>
       <costs>
         <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
@@ -302,6 +299,13 @@
         <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
         <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Psyker" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="21c7-7746-adae-d4de">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model can cast 1 power and deny 1 power per battle round. It knows Smite and Craftsong.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Yncarne" hidden="false" id="4d8b-6d4f-32f7-414f">
       <selectionEntries>
@@ -340,7 +344,7 @@
         <infoLink name="Greater Demon" id="e670-acbf-b358-41de" hidden="false" type="rule" targetId="bd01-f585-bb9a-2aff"/>
         <infoLink name="Parry" id="5550-934d-e9eb-48d9" hidden="false" type="rule" targetId="fc6d-9ee5-f9c3-6035"/>
         <infoLink name="Terrifying(-2)" id="ecff-491f-97b5-43c9" hidden="false" type="rule" targetId="78a0-a07d-3f6c-bc41"/>
-        <infoLink name="Inevitable death" id="031b-bc7e-16bd-408d" hidden="false" type="rule" targetId="a94e-0c25-14de-4083"/>
+        <infoLink name="Inevitable Death" id="bf43-7421-756b-8f1d" hidden="false" type="profile" targetId="7460-c8e3-4638-719d"/>
       </infoLinks>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bf27-89d7-be8e-3235"/>
@@ -349,11 +353,6 @@
         <entryLink import="true" name="Traits" hidden="false" id="fe80-aded-d73e-25c6" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
         <entryLink import="true" name="Traits" hidden="false" id="982a-dc3b-00e7-8a3e" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
       </entryLinks>
-      <rules>
-        <rule name="Psyker" id="62d6-32f3-6723-0a5e" hidden="false">
-          <description>The model can cast 2 powers and deny 2 powers per battle round. It knows Smite and all powers from a chosen discipline.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup name="Psychic powers" id="3e43-a60b-901d-5c5c" hidden="false" sortIndex="2" collapsible="true">
           <entryLinks>
@@ -376,6 +375,13 @@
         <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
         <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="1"/>
       </costs>
+      <profiles>
+        <profile name="Psyker" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="e560-50e8-808f-9e45">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model can cast 2 powers and deny 2 powers per battle round. It knows Smite and all powers from a chosen discipline.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Guardian Defenders" hidden="false" id="6eb8-d6ab-d11f-47a4">
       <selectionEntries>
@@ -486,7 +492,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Battle Focus" id="3693-3775-18f6-4939" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
-        <infoLink name="Crewed platform" id="adac-389f-2080-4912" hidden="false" type="rule" targetId="67d6-06cb-007d-49b6"/>
+        <infoLink name="Crewed platform" id="dd1e-3b10-7592-4768" hidden="false" type="profile" targetId="ce3e-5281-3d69-4607"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Webway Strike" hidden="false" id="8e38-fc29-1092-be9c" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
@@ -548,7 +554,7 @@
         <infoLink name="Infiltrator" id="0bc2-0c1f-c335-4826" hidden="false" type="rule" targetId="276b-ef81-2a62-da70"/>
         <infoLink name="Move Through Cover" id="cd1e-5bd8-9a4d-4fa6" hidden="false" type="rule" targetId="3b94-b5d5-ebe7-cb17"/>
         <infoLink name="Use Cover" id="519e-f13d-4e22-4cd1" hidden="false" type="rule" targetId="7a04-95b4-d929-fe4e"/>
-        <infoLink name="Pathfinder ambush" id="dfff-90cd-c51a-42e3" hidden="false" type="rule" targetId="d07f-42d3-3bad-4fa5"/>
+        <infoLink name="Pathfinder ambush" id="19c9-01ac-7f68-ee4c" hidden="false" type="profile" targetId="9866-7bd7-e86f-a6ba"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="For every 5 Rangers, 1 model can be equipped with:" id="c245-6579-c09e-115c" hidden="false">
@@ -645,7 +651,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Battle Focus" id="cb33-50d0-0495-4527" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
-        <infoLink name="Crewed platform" id="2186-e899-78f2-46dc" hidden="false" type="rule" targetId="67d6-06cb-007d-49b6"/>
+        <infoLink name="Crewed platform" id="0673-8d04-6f6a-e3b1" hidden="false" type="profile" targetId="d460-dfd1-36b0-3bd1"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Storm Guardians" id="d814-309f-832e-ac83" hidden="false" sortIndex="2">
@@ -817,6 +823,7 @@
                   <infoLinks>
                     <infoLink name="Power sword" id="d504-d948-9b08-bbfe" hidden="false" type="profile" targetId="e036-c920-af1d-499a"/>
                     <infoLink name="Neuro disruptor" id="0bdc-4812-2115-afb0" hidden="false" type="profile" targetId="d574-40f5-adf8-4e57"/>
+                    <infoLink name="Neuro Disruptor" id="d596-4f95-4d75-d63b" hidden="false" type="profile" targetId="f532-cd53-35ba-e0bb"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -857,7 +864,6 @@
         <categoryLink targetId="f1ae-55e8-23e1-3477" id="4490-ab01-273d-a284" primary="false" name="&lt;Corsairs&gt;"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Neuro disruptor" id="106c-63d5-8c90-4a3b" hidden="false" type="rule" targetId="8fd0-e940-27ac-407b"/>
         <infoLink name="Outcasts and Pirates" id="fb0f-89ba-b4fd-4fb7" hidden="false" type="rule" targetId="cf90-8288-0cdf-4c59"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -1644,6 +1650,7 @@
                   <infoLinks>
                     <infoLink name="Power sword" id="b572-368f-87f0-81d8" hidden="false" type="profile" targetId="e036-c920-af1d-499a"/>
                     <infoLink name="Neuro disruptor" id="00a0-415b-37df-d135" hidden="false" type="profile" targetId="d574-40f5-adf8-4e57"/>
+                    <infoLink name="Neuro disruptor" id="327a-d4c2-8621-b417" hidden="false" type="profile" targetId="f532-cd53-35ba-e0bb"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -1699,13 +1706,6 @@
         <categoryLink name="Elite" hidden="false" id="b0c6-689f-5c29-47e4" targetId="e998-b6e1-9f43-6739" primary="true"/>
         <categoryLink targetId="f1ae-55e8-23e1-3477" id="748f-c87a-91b9-1107" primary="false" name="&lt;Corsairs&gt;"/>
       </categoryLinks>
-      <infoLinks>
-        <infoLink name="Neuro disruptor" id="e896-e1eb-d6a9-496d" hidden="false" type="rule" targetId="8fd0-e940-27ac-407b"/>
-        <infoLink name="Channeler stones" id="2ebc-aa4f-5b38-4eee" hidden="false" type="rule" targetId="dadd-9cda-9e18-4baa"/>
-        <infoLink name="Ghosthelm" id="4fa5-ca85-4a12-4824" hidden="false" type="rule" targetId="ea34-cc39-8a40-489b"/>
-        <infoLink name="Shade Runner Assault" id="47f5-5fdb-6c21-408b" hidden="false" type="rule" targetId="c5a7-7623-52cf-4d73"/>
-        <infoLink name="Sniper" id="3ad0-5879-23b3-4bf4" hidden="false" type="rule" targetId="34f3-b13b-c76e-4a7e"/>
-      </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Voidscarred" id="a4f0-637c-bcc3-35a5" hidden="false" sortIndex="2">
           <selectionEntries>
@@ -1936,6 +1936,7 @@
               </selectionEntries>
               <infoLinks>
                 <infoLink name="Voidscarred" id="9114-96eb-1f89-8614" hidden="false" type="profile" targetId="7745-3330-c711-4c80"/>
+                <infoLink name="Sniper" id="9f70-817c-06ad-3d13" hidden="false" type="profile" targetId="ecac-10c4-31ef-9415"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="731b-acd8-94e9-ae1b"/>
@@ -1991,6 +1992,7 @@
               </selectionEntries>
               <infoLinks>
                 <infoLink name="Shade Runner" id="df52-be02-fac9-c3f0" hidden="false" type="profile" targetId="416d-4b5f-f2f8-47e8"/>
+                <infoLink name="Shade runner assault" id="5f48-b918-2c75-6815" hidden="false" type="profile" targetId="f717-61c0-7aa9-f444"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b70c-9fd2-c75c-762b"/>
@@ -2037,6 +2039,7 @@
               </selectionEntries>
               <infoLinks>
                 <infoLink name="Soul Weaver" id="6ccb-387a-83db-60c5" hidden="false" type="profile" targetId="a31b-2ed9-181b-43f5"/>
+                <infoLink name="Channeler stones" id="75b6-6662-3366-63be" hidden="false" type="profile" targetId="3a55-3647-6822-9d4d"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7428-b8fa-16c3-dfb3"/>
@@ -2079,11 +2082,19 @@
               </selectionEntries>
               <infoLinks>
                 <infoLink name="Way Seeker" id="be72-3cf2-a14f-84a6" hidden="false" type="profile" targetId="caa8-8c12-ff7a-456f"/>
+                <infoLink name="Ghosthelm" id="df62-5b6f-e6fa-84c2" hidden="false" type="profile" targetId="c789-58cd-5273-4168"/>
               </infoLinks>
               <constraints>
                 <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b8c1-4856-0f30-dfbe"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98cd-6b00-9289-0fb7"/>
               </constraints>
+              <profiles>
+                <profile name="Psyker" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="6c1d-0df5-23ed-9185">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The Way Seeker can cast 1 power and deny 1 power per battle round. They know Smite and 1 power from either the Battle or Fate discipline.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -2103,11 +2114,6 @@
         <entryLink import="true" name="Traits" hidden="false" id="6c73-9056-9c99-16a0" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
         <entryLink import="true" name="Traits" hidden="false" id="6f8d-f8e3-7685-a1ba" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
       </entryLinks>
-      <rules>
-        <rule name="Psyker" id="618e-d8f0-9a8b-f908" hidden="false">
-          <description>The Way Seeker can cast 1 power and deny 1 power per battle round. They know Smite and 1 power from either the Battle or Fate discipline.</description>
-        </rule>
-      </rules>
       <costs>
         <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
         <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
@@ -2155,7 +2161,7 @@
       <infoLinks>
         <infoLink name="Battle Focus" id="9bb5-e4e9-d586-4d55" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Command Squad" id="18bd-d708-76ad-440c" hidden="false" type="rule" targetId="3bb3-3db8-a1f6-9b22"/>
-        <infoLink name="Seer council" id="b020-50e5-7b80-4a4e" hidden="false" type="rule" targetId="eda4-c856-189f-476d"/>
+        <infoLink name="Seer council" id="9f4f-8fda-9a4e-056f" hidden="false" type="profile" targetId="2cf6-32ce-89c6-fc63"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Webway Strike" hidden="false" id="8eff-7777-f8e4-6b57" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
@@ -2163,11 +2169,6 @@
         <entryLink import="true" name="Traits" hidden="false" id="d219-d58a-3b59-e440" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
         <entryLink import="true" name="Infantry only" hidden="false" id="f401-0d34-745c-942b" type="selectionEntryGroup" targetId="d47d-8d71-326e-7884"/>
       </entryLinks>
-      <rules>
-        <rule name="Psyker" id="ed6b-9966-ca05-e112" hidden="false">
-          <description>The model can cast 1 power and deny 1 power per battle round. It knows Smite and two powers from a chosen discipline.</description>
-        </rule>
-      </rules>
       <comment>Elite</comment>
       <costs>
         <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
@@ -2176,6 +2177,13 @@
         <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
         <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Psyker" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="5ea6-7365-86fb-2a8f">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model can cast 1 power and deny 1 power per battle round. It knows Smite and two powers from a chosen discipline.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wraithblades" hidden="false" id="f709-4c15-1b92-4aa4">
       <selectionEntries>
@@ -2223,7 +2231,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Massive(1)" id="7c00-d797-048f-41ed" hidden="false" type="rule" targetId="621d-3453-ec3c-c2f8"/>
-        <infoLink name="Wraithbone" id="058c-dba2-dd44-421c" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
+        <infoLink name="Wraithbone" id="1a1d-db41-9cd2-b2f7" hidden="false" type="profile" targetId="5567-1fbc-a0b7-ba3f"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Traits" hidden="false" id="04f6-300d-5bf7-cf62" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
@@ -2266,6 +2274,8 @@
                 <selectionEntry type="upgrade" import="true" name="D-scythe" hidden="false" id="f6f1-54f7-05d8-79c0" defaultAmount="1">
                   <infoLinks>
                     <infoLink name="D-scythe" id="655d-aaa3-5b7c-19e4" hidden="false" type="profile" targetId="4f7f-1fb2-acc1-48ac"/>
+                    <infoLink name="Strength &quot;D&quot;" id="ac62-63a8-e2e6-462c" hidden="false" type="rule" targetId="5cf0-3f9c-712e-4fa5"/>
+                    <infoLink name="Distortion" id="045a-d9b4-76e9-40b5" hidden="false" type="rule" targetId="3c54-ea9a-213f-4759"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Wraithcannon" hidden="false" id="262b-d144-4e53-ff9c">
@@ -2288,8 +2298,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Massive(1)" id="4a67-3cf0-b728-4716" hidden="false" type="rule" targetId="621d-3453-ec3c-c2f8"/>
-        <infoLink name="Wraithbone" id="d3dc-273a-2da7-4020" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
-        <infoLink name="Strength &quot;D&quot;" id="ac62-63a8-e2e6-462c" hidden="false" type="rule" targetId="5cf0-3f9c-712e-4fa5"/>
+        <infoLink name="Wraithbone" id="5b64-b598-7a15-c727" hidden="false" type="profile" targetId="5567-1fbc-a0b7-ba3f"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Traits" hidden="false" id="40ec-7fc4-3c09-15c2" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
@@ -2410,7 +2419,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Squadron" id="cf86-333b-b827-4498" hidden="false" type="rule" targetId="bf82-191a-f79d-c43a"/>
-        <infoLink name="Wraithbone" id="24c2-0670-b235-4d1e" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
+        <infoLink name="Wraithbone" id="009e-b17e-64c3-3a13" hidden="false" type="profile" targetId="5567-1fbc-a0b7-ba3f"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Traits" hidden="false" id="7bee-4221-8043-1128" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
@@ -2425,11 +2434,11 @@
     <selectionEntry type="unit" import="true" name="Shining Spears" hidden="false" id="cfe4-dc0d-0bf4-4c34">
       <categoryLinks>
         <categoryLink name="Fast Attack" hidden="false" id="9c75-90f7-ce5c-4856" targetId="8ba0-ef12-9165-c50c" primary="true"/>
+        <categoryLink targetId="4a11-a28a-f800-7557" id="6a20-b808-253a-92bc" primary="false" name="&lt;Aspect&gt;"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Battle Focus" id="1b15-2175-bfcc-48f1" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Deflect" id="9ba4-f99b-5492-4c92" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
-        <infoLink name="&lt;Aspect&gt;" id="9136-56e0-440b-4d50" hidden="false" type="rule" targetId="4d25-3157-abee-df32"/>
         <infoLink name="Aspect armor" id="87d1-b7ac-2091-4e2d" hidden="false" type="rule" targetId="183d-7ca3-a557-473b"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -2647,7 +2656,7 @@
       <infoLinks>
         <infoLink name="Battle Focus" id="0fc2-b6dc-1283-4a85" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Aspect armor" id="0154-4307-50ad-40fd" hidden="false" type="rule" targetId="183d-7ca3-a557-473b"/>
-        <infoLink name="Sky Dive" id="32fa-6ecb-01aa-4d82" hidden="false" type="rule" targetId="ec03-77c2-80d7-4330"/>
+        <infoLink name="Sky Dive" id="b3cb-a993-3388-9ea2" hidden="false" type="profile" targetId="fc21-11d8-53f2-e874"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Members - 5 to 10" id="3efd-40f0-2a62-469d" hidden="false" sortIndex="1">
@@ -2802,7 +2811,7 @@
         <infoLink name="Battle Focus" id="2d91-0b9b-577c-48be" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Aspect armor" id="a34d-a7a8-fc92-419d" hidden="false" type="rule" targetId="183d-7ca3-a557-473b"/>
         <infoLink name="Monofilament" id="772f-541d-59bb-4a15" hidden="false" type="rule" targetId="2ef5-cbe9-5de7-4e92"/>
-        <infoLink name="Shunting" id="a135-6241-d4dc-4346" hidden="false" type="rule" targetId="11a6-c9ad-ed88-4c89"/>
+        <infoLink name="Shunting" id="2146-141d-56fc-129d" hidden="false" type="profile" targetId="97cc-8a18-dafc-2c5b"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Members - 5 to 10" id="f0d2-a5b1-c723-4785" hidden="false" sortIndex="1">
@@ -3116,6 +3125,7 @@
                 <selectionEntry type="upgrade" import="true" name="Shadow weaver" hidden="false" id="7f80-03bd-54d4-818f" sortIndex="1">
                   <infoLinks>
                     <infoLink name="Shadow weaver" id="5201-ebe6-e37d-4aac" hidden="false" type="profile" targetId="4b88-e5c3-2213-4be0"/>
+                    <infoLink name="Monofilament" id="737a-cedc-9797-6640" hidden="false" type="rule" targetId="2ef5-cbe9-5de7-4e92"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Vibro cannon" hidden="false" id="0a2a-e45e-dc90-ad15" sortIndex="2">
@@ -3133,6 +3143,7 @@
                   </costs>
                   <infoLinks>
                     <infoLink name="D-cannon" id="3f85-4295-1d49-9e4f" hidden="false" type="profile" targetId="76da-af4d-0733-4fba"/>
+                    <infoLink name="Strength &quot;D&quot;" id="a88b-2ea1-6563-97aa" hidden="false" type="rule" targetId="5cf0-3f9c-712e-4fa5"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -3161,7 +3172,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Battle Focus" id="f7a7-0361-ed4c-4b47" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
-        <infoLink name="Support Weapons crew" id="b3ed-e8fb-a37f-4263" hidden="false" type="rule" targetId="ed8d-141a-3052-4527"/>
+        <infoLink name="Support Weapons Crew" id="4f7f-17d2-43cb-9053" hidden="false" type="profile" targetId="1975-f5e6-9d86-e51a"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Webway Strike" hidden="false" id="5c9b-4749-380d-0d3c" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
@@ -3360,23 +3371,25 @@
         <infoLink name="Anti-Grav" id="6d31-9276-9b20-4123" hidden="false" type="rule" targetId="1694-8bbc-0a3e-a52d"/>
         <infoLink name="Battle Focus" id="b1c1-db3f-50ac-450c" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Deep Strike" id="2832-d32a-a2c3-4540" hidden="false" type="rule" targetId="ea49-8f6d-64fe-e520"/>
-        <infoLink name="Cloudstrike" id="aca2-3f42-0906-48bc" hidden="false" type="rule" targetId="ca19-183b-69f1-4afc"/>
+        <infoLink name="Cloudstrike" id="ab68-eab6-e678-4609" hidden="false" type="profile" targetId="740c-a5df-1247-89cb"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="829e-a989-7555-e6be" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9" collapsible="true"/>
         <entryLink import="true" name="Traits" hidden="false" id="ee8b-30bc-52f8-4c41" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
-      <rules>
-        <rule name="Transport" id="86c3-1af3-300e-cbc4" hidden="false">
-          <description>This model has a transport capacity of 6 infantry models.</description>
-        </rule>
-      </rules>
       <costs>
         <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
         <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
         <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
         <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
       </costs>
+      <profiles>
+        <profile name="Transport" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9f2a-107f-a99d-f1fd">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a transport capacity of 6 infantry models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fire Prism" hidden="false" id="0e35-fa64-79db-4b9b">
       <selectionEntries>
@@ -3492,6 +3505,7 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Doomweaver" id="5f06-a7d4-6ff2-8a47" hidden="false" type="profile" targetId="4bdc-5fbe-bf8b-4a94"/>
+                <infoLink name="Monofilament" id="9e8e-f80b-583a-51d0" hidden="false" type="rule" targetId="2ef5-cbe9-5de7-4e92"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -3586,7 +3600,7 @@
       <infoLinks>
         <infoLink name="Battle Focus" id="4079-c23e-387f-41ea" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Squadron" id="aa3b-98cd-f9cb-4736" hidden="false" type="rule" targetId="bf82-191a-f79d-c43a"/>
-        <infoLink name="Power field" id="b826-2622-2d37-45f7" hidden="false" type="rule" targetId="47d2-6669-d957-49e4"/>
+        <infoLink name="Power Field" id="e684-fd84-536d-d060" hidden="false" type="profile" targetId="5781-cdc4-a1da-823c"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="5ad5-aa36-56d1-2f02" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9" collapsible="true"/>
@@ -3690,23 +3704,25 @@
       <infoLinks>
         <infoLink name="Anti-Grav" id="2c65-b4d9-905f-4a53" hidden="false" type="rule" targetId="1694-8bbc-0a3e-a52d"/>
         <infoLink name="Battle Focus" id="00e8-8d8c-4bb6-40b0" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
-        <infoLink name="Wave Serpent Shield" id="e12a-5262-fb9f-42eb" hidden="false" type="rule" targetId="7370-6667-3925-4eab"/>
+        <infoLink name="Wave Serpent Shield" id="0820-1501-29f1-2dd4" hidden="false" type="profile" targetId="f1e9-9a74-42f7-6ee5"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Vehicle Equipment" hidden="false" id="de18-e95c-9c1b-3d29" type="selectionEntryGroup" targetId="cea1-7cdc-7b58-a5e9" collapsible="true"/>
         <entryLink import="true" name="Traits" hidden="false" id="13f4-ade7-c3ab-7488" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
       </entryLinks>
-      <rules>
-        <rule name="Transport" id="6b15-2f38-0721-9c7d" hidden="false">
-          <description>This model has a transport capacity of 12 infantry models.</description>
-        </rule>
-      </rules>
       <costs>
         <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
         <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
         <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
         <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
       </costs>
+      <profiles>
+        <profile name="Transport" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="911c-72f0-31aa-1b85">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a transport capacity of 12 infantry models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Crimson Hunter" hidden="false" id="99ac-9c31-9353-4cb0">
       <selectionEntries>
@@ -3726,7 +3742,7 @@
       <infoLinks>
         <infoLink name="Battle Focus" id="88ad-0da9-67b0-4554" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Deflect" id="4767-c454-3a5f-4923" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
-        <infoLink name="Vector dancer" id="66d1-d3f1-95be-465a" hidden="false" type="rule" targetId="7abb-d1de-7291-488c"/>
+        <infoLink name="Vector dancer" id="bcd2-77e6-a55b-1490" hidden="false" type="profile" targetId="1f14-3533-98fa-48f6"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Choice" id="da7c-bb35-b7e5-4d0b" hidden="false" defaultSelectionEntryId="6d56-f43e-ac7e-4b8b" sortIndex="2">
@@ -3856,11 +3872,6 @@
         <entryLink import="true" name="Traits" hidden="false" id="76f8-ce47-314e-0fe1" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
         <entryLink import="true" name="Infantry only" hidden="false" id="831b-a866-e016-191b" type="selectionEntryGroup" targetId="d47d-8d71-326e-7884"/>
       </entryLinks>
-      <rules>
-        <rule name="Psyker" id="3ca9-9944-8556-8f92" hidden="false">
-          <description>The model can cast 1 power and deny 1 power per battle round. It knows Smite and Craftsong.</description>
-        </rule>
-      </rules>
       <comment>Free slot.</comment>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7cae-b075-9fdc-49f5"/>
@@ -3879,6 +3890,13 @@
         <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
         <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Psyker" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="c380-50e1-2279-097c">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model can cast 1 power and deny 1 power per battle round. It knows Smite and Craftsong.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Warlocks" hidden="false" id="7dd9-fef3-2fb8-c4d4">
       <selectionEntries>
@@ -3919,7 +3937,7 @@
       <infoLinks>
         <infoLink name="Battle Focus" id="456f-d202-f7fb-fb69" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Command Squad" id="95fa-7dcd-b5b3-c982" hidden="false" type="rule" targetId="3bb3-3db8-a1f6-9b22"/>
-        <infoLink name="Seer council" id="83e3-57c7-b9cc-d45d" hidden="false" type="rule" targetId="eda4-c856-189f-476d"/>
+        <infoLink name="Seer council" id="dce8-0218-6b53-46ea" hidden="false" type="profile" targetId="2cf6-32ce-89c6-fc63"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Webway Strike" hidden="false" id="6d36-04d9-1aea-10a2" type="selectionEntry" targetId="98be-190d-bd75-3a7b"/>
@@ -3927,11 +3945,6 @@
         <entryLink import="true" name="Traits" hidden="false" id="450d-ab1d-b581-ee22" type="selectionEntryGroup" targetId="3618-1f7c-3bd2-6eca"/>
         <entryLink import="true" name="Infantry only" hidden="false" id="5b86-9d3c-dcb2-87c9" type="selectionEntryGroup" targetId="d47d-8d71-326e-7884"/>
       </entryLinks>
-      <rules>
-        <rule name="Psyker" id="3b03-27bd-73a7-5499" hidden="false">
-          <description>The model can cast 1 power and deny 1 power per battle round. It knows Smite and two powers from a chosen discipline.</description>
-        </rule>
-      </rules>
       <comment>Free slot.</comment>
       <constraints>
         <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ff79-b189-4836-efd8"/>
@@ -3950,6 +3963,13 @@
         <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
         <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Psyker" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="7f66-40fb-1d6f-5e77">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model can cast 1 power and deny 1 power per battle round. It knows Smite and two powers from a chosen discipline.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Wraithblades" hidden="true" id="6b5e-d538-67f3-bde5">
       <selectionEntries>
@@ -3997,7 +4017,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Massive(1)" id="13ce-d7f9-3d49-388e" hidden="false" type="rule" targetId="621d-3453-ec3c-c2f8"/>
-        <infoLink name="Wraithbone" id="b879-1638-71e2-6064" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
+        <infoLink name="Wraithbone" id="f53c-822a-925d-e868" hidden="false" type="profile" targetId="5567-1fbc-a0b7-ba3f"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Traits" hidden="false" id="379f-98a0-239f-2a03" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
@@ -4040,6 +4060,8 @@
                 <selectionEntry type="upgrade" import="true" name="D-scythe" hidden="false" id="0a3f-b96c-0fef-10ec" defaultAmount="1">
                   <infoLinks>
                     <infoLink name="D-scythe" id="3e10-58b9-90b9-0ca3" hidden="false" type="profile" targetId="4f7f-1fb2-acc1-48ac"/>
+                    <infoLink name="Strength &quot;D&quot;" id="fee9-3712-fc62-0fb4" hidden="false" type="rule" targetId="5cf0-3f9c-712e-4fa5"/>
+                    <infoLink name="Distortion" id="baeb-0f05-0b34-d042" hidden="false" type="rule" targetId="3c54-ea9a-213f-4759"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Wraithcannon" hidden="false" id="2a58-975c-8aa8-b121">
@@ -4062,8 +4084,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Massive(1)" id="e6a0-cb7f-9cf7-698b" hidden="false" type="rule" targetId="621d-3453-ec3c-c2f8"/>
-        <infoLink name="Wraithbone" id="6520-4d85-4afa-a580" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
-        <infoLink name="Strength &quot;D&quot;" id="fee9-3712-fc62-0fb4" hidden="false" type="rule" targetId="5cf0-3f9c-712e-4fa5"/>
+        <infoLink name="Wraithbone" id="2811-4fe8-0b00-aa2b" hidden="false" type="profile" targetId="5567-1fbc-a0b7-ba3f"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Traits" hidden="false" id="792d-76ae-39c6-5087" type="selectionEntryGroup" targetId="a93d-1369-b109-8af3"/>
@@ -4121,6 +4142,7 @@
                   <infoLinks>
                     <infoLink name="Power sword" id="51e7-fc9a-3f64-1618" hidden="false" type="profile" targetId="e036-c920-af1d-499a"/>
                     <infoLink name="Neuro disruptor" id="4d6b-2ac6-5b40-671a" hidden="false" type="profile" targetId="d574-40f5-adf8-4e57"/>
+                    <infoLink name="Neuro disruptor" id="9242-63c5-5233-e958" hidden="false" type="profile" targetId="f532-cd53-35ba-e0bb"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -4161,7 +4183,6 @@
         <categoryLink targetId="e998-b6e1-9f43-6739" id="88c4-7b2c-1698-542e" primary="true" name="Elite"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Neuro disruptor" id="3cd2-f063-f055-01ad" hidden="false" type="rule" targetId="8fd0-e940-27ac-407b"/>
         <infoLink name="Outcasts and Pirates" id="8e8e-ac23-55a4-86e9" hidden="false" type="rule" targetId="cf90-8288-0cdf-4c59"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -4383,7 +4404,7 @@
       </categoryLinks>
       <infoLinks>
         <infoLink name="Battle Focus" id="23ad-ac80-4210-36ce" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
-        <infoLink name="Crewed platform" id="5527-c8d5-8fa7-c8ba" hidden="false" type="rule" targetId="67d6-06cb-007d-49b6"/>
+        <infoLink name="Crewed platform" id="961e-d7a2-74b4-c5bc" hidden="false" type="profile" targetId="d460-dfd1-36b0-3bd1"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Storm Guardians" id="0029-8d24-8d8f-2b6b" hidden="false" sortIndex="2">
@@ -4627,6 +4648,7 @@
       <infoLinks>
         <infoLink name="Battle Focus" id="dead-3014-9641-dbe5" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Crewed platform" id="0c10-61d1-9020-55d9" hidden="false" type="rule" targetId="67d6-06cb-007d-49b6"/>
+        <infoLink name="Crewed platform" id="5c89-d2da-b4fe-de8e" hidden="false" type="profile" targetId="ce3e-5281-3d69-4607"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Webway Strike" hidden="false" id="2c01-b1c8-7780-1f8d" type="selectionEntry" targetId="7e37-6716-b56f-296e"/>
@@ -4688,7 +4710,7 @@
         <infoLink name="Infiltrator" id="b40a-7bbc-9914-2bb0" hidden="false" type="rule" targetId="276b-ef81-2a62-da70"/>
         <infoLink name="Move Through Cover" id="5fa5-1227-2f2e-d97d" hidden="false" type="rule" targetId="3b94-b5d5-ebe7-cb17"/>
         <infoLink name="Use Cover" id="ba16-6f56-1fe5-51c4" hidden="false" type="rule" targetId="7a04-95b4-d929-fe4e"/>
-        <infoLink name="Pathfinder ambush" id="9a44-005a-118c-dd37" hidden="false" type="rule" targetId="d07f-42d3-3bad-4fa5"/>
+        <infoLink name="Pathfinder ambush" id="776d-0b7c-4dc6-058a" hidden="false" type="profile" targetId="9866-7bd7-e86f-a6ba"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="For every 5 Rangers, 1 model can be equipped with:" id="b3b5-08db-2708-4749" hidden="false">
@@ -5288,11 +5310,11 @@
     <selectionEntry type="unit" import="true" name="Shining Spears" hidden="true" id="28da-072e-2cbe-78e5">
       <categoryLinks>
         <categoryLink targetId="2a68-9526-9cb0-16c3" id="271a-87c5-5cc7-e310" primary="true" name="Troops"/>
+        <categoryLink targetId="4a11-a28a-f800-7557" id="0b63-c55f-d6e0-e867" primary="false" name="&lt;Aspect&gt;"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Battle Focus" id="b9b3-0fdb-2b01-0455" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Deflect" id="e328-e002-3b80-bcd3" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
-        <infoLink name="&lt;Aspect&gt;" id="dca0-35de-17c5-5648" hidden="false" type="rule" targetId="4d25-3157-abee-df32"/>
         <infoLink name="Aspect armor" id="e0b1-b8c8-34a9-d2f3" hidden="false" type="rule" targetId="183d-7ca3-a557-473b"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -5593,7 +5615,7 @@
       <infoLinks>
         <infoLink name="Battle Focus" id="c0ee-3158-ab9c-95f7" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Aspect armor" id="9246-e7ba-14cd-beb6" hidden="false" type="rule" targetId="183d-7ca3-a557-473b"/>
-        <infoLink name="Sky Dive" id="c30f-0549-19a7-610f" hidden="false" type="rule" targetId="ec03-77c2-80d7-4330"/>
+        <infoLink name="Sky Dive" id="2aaf-31f3-3786-3d73" hidden="false" type="profile" targetId="fc21-11d8-53f2-e874"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Members - 5 to 10" id="af19-df47-346d-7e1d" hidden="false" sortIndex="1">
@@ -5747,7 +5769,7 @@
         <infoLink name="Battle Focus" id="db4d-ac2e-4556-d39e" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Aspect armor" id="c56b-7821-5fe7-d5c5" hidden="false" type="rule" targetId="183d-7ca3-a557-473b"/>
         <infoLink name="Monofilament" id="246d-b76b-3f0f-0635" hidden="false" type="rule" targetId="2ef5-cbe9-5de7-4e92"/>
-        <infoLink name="Shunting" id="155c-4868-9615-177c" hidden="false" type="rule" targetId="11a6-c9ad-ed88-4c89"/>
+        <infoLink name="Shunting" id="107b-d8c4-814f-86e4" hidden="false" type="profile" targetId="97cc-8a18-dafc-2c5b"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Members - 5 to 10" id="9e6b-d1a9-ca4e-d569" hidden="false" sortIndex="1">
@@ -5999,12 +6021,12 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Lightning Reflexes" id="0711-9f1a-893d-6477" hidden="false" type="rule" targetId="489b-9153-9b01-c26b"/>
             <infoLink name="Deflect" id="a5b3-cb27-1536-bb14" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
             <infoLink name="Hit &amp; Run" id="d4b1-de06-ebb6-9f6e" hidden="false" type="rule" targetId="3120-d192-37d7-bf60"/>
             <infoLink name="Infiltrator" id="91b2-e4e9-9823-5aed" hidden="false" type="rule" targetId="276b-ef81-2a62-da70"/>
             <infoLink name="Move Through Cover" id="c7a6-6f7c-b0ed-3bac" hidden="false" type="rule" targetId="3b94-b5d5-ebe7-cb17"/>
             <infoLink name="Parry" id="19c4-a6fe-c231-1861" hidden="false" type="rule" targetId="fc6d-9ee5-f9c3-6035"/>
+            <infoLink name="Lightning reflexes" id="69ca-48f0-d0a5-f081" hidden="false" type="profile" targetId="63cd-dea6-9687-ef81"/>
           </infoLinks>
           <rules>
             <rule name="Lone Operative" id="011f-05a4-5c86-0427" hidden="false">
@@ -6137,7 +6159,11 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="d995-4400-8d48-8a09"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="112"/>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="122"/>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="c4cc-74c0-4753-804d" hidden="false" sortIndex="1">
@@ -6199,7 +6225,7 @@
         <infoLink name="Battle Focus" id="e055-9145-41e9-9046" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Deep Strike" id="ccd8-0626-1b04-334c" hidden="false" type="rule" targetId="ea49-8f6d-64fe-e520"/>
         <infoLink name="Squadron" id="e521-e210-a78c-1f44" hidden="false" type="rule" targetId="bf82-191a-f79d-c43a"/>
-        <infoLink name="Jump Jet" id="5fce-5fab-6183-c3b3" hidden="false" type="rule" targetId="99ec-0562-7382-ef3b"/>
+        <infoLink name="Jump Jet" id="b2b8-7395-c0e6-7543" hidden="false" type="profile" targetId="2221-90a2-34b9-350c"/>
       </infoLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -6236,7 +6262,11 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="fc4d-5d7a-7fc7-2124"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="112"/>
+            <cost name="pts" typeId="40d8-7900-73a1-1378" value="122"/>
+            <cost name="Wounds" typeId="de3a-1d44-d586-bd9d" value="0"/>
+            <cost name="Normal" typeId="77d0-5202-ac27-34e5" value="0"/>
+            <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="0"/>
+            <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="0"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" id="b462-5970-c873-d0e0" hidden="false" sortIndex="1">
@@ -6298,7 +6328,7 @@
         <infoLink name="Battle Focus" id="8472-9c66-77bd-0451" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Deep Strike" id="313b-2ecf-74d2-16e4" hidden="false" type="rule" targetId="ea49-8f6d-64fe-e520"/>
         <infoLink name="Squadron" id="59d6-fea6-10a9-7b58" hidden="false" type="rule" targetId="bf82-191a-f79d-c43a"/>
-        <infoLink name="Jump Jet" id="6318-44b7-0931-80a5" hidden="false" type="rule" targetId="99ec-0562-7382-ef3b"/>
+        <infoLink name="Jump Jet" id="af97-752f-417f-da34" hidden="false" type="profile" targetId="2221-90a2-34b9-350c"/>
       </infoLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -6406,6 +6436,7 @@
                   </costs>
                   <infoLinks>
                     <infoLink name="D-cannon" id="6d4a-fa62-4c98-88ec" hidden="false" type="profile" targetId="76da-af4d-0733-4fba"/>
+                    <infoLink name="Strength &quot;D&quot;" id="eea9-00aa-ef00-6e48" hidden="false" type="rule" targetId="5cf0-3f9c-712e-4fa5"/>
                   </infoLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Wraithcannon" hidden="false" id="ed31-b78b-e598-d45a" sortIndex="3">
@@ -6428,16 +6459,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <rules>
-        <rule name="Psyker" id="63fe-1284-a7f7-6777" hidden="false">
-          <description>The model can cast 1 power and deny 1 power per battle round. It knows Smite and all powers from the Wraithseer discipline.</description>
-        </rule>
-        <rule name="Wraithshield" id="546d-c457-9f52-4a7b" hidden="false">
-          <description>The model gains a 5+ invulnerability save.</description>
-        </rule>
-      </rules>
       <infoLinks>
-        <infoLink name="Wraithbone" id="61f0-e708-2cb5-01bd" hidden="false" type="rule" targetId="aaf6-1f11-4b5a-4bd8"/>
+        <infoLink name="Wraithbone" id="33fb-1e70-b172-5f61" hidden="false" type="profile" targetId="5567-1fbc-a0b7-ba3f"/>
+        <infoLink name="Wraithshield" id="e568-4711-0d76-b05a" hidden="false" type="profile" targetId="bc17-d4c0-dfc4-931e"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Traits" hidden="false" id="8693-d625-8192-d2fa" type="selectionEntryGroup" targetId="9f38-c1e6-89b6-3518"/>
@@ -6450,6 +6474,13 @@
         <cost name="Monstrous Creature/Vehicle" typeId="5963-0ef4-6641-6d6f" value="1"/>
         <cost name="Psyker" typeId="22e4-e98a-eea9-7ab5" value="1"/>
       </costs>
+      <profiles>
+        <profile name="Psyker" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="b52a-e686-4a30-89da">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model can cast 1 power and deny 1 power per battle round. It knows Smite and all powers from the Wraithseer discipline.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shadow Spectres" hidden="false" id="1217-8ae9-025e-f2d7">
       <selectionEntryGroups>
@@ -6579,6 +6610,7 @@
         <infoLink name="Terrifying(-1)" id="f649-9df1-0878-02aa" hidden="false" type="rule" targetId="5177-f795-b9a1-2785"/>
         <infoLink name="Aspect armor" id="32b0-63d9-b660-07d0" hidden="false" type="rule" targetId="183d-7ca3-a557-473b"/>
         <infoLink name="Ghostlight" id="cf4e-63c5-cbbc-1ae4" hidden="false" type="rule" targetId="09d6-7389-7c63-e71a"/>
+        <infoLink name="Ghostlight" id="d9c5-4e0c-3de0-0cc8" hidden="false" type="profile" targetId="65bf-c84c-8d1f-306f"/>
       </infoLinks>
       <comment>Elite</comment>
       <modifiers>
@@ -6725,6 +6757,7 @@
         <infoLink name="Terrifying(-1)" id="cc60-9edb-4035-2d19" hidden="false" type="rule" targetId="5177-f795-b9a1-2785"/>
         <infoLink name="Aspect armor" id="6c6f-c8c5-c871-9439" hidden="false" type="rule" targetId="183d-7ca3-a557-473b"/>
         <infoLink name="Ghostlight" id="ae88-5e99-8975-6cbd" hidden="false" type="rule" targetId="09d6-7389-7c63-e71a"/>
+        <infoLink name="Ghostlight" id="2539-7094-e1ca-27dc" hidden="false" type="profile" targetId="65bf-c84c-8d1f-306f"/>
       </infoLinks>
       <comment>Troops</comment>
       <modifiers>
@@ -6880,7 +6913,7 @@
       <infoLinks>
         <infoLink name="Battle Focus" id="bfc4-bfbd-4fbd-8c67" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Deflect" id="e389-5f0d-5ae1-624e" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
-        <infoLink name="Vector dancer" id="c0d1-5bd0-f3b6-f5d3" hidden="false" type="rule" targetId="7abb-d1de-7291-488c"/>
+        <infoLink name="Vector dancer" id="4880-7ade-ae22-037a" hidden="false" type="profile" targetId="1f14-3533-98fa-48f6"/>
       </infoLinks>
       <rules>
         <rule name="Interceptor" id="f2c6-fd1e-0e1e-a752" hidden="false">
@@ -6976,7 +7009,7 @@
       <infoLinks>
         <infoLink name="Battle Focus" id="3f52-6078-427a-e5b4" hidden="false" type="rule" targetId="6bf6-be1d-576f-4aa9"/>
         <infoLink name="Deflect" id="fc31-e4cc-e827-84fc" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
-        <infoLink name="Vector dancer" id="adde-ee2d-f348-d159" hidden="false" type="rule" targetId="7abb-d1de-7291-488c"/>
+        <infoLink name="Vector dancer" id="aa91-0484-0635-f203" hidden="false" type="profile" targetId="1f14-3533-98fa-48f6"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="40d8-7900-73a1-1378" value="0"/>
@@ -9802,6 +9835,133 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
         <characteristic name="Keywords" typeId="837d-5e63-aeb7-1410">Anti-Air, AT(2)</characteristic>
       </characteristics>
     </profile>
+    <profile name="Neuro disruptor" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f532-cd53-35ba-e0bb">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Roll 2D6 after a successful hit and compare it with the Leadership value of the unit. If your roll is higher, the target suffers one Mortal Wound for each point above their Ld value.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Channeler Stones" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="7c85-1678-d2f7-82ad">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per turn, the damage of a wound against the model or attached unit can be reduced by 1. The ability must be declared after armor and invulnerability saves. Does not work against weapons with a strength of 8 or above.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shade runner assault" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f717-61c0-7aa9-f444">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">After finishing a charge move, the enemy unit suffers one automatic wound with S4 AP0 D1 for every friendly model that made it into base contact.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sniper" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="ecac-10c4-31ef-9415">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A model equipped with a Ranger long rifle increases their BS by +1.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Perfected Warfare" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="468c-579f-78fd-25ad">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">An Autarch can decide once per game to get a +1/-1 modifier to rolls during the Reinforcement phase and/or a +1/-1 modifier during the Initiative phase. The ability may be used after rolls have been made by both players.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Exalted Autarch" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9acf-fa7e-77ed-4280">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The Autarch may use Perfected warfare twice per game.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Molten body" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="b67c-b83e-ebed-1c6c">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Enemy attacks reduce their AP value by -2 (to a minimum of 0) and damage by 1 (to a minimum of 1). If the model loses its last Wound, it explodes like a vehicle.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vector dancer" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="1f14-3533-98fa-48f6">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model gains a 4+ invulnerability save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cloudstrike" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="740c-a5df-1247-89cb">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model scatters only 1D6&quot; when being deployed via Deep strike.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Exalted Farseer" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="0fac-3c61-1ebf-ee79">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model can cast and deny 1 additional power per battle round.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Crewed platform" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="ce3e-5281-3d69-4607">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If the last Guardian Defender is removed, all remaining Heavy weapon platforms are destroyed. They are ignored for all kinds of unit strength and moral purposes.</characteristic>
+      </characteristics>
+      <comment>guardian defenders</comment>
+    </profile>
+    <profile name="Pathfinder ambush" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9866-7bd7-e86f-a6ba">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once an enemy unit emerges from reserve, a Ranger unit in reserve may perform an intercept. The unit is immediately deployed within 18&quot; but at least 9&quot; of the enemy reserve unit. The Rangers can then fire at that unit as if they had been given the &quot;Stand &amp; Shoot&quot; order. The attack resolves after the enemy unit has been deployed and before it takes another action.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ghostlight" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="65bf-c84c-8d1f-306f">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If a unit scores two or more hits with weapons with this ability, you may resolve the hits normally or inflict a single combined attack. When combining attacks, choose one Ghostlight hit to be the primary hit. Resolve only the primary hit; for each other Ghostlight hit, the primary hit gains +1 Strength, -1 AP, +1 Damage, and AT(1), to a maximum of 10 Strength, -6 AP, 4 Damage, and AT(4).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Crewed platform" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="d460-dfd1-36b0-3bd1">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If the last Storm Guardian is removed, all remaining Serpent scale platforms are destroyed. They are ignored for all kinds of unit strength and moral purposes.</characteristic>
+      </characteristics>
+      <comment>storm guardians</comment>
+    </profile>
+    <profile name="Support Weapons Crew" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="1975-f5e6-9d86-e51a">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Every instance of damage can only ever cause 1 wound loss. Attacks with the &quot;Barrage&quot; or &quot;Explosive&quot; ability cause one hit for each Wound remaining on the model.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sky Dive" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="fc21-11d8-53f2-e874">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per game, at the start of their activation, the unit may use a Stand &amp; Shoot order to be immediately re-deployed anywhere on the battlefield. They must keep a minimum distance of 6&quot; to enemy models.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lightning reflexes" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="63cd-dea6-9687-ef81">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A model with this special rule has a 4+ invulnerable save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Power Field" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="5781-cdc4-a1da-823c">
+      <characteristics>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains a 5+ invulnerability save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Seer council" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="2cf6-32ce-89c6-fc63">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A Farseer gets a cumulative +1 bonus to casting and denying psychic powers for each Warlock in their unit. Accompanying Warlocks receive the same bonus for each Warlock after the first.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Shunting" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="97cc-8a18-dafc-2c5b">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The unit rolls and moves an additional 1D6 when using the Advance order. If a double 1 is rolled, the unit suffers an automatic wound with no save allowed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Jump Jet" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="2221-90a2-34b9-350c">
+      <characteristics>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">When this model executes an Advance or Charge order, it gets +6&quot; to its movement and the Anti-Grav rule.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wave Serpent Shield" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="f1e9-9a74-42f7-6ee5">
+      <characteristics>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model has a 5+ invulnerability save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wraithbone" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="5567-1fbc-a0b7-ba3f">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Reduces AP of enemy attacks by -1 (to a minimum of 0).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wraithshield" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="bc17-d4c0-dfc4-931e">
+      <characteristics>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains a 5+ invulnerability save.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Inevitable Death" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="7460-c8e3-4638-719d">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Once per game, after a friendly unit is removed, the Yncarne can be set up immediately to that position. Set the Yncarne up within 6&quot; of the last removed model. You have to keep at least 1&quot; away from enemy units. This way of moving does not count as an activation and can not be used while being in an ongoing melee combat.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <entryLinks>
     <entryLink import="true" name="Autarch" hidden="false" id="bff8-32d4-09b9-4524" type="selectionEntry" targetId="e908-9dd5-8bce-424d">
@@ -10192,9 +10352,13 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Bladestorm" id="fe3a-0e14-c473-ac2c" hidden="false" type="rule" targetId="eaab-493d-d022-53fa"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Bladestorm" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4934-a8b7-2ee8-66b8">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model and its unit trigger the &quot;Shuriken&quot; special rule on each to wound roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Burning heat" hidden="false" id="59c2-a858-3ed8-9ff7">
           <constraints>
@@ -10203,9 +10367,13 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Burning heat" id="bebf-ddf2-f32a-6084" hidden="false" type="rule" targetId="8201-5e60-1086-085a"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Burning heat" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="c11e-ff9b-2082-48de">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Ranged weapons of the model gain an additional -1 AP against units in cover.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Crack shot" hidden="false" id="2c27-a236-f53e-c858">
           <constraints>
@@ -10215,8 +10383,15 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Crack shot" id="d396-a856-5355-b9af" hidden="false" type="rule" targetId="f2a1-67f4-ea9c-72af"/>
+            <infoLink name="Seeking" id="7614-e068-e992-c942" hidden="false" type="rule" targetId="4111-1d6b-e33a-ba04"/>
           </infoLinks>
+          <profiles>
+            <profile name="Crack shot" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="aa03-9d01-020a-9789">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">One ranged weapon of the model gets the &quot;Seeking&quot; ability each round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Crushing blows" hidden="false" id="87b6-e40f-60ae-0f88">
           <constraints>
@@ -10225,9 +10400,13 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Crushing blows" id="cf04-34b0-4aa3-7e6b" hidden="false" type="rule" targetId="c1b8-6628-a38f-71e9"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Crushing blows" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="7c81-ec5c-217c-6efc">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model may re-roll one to wound or armor penetration roll in melee.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Defensive stance" hidden="false" id="4a12-6c96-3dd1-dbd0">
           <constraints>
@@ -10236,9 +10415,13 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Defensive stance" id="dd58-96c4-0650-e3c7" hidden="false" type="rule" targetId="d17c-450b-d6c1-b2ef"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Defensive stance" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="57b6-f2a5-60e4-79a4">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model may use Defensive fire twice when getting charged.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Dragon&apos;s bite" hidden="false" id="c5b3-2199-8158-b95b">
           <constraints>
@@ -10247,9 +10430,13 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Dragon&apos;s bite" id="90ce-e6db-7075-d4c8" hidden="false" type="rule" targetId="6c80-f47d-34fc-61d7"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Dragon&apos;s bite" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="39f8-c1c2-4500-1032">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Ranged weapons of the model gain a cumulative AT(1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Graceful avoidance" hidden="false" id="3ed6-e1b1-3b1a-5267">
           <constraints>
@@ -10258,9 +10445,13 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Graceful avoidance" id="f19f-6451-b73a-8020" hidden="false" type="rule" targetId="5c36-be10-90ed-2245"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Graceful avoidance" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="b6cb-880f-3137-9ff8">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model and its unit got a 4+ invulnerability save against melee attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Heartstrike" hidden="false" id="a665-91b0-cc16-3034">
           <constraints>
@@ -10270,8 +10461,15 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Heartstrike" id="cbf9-86a9-e8bf-3e16" hidden="false" type="rule" targetId="1bcd-e920-b8ea-4597"/>
+            <infoLink name="Deadly (X+)" id="bc49-8714-8d70-d9ba" hidden="false" type="rule" targetId="fb78-0a00-9391-6b3e"/>
           </infoLinks>
+          <profiles>
+            <profile name="Heartstrike" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9ea7-e6fb-6fd4-ef82">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Melee attacks of the model gain Deadly(5+). If the model already has the rule, increase Deadly(x+) by 1. For example Deadly(5+) becomes Deadly(4+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Lightning attacks" hidden="false" id="5713-2114-3813-6976">
           <constraints>
@@ -10280,9 +10478,13 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Lightning attacks" id="2950-251c-f14b-298e" hidden="false" type="rule" targetId="dcdd-5aed-9824-b84b"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Lightning attacks" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="7bce-33c0-77e1-e205">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model and its unit may consolidate 6&quot; after winning a melee combat. If it consolidates into an enemy unit, that unit may not use Defensive Fire.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Piercing strike" hidden="false" id="6450-3803-f5e4-cf5c">
           <constraints>
@@ -10292,8 +10494,15 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Piercing strike" id="d721-248d-4c64-a7c8" hidden="false" type="rule" targetId="afb3-97f7-55c1-e9c6"/>
+            <infoLink name="Armor Piercing (5+)" id="f54a-a8ac-32e3-936e" hidden="false" type="rule" targetId="d01d-35c5-a0ef-1422"/>
           </infoLinks>
+          <profiles>
+            <profile name="Piercing strike" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="4af2-69b9-a0f1-e8d5">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Melee attacks of the model gain Armor piercing(5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rapid redeployment" hidden="false" id="fe36-3b1c-cfb7-ce16">
           <constraints>
@@ -10303,8 +10512,15 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Rapid redeployment" id="78fc-4ef5-3fa5-e28c" hidden="false" type="rule" targetId="d3d5-ffc6-0b26-d71b"/>
+            <infoLink name="Hit &amp; Run" id="78fc-4ef5-3fa5-e28c" hidden="false" type="rule" targetId="3120-d192-37d7-bf60"/>
           </infoLinks>
+          <profiles>
+            <profile name="Rapid redeployment" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="ddb4-8200-a444-2393">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model and its unit gain the &quot;Hit &amp; Run&quot; ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Reaper&apos;s reach" hidden="false" id="98c6-fa89-54c5-9583">
           <constraints>
@@ -10313,9 +10529,13 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Reaper&apos;s reach" id="230f-49f1-fe15-cb9d" hidden="false" type="rule" targetId="38fe-86f1-13e1-1b19"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Reaper&apos;s reach" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="6397-a60e-6f9b-011b">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Ranged weapons of the model and its attached unit gain +6&quot; range.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Scorpion&apos;s sting" hidden="false" id="6c5b-f20a-9ec9-98c6">
           <constraints>
@@ -10325,8 +10545,15 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Scorpion&apos;s sting" id="e2b1-4a38-968c-31fc" hidden="false" type="rule" targetId="754a-c07b-782b-8f35"/>
+            <infoLink name="Precision (5+)" id="e2b1-4a38-968c-31fc" hidden="false" type="rule" targetId="e14c-ac32-43d3-4935"/>
           </infoLinks>
+          <profiles>
+            <profile name="Scorpion&apos;s sting" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="fc3b-ff2d-075b-1ce0">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Melee attacks of the model gain Precision(5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Skyhunter" hidden="false" id="b7b9-902e-be34-347a">
           <constraints>
@@ -10336,8 +10563,15 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Skyhunter" id="a1d4-28a3-d94d-ab33" hidden="false" type="rule" targetId="9c45-f77b-b418-fe38"/>
+            <infoLink name="Anti-Air" id="c11c-382d-8754-8220" hidden="false" type="rule" targetId="74c5-fd82-a535-3e41"/>
           </infoLinks>
+          <profiles>
+            <profile name="Skyhunter" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="cd71-334e-8829-c428">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">All ranged weapons of the model gain Anti-Air.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Stand firm" hidden="false" id="003e-7476-5a35-efa6">
           <constraints>
@@ -10346,9 +10580,13 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Stand firm" id="6834-a4ac-2ef2-0999" hidden="false" type="rule" targetId="d083-80d8-a65b-d384"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Stand firm" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="8c07-f4e7-58ac-0f42">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model and its unit gain the &quot;Objective secured!&quot; ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Surprise assault" hidden="false" id="2003-6001-b4e9-0e8e">
           <constraints>
@@ -10357,9 +10595,13 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Surprise assault" id="3a6b-3507-e54e-0d1a" hidden="false" type="rule" targetId="3354-f9fb-98df-6a7f"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Surprise assault" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="757a-19f7-c2f5-af9a">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If the model used the &quot;Shunting&quot; ability this round, it may shoot one additional time with each equipped Death spinner. If the model used the &quot;Sky dive&quot; ability this round, it doubles their shots with a Hawk&apos;s talon or Lasblaster.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -11312,181 +11554,263 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
     </selectionEntryGroup>
     <selectionEntryGroup name="Exarch Powers" id="412b-5678-98ce-101b" hidden="true" collapsible="true">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bladestorm" hidden="false" id="d8da-887c-2492-235a">
+        <selectionEntry type="upgrade" import="true" name="Bladestorm" hidden="false" id="364d-d328-dca1-d32a">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74ad-09c4-41c4-67b3" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="269f-d5a5-2c2e-f565"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Bladestorm" id="2f0d-7c4f-02dc-3523" hidden="false" type="rule" targetId="eaab-493d-d022-53fa"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Bladestorm" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="69ef-dc28-ce9f-d083">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model and its unit trigger the &quot;Shuriken&quot; special rule on each to wound roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Burning heat" hidden="false" id="7504-29fb-f9d6-8aa1">
+        <selectionEntry type="upgrade" import="true" name="Burning heat" hidden="false" id="baa2-33b9-038e-7688">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e59-cde0-126d-5eb3" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17cf-49a3-349e-97d5"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Burning heat" id="3adc-b89f-485e-e08c" hidden="false" type="rule" targetId="8201-5e60-1086-085a"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Burning heat" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f130-6269-2638-21f7">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Ranged weapons of the model gain an additional -1 AP against units in cover.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Crack shot" hidden="false" id="cdc9-439b-bd8e-c417">
+        <selectionEntry type="upgrade" import="true" name="Crack shot" hidden="false" id="148b-d66a-d6cb-e8c7">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc0c-4100-940f-4346" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="660c-5817-b358-27f9"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Crack shot" id="9091-51d4-b59e-0766" hidden="false" type="rule" targetId="f2a1-67f4-ea9c-72af"/>
+            <infoLink name="Seeking" id="c569-7cd0-598d-4a68" hidden="false" type="rule" targetId="4111-1d6b-e33a-ba04"/>
           </infoLinks>
+          <profiles>
+            <profile name="Crack shot" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9f44-3ccb-8385-0cc6">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">One ranged weapon of the model gets the &quot;Seeking&quot; ability each round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Crushing blows" hidden="false" id="c553-d667-6875-c1ec">
+        <selectionEntry type="upgrade" import="true" name="Crushing blows" hidden="false" id="3225-21f2-9425-7036">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7399-af17-83c5-ab55" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8e8-7221-94ba-8b24"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Crushing blows" id="68cb-f8b5-cbcd-97db" hidden="false" type="rule" targetId="c1b8-6628-a38f-71e9"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Crushing blows" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="13b8-0e4f-1116-99d7">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model may re-roll one to wound or armor penetration roll in melee.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Defensive stance" hidden="false" id="a562-2405-126c-1c74">
+        <selectionEntry type="upgrade" import="true" name="Defensive stance" hidden="false" id="3f13-83d2-cf08-a82d">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2d3-2050-b5b8-fc9b" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29a5-7c9e-f806-baa5"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Defensive stance" id="7907-1bc0-6870-23bb" hidden="false" type="rule" targetId="d17c-450b-d6c1-b2ef"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Defensive stance" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="1937-553c-163f-c44e">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model may use Defensive fire twice when getting charged.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Dragon&apos;s bite" hidden="false" id="e52b-fca1-69b4-f583">
+        <selectionEntry type="upgrade" import="true" name="Dragon&apos;s bite" hidden="false" id="791b-6942-713e-c785">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17b3-deb9-6e36-2093" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fde-3f22-415e-258f"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Dragon&apos;s bite" id="f2dd-2434-6e48-0ea2" hidden="false" type="rule" targetId="6c80-f47d-34fc-61d7"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Dragon&apos;s bite" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="8960-0e47-5b5f-c30e">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Ranged weapons of the model gain a cumulative AT(1).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Graceful avoidance" hidden="false" id="1c74-d373-00cf-914b">
+        <selectionEntry type="upgrade" import="true" name="Graceful avoidance" hidden="false" id="5cc0-4e92-a89b-bda3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cdf-6235-2cfb-b4e8" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1af-1f8c-a62f-76a3"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Graceful avoidance" id="0ab0-b8b3-0580-24b1" hidden="false" type="rule" targetId="5c36-be10-90ed-2245"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Graceful avoidance" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="22ba-1a33-6b00-1838">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model and its unit got a 4+ invulnerability save against melee attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Heartstrike" hidden="false" id="d3bb-e6bf-b0f8-66cd">
+        <selectionEntry type="upgrade" import="true" name="Heartstrike" hidden="false" id="3455-8bcd-725a-c815">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dea9-a222-d999-29d9" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dcf-dacc-cfe0-7d80"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Heartstrike" id="1d51-d7f7-ee61-b2ea" hidden="false" type="rule" targetId="1bcd-e920-b8ea-4597"/>
+            <infoLink name="Deadly (X+)" id="7f04-fa0c-19c5-43ae" hidden="false" type="rule" targetId="fb78-0a00-9391-6b3e"/>
           </infoLinks>
+          <profiles>
+            <profile name="Heartstrike" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="8bfc-9b8f-6ea6-5a7b">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Melee attacks of the model gain Deadly(5+). If the model already has the rule, increase Deadly(x+) by 1. For example Deadly(5+) becomes Deadly(4+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Lightning attacks" hidden="false" id="a958-86f9-6980-92bf">
+        <selectionEntry type="upgrade" import="true" name="Lightning attacks" hidden="false" id="e637-e530-b5bd-168c">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="998b-cc80-8a07-4aa5" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd5a-689b-ffbe-2b71"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Lightning attacks" id="eebb-1c06-0122-a8e1" hidden="false" type="rule" targetId="dcdd-5aed-9824-b84b"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Lightning attacks" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="03f1-d1a8-80aa-3aa9">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model and its unit may consolidate 6&quot; after winning a melee combat. If it consolidates into an enemy unit, that unit may not use Defensive Fire.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Piercing strike" hidden="false" id="790c-7fa1-eb59-1bc6">
+        <selectionEntry type="upgrade" import="true" name="Piercing strike" hidden="false" id="6e52-bfa7-1cbb-eb3a">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ed9-aa8d-923b-b3fb" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c983-242e-1e4a-848d"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Piercing strike" id="98f4-bbba-cade-66c9" hidden="false" type="rule" targetId="afb3-97f7-55c1-e9c6"/>
+            <infoLink name="Armor Piercing (5+)" id="50ec-43a1-d1dd-2782" hidden="false" type="rule" targetId="d01d-35c5-a0ef-1422"/>
           </infoLinks>
+          <profiles>
+            <profile name="Piercing strike" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="68bb-956f-4c85-f134">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Melee attacks of the model gain Armor piercing(5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Rapid redeployment" hidden="false" id="47c2-f4ac-1441-6ed4">
+        <selectionEntry type="upgrade" import="true" name="Rapid redeployment" hidden="false" id="5a81-0fe3-b791-876a">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feae-ffde-823d-f46e" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f68d-7bc2-160b-190d"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Rapid redeployment" id="174c-48d1-57ee-ab98" hidden="false" type="rule" targetId="d3d5-ffc6-0b26-d71b"/>
+            <infoLink name="Hit &amp; Run" id="3818-843d-787a-7df0" hidden="false" type="rule" targetId="3120-d192-37d7-bf60"/>
           </infoLinks>
+          <profiles>
+            <profile name="Rapid redeployment" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="7ce4-d660-148f-f692">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model and its unit gain the &quot;Hit &amp; Run&quot; ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Reaper&apos;s reach" hidden="false" id="ccb5-bc50-47eb-9250">
+        <selectionEntry type="upgrade" import="true" name="Reaper&apos;s reach" hidden="false" id="bb3c-7224-a229-a139">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34d0-c2f1-2a42-c1b7" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="70c6-4cae-ad53-d963"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Reaper&apos;s reach" id="ccaa-739a-6153-98b3" hidden="false" type="rule" targetId="38fe-86f1-13e1-1b19"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Reaper&apos;s reach" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="34c0-1269-7efc-942b">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Ranged weapons of the model and its attached unit gain +6&quot; range.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Scorpion&apos;s sting" hidden="false" id="134c-b128-a3ec-d800">
+        <selectionEntry type="upgrade" import="true" name="Scorpion&apos;s sting" hidden="false" id="f255-33d5-6b52-fd01">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1afb-ac44-b7d9-cfb2" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c59-f93c-1b34-65ff"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Scorpion&apos;s sting" id="6c2c-be6b-3d2b-3d31" hidden="false" type="rule" targetId="754a-c07b-782b-8f35"/>
+            <infoLink name="Precision (5+)" id="cc33-f911-63d3-f6e5" hidden="false" type="rule" targetId="e14c-ac32-43d3-4935"/>
           </infoLinks>
+          <profiles>
+            <profile name="Scorpion&apos;s sting" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="cbe6-e2b8-30ea-3c0a">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Melee attacks of the model gain Precision(5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Skyhunter" hidden="false" id="2819-f40e-2fa0-97c0">
+        <selectionEntry type="upgrade" import="true" name="Skyhunter" hidden="false" id="ea07-f42e-55ec-5406">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b10-a9a0-05f5-824c" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9075-34c3-7601-488d"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
           <infoLinks>
-            <infoLink name="Skyhunter" id="8300-8a6c-c44f-59d7" hidden="false" type="rule" targetId="9c45-f77b-b418-fe38"/>
+            <infoLink name="Anti-Air" id="5d6f-e889-cdc6-6652" hidden="false" type="rule" targetId="74c5-fd82-a535-3e41"/>
           </infoLinks>
+          <profiles>
+            <profile name="Skyhunter" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="1f17-ef0e-05bd-78c8">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">All ranged weapons of the model gain Anti-Air.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Stand firm" hidden="false" id="3f68-66bd-77b4-8441">
+        <selectionEntry type="upgrade" import="true" name="Stand firm" hidden="false" id="9c91-5008-49a4-eb8a">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="366e-cae6-8081-4e15" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb2c-8d17-2696-8660"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Stand firm" id="1982-43a2-ab28-c04b" hidden="false" type="rule" targetId="d083-80d8-a65b-d384"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Stand firm" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="9a8b-deb4-f935-f170">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The model and its unit gain the &quot;Objective secured!&quot; ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Surprise assault" hidden="false" id="aa85-211f-1231-3c1e">
+        <selectionEntry type="upgrade" import="true" name="Surprise assault" hidden="false" id="321f-426f-84a6-ec8d">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6509-a466-ca78-05f5" includeChildSelections="true" includeChildForces="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cb6-0212-7197-8c31"/>
           </constraints>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="5"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Surprise assault" id="2b1b-018a-fb2c-db73" hidden="false" type="rule" targetId="3354-f9fb-98df-6a7f"/>
-          </infoLinks>
+          <profiles>
+            <profile name="Surprise assault" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="5fb9-5c24-eb32-0e66">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If the model used the &quot;Shunting&quot; ability this round, it may shoot one additional time with each equipped Death spinner. If the model used the &quot;Sky dive&quot; ability this round, it doubles their shots with a Hawk&apos;s talon or Lasblaster.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -12367,6 +12691,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
         <selectionEntry type="upgrade" import="true" name="Faolchu&apos;s wings" hidden="false" id="da45-c25c-5223-e1ea">
           <infoLinks>
             <infoLink name="Faolchu&apos;s wings" id="cef9-550c-f1f4-9869" hidden="false" type="profile" targetId="6382-7c9e-4503-4a17"/>
+            <infoLink name="Sky Dive" id="6084-5a2c-38fd-de99" hidden="false" type="profile" targetId="fc21-11d8-53f2-e874"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="11"/>
@@ -12381,6 +12706,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
         <selectionEntry type="upgrade" import="true" name="Warp jump generator" hidden="false" id="3d71-d67e-a44b-cab0">
           <infoLinks>
             <infoLink name="Warp jump generator" id="af5e-04a7-5b5f-724c" hidden="false" type="profile" targetId="0ce6-74c8-f8be-483b"/>
+            <infoLink name="Shunting" id="fd9b-9d22-b4e9-3668" hidden="false" type="profile" targetId="97cc-8a18-dafc-2c5b"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="11"/>
@@ -12400,6 +12726,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
         <selectionEntry type="upgrade" import="true" name="Faolchu&apos;s wings" hidden="false" id="6548-6cd1-2636-c86c">
           <infoLinks>
             <infoLink name="Faolchu&apos;s wings" id="8f44-d65f-3eab-4d01" hidden="false" type="profile" targetId="6382-7c9e-4503-4a17"/>
+            <infoLink name="Sky Dive" id="4cc0-ccdd-54eb-caac" hidden="false" type="profile" targetId="fc21-11d8-53f2-e874"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="13"/>
@@ -12428,6 +12755,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
         <selectionEntry type="upgrade" import="true" name="Warp jump generator" hidden="false" id="47d7-93c0-1c39-bffa">
           <infoLinks>
             <infoLink name="Warp jump generator" id="8254-8097-06c1-f432" hidden="false" type="profile" targetId="0ce6-74c8-f8be-483b"/>
+            <infoLink name="Shunting" id="9b0c-ce25-e1ba-d3fd" hidden="false" type="profile" targetId="97cc-8a18-dafc-2c5b"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="40d8-7900-73a1-1378" value="13"/>

@@ -783,8 +783,8 @@ A combi-weapon can fire both profiles simultaneously at the same target, with a 
     <rule name="Poison (3+)" id="68f8-25c2-047a-519e" hidden="false">
       <description>To would rolls of 3+ against creatures always succeed.</description>
     </rule>
-    <rule name="Precision (X+)" id="e14c-ac32-43d3-4935" hidden="false">
-      <description>Successful to hit rolls of X+ automatically wound creatures. 
+    <rule name="Precision (5+)" id="e14c-ac32-43d3-4935" hidden="false">
+      <description>Successful to hit rolls of 5+ automatically wound creatures. 
 Can’t be used with “Barrage” or “Explosive” weapons.</description>
     </rule>
     <rule name="Precision (4+)" id="c248-b243-22a7-c943" hidden="false">
@@ -793,6 +793,24 @@ Can’t be used with “Barrage” or “Explosive” weapons.</description>
     </rule>
     <rule name="Daemon" id="a9b2-2a61-bc33-2c3f" hidden="false">
       <description>The model has a 5+ invulnerability save.</description>
+    </rule>
+    <rule name="Seeking" id="4111-1d6b-e33a-ba04" hidden="false">
+      <description>Enemy units in cover do not gain any cover benefit against this weapon and are treated as being outside of cover.</description>
+    </rule>
+    <rule name="Armor Piercing (X+)" id="e589-7d5b-e190-bd05" hidden="false">
+      <description>Wound rolls of x+ always succeed and gain an additional -2 AP.
+Armor penetration rolls of x+ gain +1 AT and roll an extra 1D3 for armor penetration.</description>
+    </rule>
+    <rule name="Armor Piercing (5+)" id="d01d-35c5-a0ef-1422" hidden="false">
+      <description>Wound rolls of 5+ always succeed and gain an additional -2 AP.
+Armor penetration rolls of 5+ gain +1 AT and roll an extra 1D3 for armor penetration.</description>
+    </rule>
+    <rule name="Precision (X+)" id="b5ed-749f-b8e5-5ee0" hidden="false">
+      <description>Successful to hit rolls of X+ automatically wound creatures. 
+Can’t be used with “Barrage” or “Explosive” weapons.</description>
+    </rule>
+    <rule name="Anti-Air" id="74c5-fd82-a535-3e41" hidden="false">
+      <description>Attacks made with this weapon against models with the Anti-Grav, Jet Bike, or Jump Pack special rules or the Flyer unit type gain +1 to hit rolls and +1 Strength.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

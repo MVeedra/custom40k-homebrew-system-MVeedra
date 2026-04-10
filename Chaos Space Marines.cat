@@ -84,6 +84,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="3ef7-49c0-2583-79fc" id="96ed-00b1-8dc3-366f" primary="false" name="Nurgle"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -1607,84 +1610,167 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Adept of Possession" hidden="false" id="68e0-d7c1-868d-e532">
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Adept of Possession" hidden="false" id="c284-39fc-8b4d-b049">
-          <entryLinks>
-            <entryLink import="true" name="Frag Grenade" hidden="false" id="bd43-6099-f7c7-dd59" type="selectionEntry" targetId="4b36-4099-9c01-b261"/>
-            <entryLink import="true" name="Krak Grenades" hidden="false" id="a027-f533-3792-352b" type="selectionEntry" targetId="8871-afd8-0283-8c9f"/>
-            <entryLink import="true" name="Mark of Chaos" hidden="false" id="06fe-9889-9399-0a8b" type="selectionEntryGroup" targetId="a522-beb8-6a76-8a45"/>
-            <entryLink import="true" name="Armory" hidden="false" id="3613-ea30-a752-24bd" type="selectionEntryGroup" targetId="2d1a-9a4b-914a-3031"/>
-            <entryLink import="true" name="Veteran Abilities" hidden="false" id="f5b8-e727-3609-3930" type="selectionEntryGroup" targetId="6c93-db6b-2591-edf7">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3831-21f7-59bd-2ea2" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ascend to Master of Possession" hidden="false" id="4ded-5c79-f245-f9c5">
-              <costs>
-                <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2f07-5793-29c9-e8ce" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <infoLinks>
-            <infoLink name="Adept of Possession" id="4fbd-f28e-767e-35cc" hidden="false" type="profile" targetId="6e02-528e-a326-e7c4">
-              <modifiers>
-                <modifier type="set" value="9" field="1a6c-9e94-a0f5-84ec">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="4ded-5c79-f245-f9c5" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="3" field="2813-4494-0abe-7149">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="4ded-5c79-f245-f9c5" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Master of Possession" field="name">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="4ded-5c79-f245-f9c5" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="40d8-7900-73a1-1378" value="77"/>
-          </costs>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffe7-9854-d0de-c8d3-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffe7-9854-d0de-c8d3-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
       <categoryLinks>
         <categoryLink name="HQ" hidden="false" id="c870-59ff-7068-d355" targetId="681b-82fd-7cc4-8ef8" primary="true"/>
         <categoryLink name="Character Model" hidden="false" id="c0c9-3883-856b-07b2" targetId="8005-00e1-1066-035d" primary="false"/>
         <categoryLink name="Infantry" hidden="false" id="aded-da55-d5e7-ac33" targetId="79f3-f25d-2e24-7130" primary="false"/>
+        <categoryLink targetId="4489-e5f8-e50d-6903" id="15eb-2ee7-f0ee-c0f3" primary="false" name="&lt;Legion&gt;"/>
+        <categoryLink targetId="47df-0129-e847-29ee" id="1400-22ac-c2a2-1264" primary="false" name="Chaos Space Marine"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Demon" id="1012-b76f-7cd4-1b0e" hidden="false" type="rule" targetId="a3f0-2945-6c73-ec9e"/>
-        <infoLink name="Demonic Corruption" id="6640-cfe2-2e8a-6453" hidden="false" type="profile" targetId="55df-eb8a-e06a-16cf"/>
-        <infoLink name="Master of Possession" id="b42e-c103-a2c8-fd0c" hidden="true" type="profile" targetId="c880-6fdc-451c-eaa1">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="parent" childId="4ded-5c79-f245-f9c5" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
+        <infoLink name="Demon" id="4fdf-1ac5-3469-5883" hidden="false" type="rule" targetId="a3f0-2945-6c73-ec9e"/>
+        <infoLink name="Daemonic Corruption" id="ef64-9af6-e385-f718" hidden="false" type="rule" targetId="b806-6ea9-44b9-3576"/>
+        <infoLink name="Master of Possession" id="e4e2-fa3e-116c-1922" hidden="false" type="profile" targetId="c880-6fdc-451c-eaa1"/>
       </infoLinks>
-      <modifiers>
-        <modifier type="set" value="Master of Possession" field="name">
-          <conditions>
-            <condition type="equalTo" value="1" field="selections" scope="parent" childId="4ded-5c79-f245-f9c5" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="" id="df44-53eb-699b-689e" hidden="false">
+          <comment>Unit</comment>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Profile" id="3102-d341-80d9-ea2f" hidden="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Adept of Possession" hidden="false" id="3d90-1da2-0394-bd76" sortIndex="1" defaultAmount="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Frag Grenade" hidden="false" id="06cf-f8f1-093c-964a" type="selectionEntry" targetId="4b36-4099-9c01-b261"/>
+                    <entryLink import="true" name="Krak Grenades" hidden="false" id="7ce0-307a-f473-fa8c" type="selectionEntry" targetId="8871-afd8-0283-8c9f"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="40d8-7900-73a1-1378" value="77"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Adept of Possession" id="fa84-431c-9899-3462" hidden="false" type="profile" targetId="6e02-528e-a326-e7c4"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Master of Possession" hidden="false" id="b0eb-921d-db07-2e1c" sortIndex="2">
+                  <costs>
+                    <cost name="pts" typeId="40d8-7900-73a1-1378" value="92"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Frag Grenade" hidden="false" id="6fb1-6b29-8eb5-e312" type="selectionEntry" targetId="4b36-4099-9c01-b261"/>
+                    <entryLink import="true" name="Krak Grenades" hidden="false" id="6daf-1581-c4f8-e309" type="selectionEntry" targetId="8871-afd8-0283-8c9f"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="14f5-c5c1-c67c-a2a7" includeChildSelections="true" includeChildForces="true"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Master of Possession" id="c557-c8c1-3e8a-8c3e" hidden="false" type="profile" targetId="e35c-fc05-9fa7-7802"/>
+                    <infoLink name="Master of Possesion" id="ca60-2270-bee5-ddc3" hidden="false" type="rule" targetId="2f8d-1028-72a8-c16f"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cad5-9daf-1a44-8800"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="762b-b7a7-ecac-6c84"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="" id="5a77-c2ba-3e0a-e1f7" hidden="false" sortIndex="3">
+                  <comment>Armory</comment>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapons" hidden="false" id="9431-bea4-85fa-dc6f" type="selectionEntryGroup" targetId="bae3-773e-7eeb-9313"/>
+                    <entryLink import="true" name="Equipment" hidden="false" id="640f-8ec7-7fe4-0b1e" type="selectionEntryGroup" targetId="692f-ca18-23f1-582c"/>
+                    <entryLink import="true" name="Infantry only" hidden="false" id="d0ea-4f82-1e6f-8491" type="selectionEntryGroup" targetId="9c48-e9b0-4108-e74e"/>
+                    <entryLink import="true" name="Legacy Armory" hidden="false" id="dc8a-92f3-973d-31c3" type="selectionEntryGroup" targetId="2237-a3bc-dd7f-c014"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Veteran Abilities" id="3039-3464-af80-2716" hidden="false">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ea88-2ce5-47fa-e2f5"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="23a8-b0db-70f3-c76f"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Veteran Abilities" hidden="false" id="9055-3d62-bf7f-da54" type="selectionEntryGroup" targetId="6c93-db6b-2591-edf7"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Mark of Chaos" id="fff5-1137-bd16-ac04" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Khorne" hidden="false" id="164e-8bcd-685c-7ce0">
+                      <costs>
+                        <cost name="pts" typeId="40d8-7900-73a1-1378" value="8"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Mark of Khorne" id="b77e-93cd-7b3c-51e5" hidden="false" type="rule" targetId="29a3-29ca-26dd-95b6"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f02c-e671-57b7-0cec" includeChildSelections="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Khorne" hidden="false" id="520e-6bc2-5269-504d" targetId="8e9b-38f2-b7be-b9cc" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Nurgle" hidden="false" id="59f1-09a3-921d-effd">
+                      <infoLinks>
+                        <infoLink name="Mark of Nurgle" id="e542-13ee-5556-020f" hidden="false" type="rule" targetId="bc6a-3f9c-5861-3f87"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c06a-1e6b-48b7-0a6c" includeChildSelections="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Nurgle" hidden="false" id="e73d-93d0-e3a5-7361" targetId="3ef7-49c0-2583-79fc" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="40d8-7900-73a1-1378" value="20"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Slaanesh" hidden="false" id="02e0-c39d-8a5a-37b4">
+                      <infoLinks>
+                        <infoLink name="Mark of Slaanesh" id="e8fc-482a-b022-5339" hidden="false" type="rule" targetId="1577-5bee-8914-6750"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3ec-e958-50a9-dfe6" includeChildSelections="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Slaanesh" hidden="false" id="b9db-3c2c-360f-b60f" targetId="f443-a396-7f6d-f665" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="40d8-7900-73a1-1378" value="8"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="d6bb-bd2a-a0a2-b952">
+                      <infoLinks>
+                        <infoLink name="Mark of Tzeentch" id="59e3-fbc8-8f22-9a59" hidden="false" type="rule" targetId="3932-3917-7aea-d44e"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a80c-6ef9-c3a1-b595" includeChildSelections="false"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Tzeentch" hidden="false" id="43ef-187d-82f8-bdc5" targetId="7ec6-eaa6-dbca-db49" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Undivided" hidden="false" id="d487-922a-7013-cedf">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8d0-e0ca-ac28-1e6e"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Mark of Chaos Undivided" id="811a-e6de-702b-5fe0" hidden="false" type="rule" targetId="c48e-8a4a-d584-3829"/>
+                      </infoLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dec-dae3-d566-bd69" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="4dec-dae3-d566-bd69">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b1dc-1148-1c1b-9510" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="1309-8c33-70e6-2d10" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="220a-ad83-513c-4a0f" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Frag Grenade" hidden="false" id="4b36-4099-9c01-b261">
       <infoLinks>
@@ -4773,9 +4859,14 @@
       <comment>Khorne</comment>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="8e9b-38f2-b7be-b9cc" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8e9b-38f2-b7be-b9cc" shared="true"/>
+                <condition type="equalTo" value="8" field="selections" scope="parent" childId="model" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="d533-d61a-3813-9267">
           <conditions>
@@ -4795,9 +4886,13 @@
       <comment>Nurgle</comment>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="3ef7-49c0-2583-79fc" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3ef7-49c0-2583-79fc" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="7c95-0e96-f1f3-22e8">
           <conditions>
@@ -4839,9 +4934,14 @@
       <comment>Tzeentch</comment>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ec6-eaa6-dbca-db49" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="7ec6-eaa6-dbca-db49" shared="true"/>
+                <condition type="equalTo" value="9" field="selections" scope="parent" childId="model" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="9a19-5386-8024-a88a">
           <conditions>
@@ -6079,7 +6179,204 @@
         <categoryLink targetId="6825-5c4f-2f61-485f" id="4b48-45bc-b217-f332" primary="false" name="Cultist"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Tzaangors" hidden="false" id="8643-ad55-11cb-39a6"/>
+    <selectionEntry type="unit" import="true" name="Tzaangors" hidden="false" id="8643-ad55-11cb-39a6">
+      <categoryLinks>
+        <categoryLink targetId="79f3-f25d-2e24-7130" id="d671-0cc6-3e9c-efa2" primary="false" name="Infantry"/>
+        <categoryLink targetId="2a68-9526-9cb0-16c3" id="5e08-747c-65b2-39c6" primary="true" name="Troops"/>
+        <categoryLink targetId="7ec6-eaa6-dbca-db49" id="03b2-caa2-43c0-ecad" primary="false" name="Tzeentch"/>
+        <categoryLink targetId="6496-b639-f57d-3912" id="3879-620c-8b9d-8756" primary="false" name="Thousand Sons"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="" id="ac84-3b7c-e52a-affd" hidden="false">
+          <comment>Unit</comment>
+          <entryLinks>
+            <entryLink import="true" name="Favoured Unit" hidden="false" id="0fd2-66c9-4e4c-dc1b" type="selectionEntry" targetId="12e9-21b2-1e97-14c2">
+              <comment>tzeentch</comment>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Veteran Abilities" id="caf9-33c3-9eb5-ace7" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Mark of Chaos" id="88ec-6ef2-93a8-2805" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Tzeentch" hidden="false" id="7b76-5636-3095-7e85">
+                      <infoLinks>
+                        <infoLink name="Mark of Tzeentch" id="7746-12fc-8928-7917" hidden="false" type="rule" targetId="3932-3917-7aea-d44e"/>
+                      </infoLinks>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e64a-8176-2699-180a" includeChildSelections="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1863-a35b-6885-dbec"/>
+                      </constraints>
+                      <categoryLinks>
+                        <categoryLink name="Tzeentch" hidden="false" id="be57-179a-9184-06a7" targetId="7ec6-eaa6-dbca-db49" primary="false"/>
+                      </categoryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <modifiers>
+                    <modifier type="set" value="0" field="0b72-d580-de5a-caf9">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="b1dc-1148-1c1b-9510" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="1309-8c33-70e6-2d10" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="220a-ad83-513c-4a0f" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Members - 9 to 18" id="21d2-fc05-52e2-fd62" hidden="false">
+              <constraints>
+                <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="16a1-c388-366f-42bc"/>
+                <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="37d1-afb3-edda-0460"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Champion" id="a069-fd38-f234-24df" hidden="false" sortIndex="1">
+                  <selectionEntries>
+                    <selectionEntry type="model" import="true" name="Twistbray" hidden="false" id="1a73-074d-0492-031e" sortIndex="1" defaultAmount="1">
+                      <costs>
+                        <cost name="pts" typeId="40d8-7900-73a1-1378" value="10"/>
+                      </costs>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Tzaangor Weapons" id="c95f-8dc1-e3d0-c81c" hidden="false">
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Autopistol and Chainsword" hidden="false" id="156b-e5f2-4b2f-651a" defaultAmount="1">
+                              <infoLinks>
+                                <infoLink name="Autopistol" id="9eee-7987-6dfb-5a21" hidden="false" type="profile" targetId="bbde-c3c8-aeda-49a6"/>
+                                <infoLink name="Chainsword" id="fad3-3773-6b18-4f9e" hidden="false" type="profile" targetId="1946-6090-45b2-1d83"/>
+                              </infoLinks>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Eldritch Shield and Tzaangor Blade" hidden="false" id="2da5-b8e4-e76a-c2bf">
+                              <costs>
+                                <cost name="pts" typeId="40d8-7900-73a1-1378" value="2"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Tzaangor Blade" id="c1d6-8e9f-a3bf-766b" hidden="false" type="profile" targetId="c2af-4a06-06d2-3d20"/>
+                                <infoLink name="Deflect" id="1d49-49e8-16af-7ba6" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
+                                <infoLink name="Eldritch Shield" id="4eee-5054-1088-e5ea" hidden="false" type="profile" targetId="41d3-476b-3adf-8702"/>
+                                <infoLink name="Parry" id="decc-9c25-8655-6cf4" hidden="false" type="rule" targetId="fc6d-9ee5-f9c3-6035"/>
+                              </infoLinks>
+                            </selectionEntry>
+                          </selectionEntries>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ba5-297d-ba98-f17a"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d53d-5b8a-5243-7dfd"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <infoLinks>
+                        <infoLink name="Twistbray" id="cc03-5cd2-dd49-0249" hidden="false" type="profile" targetId="2f66-1d45-56b1-9d73"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry type="model" import="true" name="Aspiring Twistbray" hidden="false" id="1077-c4f0-b13d-5e73" sortIndex="2">
+                      <costs>
+                        <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
+                      </costs>
+                      <selectionEntryGroups>
+                        <selectionEntryGroup name="Tzaangor Weapons" id="8a3a-ede9-a95a-48e8" hidden="false" sortIndex="1">
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Autopistol and Chainsword" hidden="false" id="32a7-c992-12fe-82a1" defaultAmount="1">
+                              <infoLinks>
+                                <infoLink name="Autopistol" id="7320-c71f-ffb2-00c7" hidden="false" type="profile" targetId="bbde-c3c8-aeda-49a6"/>
+                                <infoLink name="Chainsword" id="c5ba-65ed-6a01-ce70" hidden="false" type="profile" targetId="1946-6090-45b2-1d83"/>
+                              </infoLinks>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Eldritch Shield and Tzaangor Blade" hidden="false" id="b793-6d8d-afbc-ecab">
+                              <costs>
+                                <cost name="pts" typeId="40d8-7900-73a1-1378" value="2"/>
+                              </costs>
+                              <infoLinks>
+                                <infoLink name="Tzaangor Blade" id="158c-bf33-6815-8cd2" hidden="false" type="profile" targetId="c2af-4a06-06d2-3d20"/>
+                                <infoLink name="Deflect" id="ef39-0fed-44ba-443e" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
+                                <infoLink name="Eldritch Shield" id="2277-2be2-c7bc-2c1b" hidden="false" type="profile" targetId="41d3-476b-3adf-8702"/>
+                                <infoLink name="Parry" id="43e7-5370-7068-71c3" hidden="false" type="rule" targetId="fc6d-9ee5-f9c3-6035"/>
+                              </infoLinks>
+                            </selectionEntry>
+                          </selectionEntries>
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b27f-d787-f4d0-95f1"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9a7-4bed-c0ed-5ce4"/>
+                          </constraints>
+                        </selectionEntryGroup>
+                      </selectionEntryGroups>
+                      <infoLinks>
+                        <infoLink name="Aspiring Twistbray" id="04fe-5f2a-f017-205b" hidden="false" type="profile" targetId="5c30-6791-8cbe-ad6c"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Infantry only" hidden="false" id="eb72-3ac9-0046-e005" type="selectionEntryGroup" targetId="0025-335c-f6d0-2d3c"/>
+                        <entryLink import="true" name="Legacy Armory" hidden="false" id="f910-fae7-ae13-1b6c" type="selectionEntryGroup" targetId="c989-91ad-dfac-1d55"/>
+                        <entryLink import="true" name="Weapons" hidden="false" id="ed6b-2807-6f2a-aabc" type="selectionEntryGroup" targetId="0f8d-a3d3-ea21-322b"/>
+                        <entryLink import="true" name="Equipment" hidden="false" id="27f4-3903-22d1-07d6" type="selectionEntryGroup" targetId="c837-4b80-7a85-380e"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc39-65ba-d811-5de2"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e68-ace8-be49-0a13"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Tzaangor" hidden="false" id="d71e-131f-f06b-3fa3" sortIndex="2" defaultAmount="8">
+                  <costs>
+                    <cost name="pts" typeId="40d8-7900-73a1-1378" value="10"/>
+                  </costs>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Tzaangor Weapons" id="c6bd-3516-0919-244d" hidden="false">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Autopistol and Chainsword" hidden="false" id="9fcc-8fce-94eb-79c0" defaultAmount="1">
+                          <infoLinks>
+                            <infoLink name="Autopistol" id="af46-d57d-18a9-df9c" hidden="false" type="profile" targetId="bbde-c3c8-aeda-49a6"/>
+                            <infoLink name="Chainsword" id="97d2-f678-dcc6-c585" hidden="false" type="profile" targetId="1946-6090-45b2-1d83"/>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Eldritch Shield and Tzaangor Blade" hidden="false" id="1a36-a808-5200-2796">
+                          <costs>
+                            <cost name="pts" typeId="40d8-7900-73a1-1378" value="2"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Tzaangor Blade" id="d16c-7d0c-4e90-7916" hidden="false" type="profile" targetId="c2af-4a06-06d2-3d20"/>
+                            <infoLink name="Deflect" id="1cdc-2f03-0c26-0e23" hidden="false" type="rule" targetId="4105-b7ba-7941-231e"/>
+                            <infoLink name="Eldritch Shield" id="778d-23e6-7327-eab6" hidden="false" type="profile" targetId="41d3-476b-3adf-8702"/>
+                            <infoLink name="Parry" id="9560-3466-53fa-cdaa" hidden="false" type="rule" targetId="fc6d-9ee5-f9c3-6035"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="946c-393b-30b8-d9b8"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4205-9715-22cf-2712"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <infoLinks>
+                    <infoLink name="Tzaangor" id="c376-8fa3-cb69-fa90" hidden="false" type="profile" targetId="ab06-d3e8-47d9-98c2"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="true" id="3787-5f2e-2ac6-fc8c" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="3787-5f2e-2ac6-fc8c">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b1dc-1148-1c1b-9510" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1309-8c33-70e6-2d10" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="220a-ad83-513c-4a0f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hourglass of Manoth" hidden="false" id="2d48-ab13-1ce0-e6db">
       <costs>
         <cost name="pts" typeId="40d8-7900-73a1-1378" value="15"/>
@@ -9114,12 +9411,69 @@ Unique.</characteristic>
     </profile>
     <profile name="The Scripts of Erebus" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="74dc-c6b8-823a-62f4">
       <characteristics>
-        <characteristic name="Description" typeId="0207-88db-7926-4ba6">If the model attempts to use a psychic power, the roll is automatically successful with the minimum cast value necessary. The model may choose to use the effect of this item. </characteristic>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">If the model attempts to use a psychic power, the roll is automatically successful with the minimum cast value necessary. The model may choose to use the effect of this item.</characteristic>
       </characteristics>
     </profile>
     <profile name="The Skull of Monarchs" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="7b75-ee89-bdd4-05ee">
       <characteristics>
         <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model and its attached unit receive a +5 bonus to all combat results and the &quot;Fearless&quot; ability. Unique.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tzaangor" typeId="a016-3bd5-58b1-188d" typeName="Unit" hidden="false" id="ab06-d3e8-47d9-98c2">
+      <characteristics>
+        <characteristic name="M" typeId="2734-8af3-55f8-d225">6&quot;</characteristic>
+        <characteristic name="WS" typeId="b8b1-cb7e-422b-9e59">4+</characteristic>
+        <characteristic name="BS" typeId="2134-4e17-7efb-7cdd">4+</characteristic>
+        <characteristic name="S" typeId="355a-95af-e32c-6a76">4</characteristic>
+        <characteristic name="T" typeId="f0a6-a47d-9895-24fd">4</characteristic>
+        <characteristic name="W" typeId="c1fc-cf0a-04a8-aa5d">1</characteristic>
+        <characteristic name="I" typeId="4f40-356e-7cce-48e8">4</characteristic>
+        <characteristic name="A" typeId="2813-4494-0abe-7149">2</characteristic>
+        <characteristic name="LD" typeId="1a6c-9e94-a0f5-84ec">6</characteristic>
+        <characteristic name="SV" typeId="512f-e34e-70e2-c6d9">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Twistbray" typeId="a016-3bd5-58b1-188d" typeName="Unit" hidden="false" id="2f66-1d45-56b1-9d73">
+      <characteristics>
+        <characteristic name="M" typeId="2734-8af3-55f8-d225">6&quot;</characteristic>
+        <characteristic name="WS" typeId="b8b1-cb7e-422b-9e59">4+</characteristic>
+        <characteristic name="BS" typeId="2134-4e17-7efb-7cdd">4+</characteristic>
+        <characteristic name="S" typeId="355a-95af-e32c-6a76">4</characteristic>
+        <characteristic name="T" typeId="f0a6-a47d-9895-24fd">4</characteristic>
+        <characteristic name="W" typeId="c1fc-cf0a-04a8-aa5d">1</characteristic>
+        <characteristic name="I" typeId="4f40-356e-7cce-48e8">4</characteristic>
+        <characteristic name="A" typeId="2813-4494-0abe-7149">2</characteristic>
+        <characteristic name="LD" typeId="1a6c-9e94-a0f5-84ec">6</characteristic>
+        <characteristic name="SV" typeId="512f-e34e-70e2-c6d9">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Aspiring Twistbray" typeId="a016-3bd5-58b1-188d" typeName="Unit" hidden="false" id="5c30-6791-8cbe-ad6c">
+      <characteristics>
+        <characteristic name="M" typeId="2734-8af3-55f8-d225">6&quot;</characteristic>
+        <characteristic name="WS" typeId="b8b1-cb7e-422b-9e59">4+</characteristic>
+        <characteristic name="BS" typeId="2134-4e17-7efb-7cdd">4+</characteristic>
+        <characteristic name="S" typeId="355a-95af-e32c-6a76">4</characteristic>
+        <characteristic name="T" typeId="f0a6-a47d-9895-24fd">4</characteristic>
+        <characteristic name="W" typeId="c1fc-cf0a-04a8-aa5d">1</characteristic>
+        <characteristic name="I" typeId="4f40-356e-7cce-48e8">4</characteristic>
+        <characteristic name="A" typeId="2813-4494-0abe-7149">2</characteristic>
+        <characteristic name="LD" typeId="1a6c-9e94-a0f5-84ec">7</characteristic>
+        <characteristic name="SV" typeId="512f-e34e-70e2-c6d9">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tzaangor Blade" typeId="77f2-c286-4a8e-85d6" typeName="Melee Weapons" hidden="false" id="c2af-4a06-06d2-3d20">
+      <characteristics>
+        <characteristic name="Range" typeId="17a8-c6d1-4902-3240">-</characteristic>
+        <characteristic name="Type" typeId="85b8-b86f-84a1-6a8a">Melee</characteristic>
+        <characteristic name="S" typeId="dfe1-ab2e-bf82-b051">U</characteristic>
+        <characteristic name="AP" typeId="5769-5be9-c3dd-1b76">-1</characteristic>
+        <characteristic name="D" typeId="40a0-b76f-918f-50a5">1</characteristic>
+        <characteristic name="Keywords" typeId="a78e-ed35-c409-5cda">Flurry(1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Eldritch Shield" typeId="03e4-280e-70a0-4395" typeName="Equipment" hidden="false" id="41d3-476b-3adf-8702">
+      <characteristics>
+        <characteristic name="Description" typeId="0207-88db-7926-4ba6">The model gains the abilities &quot;Deflect&quot; and &quot;Parry&quot;.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -9212,6 +9566,7 @@ Unique.</characteristic>
     <entryLink import="true" name="Accursed Cultists" hidden="false" id="6083-cdad-1da5-89ca" type="selectionEntry" targetId="e5f6-443c-8bc8-0080"/>
     <entryLink import="true" name="Jakhals" hidden="false" id="c9aa-84f4-5df4-e829" type="selectionEntry" targetId="bedc-2ee2-315a-6a55"/>
     <entryLink import="true" name="Traitor Guard" hidden="false" id="879e-0baa-536b-c3c2" type="selectionEntry" targetId="d90a-eaed-e4e3-2059"/>
+    <entryLink import="true" name="Tzaangors" hidden="false" id="effd-bfb5-543e-cf6e" type="selectionEntry" targetId="8643-ad55-11cb-39a6"/>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Veteran Abilities" id="6c93-db6b-2591-edf7" hidden="false" collapsible="true">
@@ -13153,6 +13508,23 @@ Can only select units with no Mark or the Mark of Chaos Undivided.</description>
     <rule name="Bodyguard (Chaos Ogryn only)" id="55c3-91fa-3c41-7c0f" hidden="false">
       <description>Wounds inflicted must first be allocated to the model before other models in the unit can be selected. Attacks with the “Precision” rule take a -1 hit penalty if they affect an attached character.</description>
     </rule>
+    <rule name="Master of Possesion" id="2f8d-1028-72a8-c16f" hidden="false">
+      <description>You may roll 1D6 or 2D6 on the &quot;Daemonic corruption&quot; table.</description>
+    </rule>
+    <rule name="Daemonic Corruption" id="b806-6ea9-44b9-3576" hidden="false">
+      <description>Daemonic corruption: Roll 2D6 at the start of the activation if this model is accompanied by a unit and set up on the battlefield (being in a transporter does not count towards being on the battlefield for that purpose). Apply following results to that unit permanently:
+
+
+-1: +2&quot; Movement
+-2: +1 Strength
+-3: +1 Toughness
+-4: +1 Initiative
+-5: +1 Wound
+-6: +1 Attack
+
+
+If a result is applied for the third time, the unit is destroyed. Place a chaos spawn for every fourth wound (rounded down) within 3&quot; of the model with this ability.</description>
+    </rule>
   </sharedRules>
   <categoryEntries>
     <categoryEntry name="Mandatory HQ" id="d462-516a-c2df-d938" hidden="true"/>
@@ -13188,6 +13560,8 @@ Can only select units with no Mark or the Mark of Chaos Undivided.</description>
     <categoryEntry name="Lieutenant" id="0fe9-6e21-d63f-ad5e" hidden="false"/>
     <categoryEntry name="Dark Apostle" id="711c-1c63-bc54-8797" hidden="false"/>
     <categoryEntry name="Sorcerer" id="4578-212d-8ed5-172b" hidden="false"/>
+    <categoryEntry name="Thousand Sons" id="6496-b639-f57d-3912" hidden="false"/>
+    <categoryEntry name="&lt;Legion&gt;" id="4489-e5f8-e50d-6903" hidden="false"/>
   </categoryEntries>
   <infoLinks>
     <infoLink name="Favoured Units" id="23e8-2765-68d5-da40" hidden="false" type="rule" targetId="fcf0-cba2-536b-fa4d"/>
