@@ -60,9 +60,6 @@
     <categoryEntry name="No Battlefield Role" id="41ed-bf57-7d27-9690" hidden="false">
       <description>For units in force creation that do not use a slot.</description>
     </categoryEntry>
-    <categoryEntry name="Wound" id="20f8-1fc5-5e76-2bf2" hidden="false">
-      <description>Wound</description>
-    </categoryEntry>
     <categoryEntry name="Lords of War" id="b76c-6f67-2cd9-2b59" hidden="false"/>
     <categoryEntry name="Epic Battle" id="776d-e8af-72c2-666e" hidden="false"/>
   </categoryEntries>
@@ -2379,11 +2376,6 @@ If multiple models in a unit have the same weapon with this rule, the correspond
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbd9-e4b9-c3eb-b800"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f2e-f390-acc0-242e"/>
       </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Wound" hidden="true" id="b6f3-e2e3-23f7-1b38" defaultAmount="1">
-      <categoryLinks>
-        <categoryLink targetId="20f8-1fc5-5e76-2bf2" id="4e47-6a4d-ea05-2c03" primary="false" name="Wound"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Skirmish Rules" hidden="true" id="6f8e-fd0a-9395-ea1b">
       <infoLinks>

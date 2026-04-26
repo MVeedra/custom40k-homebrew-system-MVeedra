@@ -823,7 +823,7 @@
                   <infoLinks>
                     <infoLink name="Power sword" id="d504-d948-9b08-bbfe" hidden="false" type="profile" targetId="e036-c920-af1d-499a"/>
                     <infoLink name="Neuro disruptor" id="0bdc-4812-2115-afb0" hidden="false" type="profile" targetId="d574-40f5-adf8-4e57"/>
-                    <infoLink name="Neuro Disruptor" id="d596-4f95-4d75-d63b" hidden="false" type="profile" targetId="f532-cd53-35ba-e0bb"/>
+                    <infoLink name="Neuro disruptor" id="d596-4f95-4d75-d63b" hidden="false" type="profile" targetId="f532-cd53-35ba-e0bb"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -11377,7 +11377,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
             <infoLink name="Protect" id="dec5-bac1-922c-269a" hidden="false" type="profile" targetId="2657-4469-b490-8a11"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Empower" hidden="false" id="4240-d902-b052-fd94">
+        <selectionEntry type="upgrade" import="true" name="Empower" hidden="false" id="4240-d902-b052-fd94" sortIndex="5">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9380-84ce-c57b-63ef"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cea5-f396-1a01-5d3a"/>
@@ -11386,7 +11386,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
             <infoLink name="Empower" id="ed1b-7f1c-422b-b744" hidden="false" type="profile" targetId="42c6-df19-cd43-b778"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Reveal" hidden="false" id="dbb8-41dd-5c8c-9b88">
+        <selectionEntry type="upgrade" import="true" name="Reveal" hidden="false" id="dbb8-41dd-5c8c-9b88" sortIndex="6">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="488b-af19-f7e3-e6fd"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24b2-363a-e908-a749"/>
@@ -11396,6 +11396,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <comment>psychic discipline</comment>
     </selectionEntryGroup>
     <selectionEntryGroup name="Fate" id="f8d3-cc46-29b2-5b4c" hidden="false" collapsible="true">
       <selectionEntries>
@@ -11444,7 +11445,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
             <infoLink name="Eldritch Storm" id="12f5-afda-dcd5-676e" hidden="false" type="profile" targetId="1908-9724-dfe9-4a4e"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Guide" hidden="false" id="620a-bef0-fd69-8619">
+        <selectionEntry type="upgrade" import="true" name="Guide" hidden="false" id="620a-bef0-fd69-8619" sortIndex="6">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bc52-2d92-4523-c7a3"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54ac-e546-2870-a204"/>
@@ -11454,6 +11455,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <comment>psychic discipline</comment>
     </selectionEntryGroup>
     <selectionEntryGroup name="Revenant (Ynnari)" id="5a30-dd1a-e38f-4e5d" hidden="true" collapsible="true">
       <selectionEntries>
@@ -11551,6 +11553,7 @@ Every enhancement is unique per army. Can be taken multiple times.</characterist
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <comment>psychic discipline</comment>
     </selectionEntryGroup>
     <selectionEntryGroup name="Exarch Powers" id="412b-5678-98ce-101b" hidden="true" collapsible="true">
       <selectionEntries>
